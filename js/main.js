@@ -1,0 +1,1331 @@
+/* ==========================================
+   Obreja Bogdan — Multi-Page Portfolio
+   Global JavaScript
+   ========================================== */
+
+// ===== TRANSLATIONS =====
+const translations = {
+  ro: {
+    // Navigation
+    navHome: "Acasă",
+    navAbout: "Despre",
+    navServices: "Servicii",
+    navPortfolio: "Portofoliu",
+    navContact: "Contact",
+    navCTA: "Consultanță Gratuită",
+
+    // Hero
+    heroAvailable: "Disponibil pentru proiecte noi",
+    heroTitle: 'Soluții Digitale Care <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Scalează</span>.<br>De la Idee la Produs.',
+    heroSubtitle: "Full-Stack Developer & Digital Solutions — construiesc aplicații web, mobile, platforme marketplace, sisteme CRM, soluții AI, marketing digital și infrastructură IT pentru business-uri din Europa și global.",
+    heroProp1: "Consultanță gratuită",
+    heroProp2: "Full-Stack · AI · Mobile",
+    heroProp3: "Clienți din Europa & global",
+    heroCTA1: "Discută Proiectul Tău",
+    heroCTA2: "Vezi Serviciile",
+    heroRole: "Full-Stack Developer & Digital Solutions Architect",
+    heroStat1: "Proiecte livrate",
+    heroStat2: "Ani experiență",
+    heroStat3: "Clienți mulțumiți",
+    heroStat4: "Servicii digitale",
+
+    // About / Benefits (Home)
+    aboutTag: "// De ce să lucrezi cu mine",
+    aboutTitle: 'Nu Doar Code. <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Soluții Complete.</span>',
+    aboutSubtitle: "Combin expertiza full-stack cu dezvoltare mobilă, AI, marketing digital și gândire de produs pentru a livra soluții care generează rezultate reale.",
+    benefit1Title: "Full-Stack End-to-End",
+    benefit1Desc: "De la bază de date și API-uri REST la interfețe responsive — un singur developer care acoperă tot stack-ul tehnic.",
+    benefit2Title: "Aplicații Mobile",
+    benefit2Desc: "Aplicații hibride iOS/Android — de la real estate la jocuri interactive. Experiență nativă, o singură codebase.",
+    benefit3Title: "AI & Automatizări",
+    benefit3Desc: "Integrare ChatGPT/OpenAI, chatboți inteligenți, boți Telegram, automatizare procese interne și externe.",
+    benefit4Title: "Marketing Digital",
+    benefit4Desc: "Email marketing, WhatsApp marketing, landing pages pentru reclame, HTML ads — tot ce trebuie pentru a genera clienți.",
+    benefit5Title: "Mentenanță & Securitate",
+    benefit5Desc: "Monitorizare, actualizări, backup-uri, securitate — website-ul tău rămâne rapid, sigur și funcțional non-stop.",
+    benefit6Title: "Motion Graphics",
+    benefit6Desc: "Reeluri animate în After Effects, content video dinamic pentru social media și campanii de marketing.",
+    benefit7Title: "Infrastructură IT",
+    benefit7Desc: "NAS Synology, stocare cloud, Drive, backup automat — soluții de infrastructură pentru business-ul tău.",
+    benefit8Title: "SEO & Growth Digital",
+    benefit8Desc: "SEO tehnic, AEO, GEO targeting, Schema markup, optimizare conversii — trafic organic și clienți din toată lumea.",
+
+    // Services overview (Home)
+    servicesTag: "// Ce pot face pentru tine",
+    servicesTitle: 'Servicii Digitale <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Complete</span>',
+    servicesSubtitle: "De la web și mobile la AI și marketing — ofer soluții end-to-end pentru orice tip de business.",
+    seeAllServices: "Vezi Toate Serviciile →",
+
+    // Services Page
+    spTitle: "Toate Serviciile Mele",
+    spSubtitle: "Soluții digitale complete pentru business-uri din Europa și global. De la idee la implementare.",
+    sp1Title: "Aplicații Web Full-Stack",
+    sp1Desc: "Aplicații web complexe construite cu Laravel și React. Dashboard-uri admin, platforme business, produse SaaS — de la bază de date la interfață.",
+    sp1f1: "Laravel MVC & REST API",
+    sp1f2: "Admin dashboard-uri custom",
+    sp1f3: "Autentificare & RBAC",
+    sp1f4: "Baze de date MySQL optimizate",
+    sp1f5: "Deploy & performance tuning",
+    sp2Title: "Aplicații Mobile Hibride",
+    sp2Desc: "Aplicații mobile cross-platform pentru iOS și Android. De la aplicații imobiliare la jocuri interactive precum Property Finder.",
+    sp2f1: "Aplicații iOS & Android",
+    sp2f2: "Aplicații imobiliare",
+    sp2f3: "Jocuri mobile (Property Finder)",
+    sp2f4: "Interfață nativă, o singură codebase",
+    sp2f5: "Push notifications & offline mode",
+    sp3Title: "Soluții AI & Automatizări",
+    sp3Desc: "Integrări OpenAI/ChatGPT, chatboți inteligenți, boți Telegram, automatizare procese — workflow-uri AI care economisesc ore.",
+    sp3f1: "Chatboți AI cu OpenAI API",
+    sp3f2: "Boți Telegram custom",
+    sp3f3: "Automatizare procese interne/externe",
+    sp3f4: "Prompt engineering avansat",
+    sp3f5: "Integrare în sisteme existente",
+    sp4Title: "E-commerce & Marketplace",
+    sp4Desc: "Platforme marketplace scalabile, magazine online cu sisteme de plăți, managementul produselor și logistică integrată.",
+    sp4f1: "Marketplace multi-vendor",
+    sp4f2: "Sisteme de plăți integrate",
+    sp4f3: "Dashboard admin & vânzători",
+    sp4f4: "Catalog & filtrare avansată",
+    sp4f5: "Integrări API externe",
+    sp5Title: "CRM & Sisteme Business",
+    sp5Desc: "Sisteme CRM custom, managementul leadurilor, platforme imobiliare, logică de business automatizată. Totul la cheie.",
+    sp5f1: "CRM custom cu lead tracking",
+    sp5f2: "Platforme imobiliare",
+    sp5f3: "Automatizări & notificări",
+    sp5f4: "Rapoarte & analytics",
+    sp5f5: "Roluri & permisiuni (RBAC)",
+    sp6Title: "Marketing Digital",
+    sp6Desc: "Email marketing cu șabloane custom, WhatsApp marketing, landing pages pentru ads, HTML ads — strategii complete de lead generation.",
+    sp6f1: "Email marketing & șabloane",
+    sp6f2: "WhatsApp marketing campaigns",
+    sp6f3: "Landing pages pentru reclame",
+    sp6f4: "HTML ads & display banners",
+    sp6f5: "Strategii de lead generation",
+    sp7Title: "Mentenanță & Securitate",
+    sp7Desc: "Mentenanță continuă, actualizări de securitate, monitoring, backup-uri automate — website-ul tău rămâne performant 24/7.",
+    sp7f1: "Mentenanță lunară proactivă",
+    sp7f2: "Actualizări de securitate",
+    sp7f3: "Monitorizare uptime & performanță",
+    sp7f4: "Backup-uri automate",
+    sp7f5: "SSL, firewall & protecție DDoS",
+    sp8Title: "Motion Graphics & Reeluri",
+    sp8Desc: "Reeluri animate în After Effects, content video dinamic, animații pentru social media și campanii de marketing digital.",
+    sp8f1: "Reeluri animate After Effects",
+    sp8f2: "Animații pentru social media",
+    sp8f3: "Video editing profesional",
+    sp8f4: "Motion graphics pentru ads",
+    sp8f5: "Branding animat & intro-uri",
+    sp9Title: "Infrastructură IT",
+    sp9Desc: "Configurare NAS Synology, soluții Drive, stocare cloud, backup automatizat și sisteme de stocare pentru companii.",
+    sp9f1: "NAS Synology configurare",
+    sp9f2: "Stocare cloud & Drive",
+    sp9f3: "Backup automat & recovery",
+    sp9f4: "Rețele interne & acces remote",
+    sp9f5: "Consultanță infrastructură IT",
+    spCTA: "Discută proiectul tău →",
+    spNote: "Fiecare proiect primește o estimare personalizată. Complexitatea, timeline-ul și cerințele specifice determină investiția.",
+    spMainCTA: "Solicită o Consultanță Gratuită",
+    spPopular: "🔥 Popular",
+
+    // Process
+    processTag: "// Cum funcționează",
+    processTitle: 'De la Idee la <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Produs Live</span>',
+    processSubtitle: "Un proces simplu și transparent în 4 pași. Tu te concentrezi pe business, eu mă ocup de restul.",
+    step1Title: "Consultanță Gratuită",
+    step1Desc: "Analizăm împreună nevoile tale. Înțeleg business-ul, publicul și obiectivele tale digitale.",
+    step2Title: "Strategie & Design",
+    step2Desc: "Creez wireframe-uri și design-ul vizual. Tu aprobi fiecare etapă înainte de a merge mai departe.",
+    step3Title: "Dezvoltare",
+    step3Desc: "Construiesc soluția cu cele mai noi tehnologii. Primești update-uri regulate și acces la preview.",
+    step4Title: "Lansare & Suport",
+    step4Desc: "Lansăm produsul live. Primești 30 zile de suport gratuit și training pentru gestionare.",
+    processsCTA: "Începe Consultanța Gratuită",
+
+    // Technologies
+    techTag: "// Stack tehnic",
+    techTitle: "Tehnologii & Competențe",
+    techBackend: "Backend & Infrastructură",
+    techFrontend: "Frontend & UI",
+    techAI: "AI & Automatizări",
+    techDevops: "DevOps & Growth",
+    techMobile: "Mobile & Cross-Platform",
+    techMarketing: "Marketing & Creative",
+
+    // Portfolio
+    portfolioTag: "// Portofoliu",
+    portfolioTitle: 'Proiecte Reale, <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Rezultate Reale</span>',
+    portfolioSubtitle: "Iată câteva dintre proiectele livrate clienților din Europa și internațional.",
+    portfolioCTA: "Vrei un proiect similar?",
+    filterAll: "Toate",
+    filterWeb: "Web",
+    filterMobile: "Mobile",
+    filterMarketing: "Marketing",
+    filterVideo: "Video",
+    Smad_invest: "Landing page modern pentru o companie de investiții, cu focus pe UX și conversie.",
+    Construct_portal: "Site web complex pentru companie de construcții, cu galerie de proiecte și sistem de ofertare.",
+    Vic_Dar: "Platformă e-commerce cu catalog de produse, sistem de comenzi și integrare social media.",
+    Logistics: "Website pentru servicii de transport cu sistem de tracking și calculare costuri.",
+    Ferestre: "Catalog digital de tâmplărie PVC cu configurator de produse și sistem de cotații.",
+    Motion: "Colecție de animații și efecte vizuale create pentru diverse proiecte și branduri.",
+
+    // Testimonials
+    testimonialsTag: "// Ce spun clienții",
+    testimonialsTitle: 'Feedback de la <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Clienți Reali</span>',
+    testimonial1: '"Bogdan a făcut un website excelent pentru compania noastră. Profesionist, rapid și atent la detalii. Recomand cu încredere!"',
+    testimonial2: '"Am primit exact ce am cerut și chiar mai mult. Website-ul nostru arată profesional și am observat o creștere a solicitărilor online."',
+    testimonial3: '"Colaborare foarte bună, comunicare promptă și rezultat pe măsura așteptărilor. Site-ul ne ajută enorm în atragerea clienților noi."',
+    t1role: "Companie de investiții",
+    t2role: "Transport & Logistică",
+    t3role: "Construcții & Amenajări",
+
+    // FAQ
+    faqTag: "// Întrebări frecvente",
+    faqTitle: 'Întrebări <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Frecvente</span>',
+    faq1q: "Ce servicii oferiți?",
+    faq1a: "Ofer dezvoltare full-stack (Laravel, React), aplicații mobile hibride, integrări AI (ChatGPT/OpenAI), boți Telegram, platforme marketplace, CRM-uri, marketing digital (email, WhatsApp, landing pages, HTML ads), mentenanță & securitate, motion graphics și infrastructură IT (NAS Synology, cloud). Fiecare proiect primește consultanță gratuită.",
+    faq2q: "Cât durează un proiect tipic?",
+    faq2a: "Depinde de complexitate: un landing page durează 1-2 săptămâni, un website business 3-6 săptămâni, o aplicație mobilă 4-8 săptămâni, iar o platformă complexă (marketplace, CRM, AI) poate dura 2-4 luni. Discutăm timeline-ul exact în consultanța gratuită.",
+    faq3q: "Oferiți suport după lansare?",
+    faq3a: "Da! Fiecare proiect include 30 de zile de suport gratuit post-lansare — rezolvare bug-uri, ajustări minore și training. Ulterior, sunt disponibile pachete de mentenanță lunară adaptate nevoilor tale.",
+    faq4q: "Ce am nevoie pentru a începe?",
+    faq4a: "Doar o idee despre ce vrei să obții! În consultanța gratuită, analizez nevoile business-ului tău, propun o soluție tehnică optimă și ofer o estimare detaliată. Tu te concentrezi pe afacere, eu pe partea tehnică.",
+    faq5q: "Lucrați cu clienți internaționali?",
+    faq5a: "Da, lucrez cu clienți din Europa și din toată lumea. Comunicarea se face în Română sau Engleză, și colaborez eficient indiferent de fusul orar — prin WhatsApp, Telegram, email sau video call.",
+    faq6q: "Faceți și mentenanță pentru site-uri existente?",
+    faq6a: "Absolut! Ofer pachete de mentenanță lunară care includ actualizări de securitate, backup-uri, monitorizare uptime, optimizare performanță și suport tehnic continuu.",
+    faq7q: "Puteți face și marketing digital?",
+    faq7a: "Da — creez campanii email marketing cu template-uri custom, WhatsApp marketing, landing pages optimizate pentru ads (Google, Facebook), HTML display ads și strategii complete de lead generation.",
+    faq8q: "Cum funcționează procesul de plată?",
+    faq8a: "Plata se face în etape convenabile: un avans la începutul proiectului, milestone-uri pe parcurs și rest la livrare. Accept transfer bancar și PayPal. Detaliile exacte le stabilim în funcție de proiect.",
+
+    // Contact
+    contactTag: "// Hai să discutăm",
+    contactTitle: 'Hai Să Construim <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Împreună</span>',
+    contactSubtitle: "Scrie-mi pe oricare canal de mai jos. Consultanță gratuită, răspuns în maximum 24 de ore.",
+    contactWhatsApp: "Răspuns în max. 2 ore",
+    contactPhone: "Telefon",
+    contactGetTitle: "Ce primești la prima discuție:",
+    contactGet1: "Analiză gratuită a nevoilor tale digitale",
+    contactGet2: "Recomandări tehnice personalizate",
+    contactGet3: "Estimare detaliată, fără obligații",
+    contactGet4: "Timeline clar și plan de execuție",
+    guarantee: "Garanția Mea",
+    guaranteeDesc: "Dacă nu ești 100% mulțumit de design-ul propus, revizuiesc gratuit până când ești satisfăcut. Succesul tău este succesul meu.",
+
+    // Why AI in 2026 Section
+    whyAiTag: "// De ce AI în 2026?",
+    whyAiTitle2: 'Business-ul Tău Are Nevoie de <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">AI & Digitalizare</span>',
+    whyAiSubtitle: "În 2026, companiile fără prezență digitală și AI pierd zilnic clienți. Iată de ce trebuie să acționezi acum.",
+    aiCard1Title: "AI Chatbot 24/7",
+    aiCard1Desc: "Un chatbot AI răspunde clienților tăi non-stop, califică lead-uri automat și crește conversiile cu până la 40%. Fără pauze, fără weekend-uri.",
+    aiCard2Title: "87% Caută Online",
+    aiCard2Desc: "87% din consumatori caută online înainte de a cumpăra. Fără website profesional cu SEO, pierzi potențiali clienți către concurență.",
+    aiCard3Title: "+35% Conversii cu AI",
+    aiCard3Desc: "Business-urile care integrează AI în marketing au cu 35% mai multe conversii. Automatizare, personalizare și date în timp real.",
+    aiCard4Title: "Mobile-First Obligatoriu",
+    aiCard4Desc: "70% din traficul web vine de pe mobil. Un site care nu e optimizat mobile pierde clienți și ranking Google în 2026.",
+    aiCard5Title: "Automatizare Procese",
+    aiCard5Desc: "AI automatizează sarcinile repetitive: facturi, rapoarte, email-uri, follow-up-uri. Economisești ore zilnic și reduci erorile umane.",
+    aiCard6Title: "Avantaj Competitiv",
+    aiCard6Desc: "Competiția ta investește deja în digital & AI. Fiecare zi fără aceste instrumente este o zi pierdută. Investiția se amortizează rapid.",
+    aiCTA: "Vreau AI Pentru Business-ul Meu",
+
+    // Final CTA
+    finalCTAtitle: "Ai un Proiect în Minte?",
+    finalCTAdesc: "De la MVP-uri la platforme enterprise, de la aplicații mobile la campanii marketing — hai să discutăm cum pot transforma ideea ta în realitate digitală.",
+    finalCTAbtn: "Scrie-mi pe WhatsApp",
+    finalCTAbtn2: "Trimite un Mesaj",
+    ctaBadge2026: "Pregătit pentru 2026",
+    finalCTAsub: "✓ Fără obligații ✓ Răspuns în 24h ✓ Consultanță gratuită",
+
+    // Guarantee Section
+    guaranteeTag: "// De ce să ai încredere",
+    guaranteeSectionTitle: 'Garanțiile <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Mele</span>',
+    guar1Title: "Revizuiri Gratuite",
+    guar1Desc: "Dacă nu ești 100% mulțumit de design, revizuiesc gratuit până ești satisfăcut.",
+    guar2Title: "30 Zile Suport Gratuit",
+    guar2Desc: "Fiecare proiect include o lună de suport post-lansare complet gratuit.",
+    guar3Title: "Răspuns în 24h",
+    guar3Desc: "Mesajele primesc răspuns în maximum 24 de ore, WhatsApp în 2 ore.",
+    guar4Title: "Transparență Totală",
+    guar4Desc: "Contract clar, plată în etape, acces la progres în timp real. Fără surprize.",
+
+    // Footer
+    footerDesc: "Full-Stack Developer & Digital Solutions Architect. Web apps, mobile, AI, marketing digital și infrastructură IT pentru business-uri din Europa și global.",
+    footerLinks: "Link-uri rapide",
+    footerLink1: "Acasă",
+    footerLink2: "Servicii",
+    footerLink3: "Portofoliu",
+    footerLink4: "Despre",
+    footerLink5: "Contact",
+    footerContact: "Contact",
+    footerLocation: "Europa · Remote Worldwide",
+
+    // About Page
+    apTag: "// Despre mine",
+    apTitle: 'Obreja Bogdan',
+    apRole: "Full-Stack Developer & Digital Solutions Architect",
+    apBio1: "Sunt un dezvoltator full-stack cu peste 2 ani de experiență în construirea soluțiilor digitale complete — de la aplicații web și mobile la integrări AI, marketing digital și infrastructură IT.",
+    apBio2: "Am lucrat cu business-uri din diverse industrii: imobiliare, investiții, transport, construcții, e-commerce. Fiecare proiect primește atenție la detalii, cod curat și o strategie orientată spre rezultate.",
+    apBio3: "Lucrez cu clienți din Europa și global, comunicând în Română și Engleză. Fie că ai nevoie de un MVP rapid sau de o platformă enterprise complexă — sunt aici să te ajut.",
+    apSkillsTitle: "Competențe cheie",
+    apExpTitle: "Experiență",
+    apExp1Title: "Full-Stack Developer & Digital Solutions",
+    apExp1Period: "2023 — Prezent",
+    apExp1Desc: "Proiecte freelance end-to-end: aplicații web (Laravel/React), aplicații mobile hibride, integrări AI, marketing digital, mentenanță & securitate, motion graphics.",
+    apExp2Title: "Motion Graphics Designer",
+    apExp2Period: "2022 — Prezent",
+    apExp2Desc: "Animații profesionale în After Effects pentru branduri și campanii digitale. Reeluri, intro-uri, content video.",
+    apValuesTitle: "Valorile mele",
+    apValue1: "Cod curat & arhitectură scalabilă",
+    apValue2: "Comunicare transparentă & deadline-uri respectate",
+    apValue3: "Gândire strategică orientată spre business",
+    apValue4: "Livrare de calitate, nu doar de cantitate",
+
+    // Breadcrumbs
+    breadHome: "Acasă",
+
+    // Trust & Social Proof (Phase 5)
+    trustTitle: "De Încredere Pentru Business-uri Din Toată Lumea",
+    trustBadge1: "15+ Proiecte Livrate",
+    trustBadge2: "100% Clienți Mulțumiți",
+    trustBadge3: "Răspuns în 24h",
+    trustBadge4: "30 Zile Suport Gratuit",
+    
+    // Industries Section
+    industriesTag: "// Industrii deservite",
+    industriesTitle: 'Soluții Pentru <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Orice Industrie</span>',
+    industriesSubtitle: "Am livrat proiecte de succes în diverse domenii de activitate.",
+    ind1: "Imobiliare",
+    ind2: "Investiții",
+    ind3: "Transport & Logistică",
+    ind4: "Construcții",
+    ind5: "E-commerce & Retail",
+    ind6: "HoReCa",
+    ind7: "Sănătate & Wellness",
+    ind8: "Educație",
+
+    // Tech Stack Section
+    techStackTag: "// Stack tehnologic",
+    techStackTitle: 'Tehnologii <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Moderne</span>',
+    techStackSubtitle: "Folosesc cele mai noi și performante instrumente din industrie.",
+    
+    // Results Section
+    resultsTag: "// Rezultate dovedite",
+    resultsTitle: 'Cifre Care <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Vorbesc</span>',
+    resultsSubtitle: "Fiecare proiect aduce rezultate măsurabile pentru clienții mei.",
+    result1Label: "Proiecte Livrate",
+    result2Label: "Ani Experiență",
+    result3Label: "Satisfacție Clienți",
+    result4Label: "Servicii Digitale",
+    result5Label: "Tehnologii Stăpânite",
+    result6Label: "Ore Cod Scrise",
+    
+    // Exit Popup
+    exitTitle: "Stai! Nu pleca fără consultanță gratuită",
+    exitDesc: "Ai un proiect în minte? Lasă-mă să te ajut. Primește o analiză gratuită a nevoilor tale digitale.",
+    exitCTA: "Vreau Consultanță Gratuită",
+    exitDismiss: "Nu, mulțumesc",
+    
+    // Floating WhatsApp
+    floatingWA: "Scrie-mi acum",
+    
+    // Mobile CTA
+    mobileCTA: "Consultanță Gratuită",
+    mobileCall: "Sună",
+    
+    // Social Proof
+    proofText1: "SMAD Invest a primit un website nou",
+    proofText2: "VVG Trans a lansat platforma online",
+    proofText3: "R&V Construct — proiect livrat cu succes",
+    proofText4: "3 proiecte noi în această lună",
+    proofTime: "recent",
+    
+    // Contact Form
+    formName: "Numele tău",
+    formEmail: "Email",
+    formService: "Serviciul dorit",
+    formMessage: "Descrie proiectul tău...",
+    formSend: "Trimite Mesajul",
+    formSelect: "Selectează un serviciu",
+    formSuccess: "Mesaj trimis cu succes! Te voi contacta în 24h.",
+  },
+  en: {
+    // Navigation
+    navHome: "Home",
+    navAbout: "About",
+    navServices: "Services",
+    navPortfolio: "Portfolio",
+    navContact: "Contact",
+    navCTA: "Free Consultation",
+
+    // Hero
+    heroAvailable: "Available for new projects",
+    heroTitle: 'Digital Solutions That <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Scale</span>.<br>From Idea to Product.',
+    heroSubtitle: "Full-Stack Developer & Digital Solutions — I build web apps, mobile apps, marketplace platforms, CRM systems, AI solutions, digital marketing and IT infrastructure for businesses across Europe and globally.",
+    heroProp1: "Free consultation",
+    heroProp2: "Full-Stack · AI · Mobile",
+    heroProp3: "Clients across Europe & worldwide",
+    heroCTA1: "Discuss Your Project",
+    heroCTA2: "View Services",
+    heroRole: "Full-Stack Developer & Digital Solutions Architect",
+    heroStat1: "Projects delivered",
+    heroStat2: "Years experience",
+    heroStat3: "Happy clients",
+    heroStat4: "Digital services",
+
+    // About / Benefits (Home)
+    aboutTag: "// Why work with me",
+    aboutTitle: 'Not Just Code. <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Complete Solutions.</span>',
+    aboutSubtitle: "I combine full-stack expertise with mobile development, AI, digital marketing and product thinking to deliver solutions that generate real results.",
+    benefit1Title: "Full-Stack End-to-End",
+    benefit1Desc: "From databases and REST APIs to responsive interfaces — one developer covering the entire tech stack.",
+    benefit2Title: "Mobile Apps",
+    benefit2Desc: "Hybrid iOS/Android apps — from real estate to interactive games. Native experience, single codebase.",
+    benefit3Title: "AI & Automation",
+    benefit3Desc: "ChatGPT/OpenAI integration, intelligent chatbots, Telegram bots, internal and external process automation.",
+    benefit4Title: "Digital Marketing",
+    benefit4Desc: "Email marketing, WhatsApp marketing, ad landing pages, HTML ads — everything needed to generate clients.",
+    benefit5Title: "Maintenance & Security",
+    benefit5Desc: "Monitoring, updates, backups, security — your website stays fast, safe and functional 24/7.",
+    benefit6Title: "Motion Graphics",
+    benefit6Desc: "Animated reels in After Effects, dynamic video content for social media and marketing campaigns.",
+    benefit7Title: "IT Infrastructure",
+    benefit7Desc: "NAS Synology, cloud storage, Drive, automated backups — infrastructure solutions for your business.",
+    benefit8Title: "SEO & Digital Growth",
+    benefit8Desc: "Technical SEO, AEO, GEO targeting, Schema markup, conversion optimization — organic traffic and clients worldwide.",
+
+    // Services overview (Home)
+    servicesTag: "// What I can do for you",
+    servicesTitle: 'Complete <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Digital Services</span>',
+    servicesSubtitle: "From web and mobile to AI and marketing — I offer end-to-end solutions for any type of business.",
+    seeAllServices: "View All Services →",
+
+    // Services Page
+    spTitle: "All My Services",
+    spSubtitle: "Complete digital solutions for businesses across Europe and globally. From idea to implementation.",
+    sp1Title: "Full-Stack Web Applications",
+    sp1Desc: "Complex web applications built with Laravel and React. Admin dashboards, business platforms, SaaS products — from database to interface.",
+    sp1f1: "Laravel MVC & REST API",
+    sp1f2: "Custom admin dashboards",
+    sp1f3: "Authentication & RBAC",
+    sp1f4: "Optimized MySQL databases",
+    sp1f5: "Deployment & performance tuning",
+    sp2Title: "Hybrid Mobile Apps",
+    sp2Desc: "Cross-platform mobile apps for iOS and Android. From real estate apps to interactive games like Property Finder.",
+    sp2f1: "iOS & Android apps",
+    sp2f2: "Real estate applications",
+    sp2f3: "Mobile games (Property Finder)",
+    sp2f4: "Native feel, single codebase",
+    sp2f5: "Push notifications & offline mode",
+    sp3Title: "AI Solutions & Automation",
+    sp3Desc: "OpenAI/ChatGPT integrations, intelligent chatbots, Telegram bots, process automation — AI workflows that save hours.",
+    sp3f1: "AI chatbots with OpenAI API",
+    sp3f2: "Custom Telegram bots",
+    sp3f3: "Internal/external process automation",
+    sp3f4: "Advanced prompt engineering",
+    sp3f5: "Integration into existing systems",
+    sp4Title: "E-commerce & Marketplace",
+    sp4Desc: "Scalable marketplace platforms, online stores with payment systems, product management and integrated logistics.",
+    sp4f1: "Multi-vendor marketplace",
+    sp4f2: "Integrated payment systems",
+    sp4f3: "Admin & vendor dashboards",
+    sp4f4: "Advanced catalog & filtering",
+    sp4f5: "External API integrations",
+    sp5Title: "CRM & Business Systems",
+    sp5Desc: "Custom CRM development, lead management, real estate platforms, automated business logic. Everything turnkey.",
+    sp5f1: "Custom CRM with lead tracking",
+    sp5f2: "Real estate platforms",
+    sp5f3: "Automation & notifications",
+    sp5f4: "Reports & analytics",
+    sp5f5: "Roles & permissions (RBAC)",
+    sp6Title: "Digital Marketing",
+    sp6Desc: "Email marketing with custom templates, WhatsApp marketing, ad landing pages, HTML ads — complete lead generation strategies.",
+    sp6f1: "Email marketing & templates",
+    sp6f2: "WhatsApp marketing campaigns",
+    sp6f3: "Ad landing pages",
+    sp6f4: "HTML ads & display banners",
+    sp6f5: "Lead generation strategies",
+    sp7Title: "Maintenance & Security",
+    sp7Desc: "Ongoing maintenance, security updates, monitoring, automated backups — your website stays performant 24/7.",
+    sp7f1: "Proactive monthly maintenance",
+    sp7f2: "Security updates",
+    sp7f3: "Uptime & performance monitoring",
+    sp7f4: "Automated backups",
+    sp7f5: "SSL, firewall & DDoS protection",
+    sp8Title: "Motion Graphics & Reels",
+    sp8Desc: "Animated reels in After Effects, dynamic video content, animations for social media and digital marketing campaigns.",
+    sp8f1: "After Effects animated reels",
+    sp8f2: "Social media animations",
+    sp8f3: "Professional video editing",
+    sp8f4: "Motion graphics for ads",
+    sp8f5: "Animated branding & intros",
+    sp9Title: "IT Infrastructure",
+    sp9Desc: "NAS Synology setup, Drive solutions, cloud storage, automated backups and enterprise storage systems.",
+    sp9f1: "NAS Synology configuration",
+    sp9f2: "Cloud storage & Drive",
+    sp9f3: "Automated backup & recovery",
+    sp9f4: "Internal networks & remote access",
+    sp9f5: "IT infrastructure consulting",
+    spCTA: "Discuss your project →",
+    spNote: "Each project receives a personalized estimate. Complexity, timeline and specific requirements determine the investment.",
+    spMainCTA: "Get a Free Consultation",
+    spPopular: "🔥 Popular",
+
+    // Process
+    processTag: "// How it works",
+    processTitle: 'From Idea to <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Live Product</span>',
+    processSubtitle: "A simple and transparent 4-step process. You focus on business, I handle the rest.",
+    step1Title: "Free Consultation",
+    step1Desc: "We analyze your needs together. I understand your business, audience, and digital goals.",
+    step2Title: "Strategy & Design",
+    step2Desc: "I create wireframes and visual design. You approve each stage before moving forward.",
+    step3Title: "Development",
+    step3Desc: "I build the solution with the latest technologies. You get regular updates and preview access.",
+    step4Title: "Launch & Support",
+    step4Desc: "We launch the product live. You get 30 days of free support and management training.",
+    processsCTA: "Start Free Consultation",
+
+    // Technologies
+    techTag: "// Tech stack",
+    techTitle: "Technologies & Skills",
+    techBackend: "Backend & Infrastructure",
+    techFrontend: "Frontend & UI",
+    techAI: "AI & Automation",
+    techDevops: "DevOps & Growth",
+    techMobile: "Mobile & Cross-Platform",
+    techMarketing: "Marketing & Creative",
+
+    // Portfolio
+    portfolioTag: "// Portfolio",
+    portfolioTitle: 'Real Projects, <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Real Results</span>',
+    portfolioSubtitle: "Here are some projects delivered to clients across Europe and internationally.",
+    portfolioCTA: "Want a similar project?",
+    filterAll: "All",
+    filterWeb: "Web",
+    filterMobile: "Mobile",
+    filterMarketing: "Marketing",
+    filterVideo: "Video",
+    Smad_invest: "Modern landing page for an investment company, focused on UX and conversion.",
+    Construct_portal: "Complex website for a construction company, featuring project gallery and quote system.",
+    Vic_Dar: "E-commerce platform with product catalog, order system, and social media integration.",
+    Logistics: "Transportation services website with tracking and cost calculation system.",
+    Ferestre: "Digital PVC joinery catalog with product configurator and quotation system.",
+    Motion: "Collection of animations and visual effects created for various projects and brands.",
+
+    // Testimonials
+    testimonialsTag: "// What clients say",
+    testimonialsTitle: 'Feedback from <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Real Clients</span>',
+    testimonial1: '"Bogdan created an excellent website for our company. Professional, fast, and detail-oriented. Highly recommended!"',
+    testimonial2: '"We received exactly what we asked for and even more. Our website looks professional and we noticed an increase in online inquiries."',
+    testimonial3: '"Great collaboration, prompt communication, and results that met expectations. The site helps us tremendously in attracting new clients."',
+    t1role: "Investment company",
+    t2role: "Transport & Logistics",
+    t3role: "Construction & Interior Design",
+
+    // FAQ
+    faqTag: "// Frequently asked questions",
+    faqTitle: 'Frequently Asked <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Questions</span>',
+    faq1q: "What services do you offer?",
+    faq1a: "I offer full-stack development (Laravel, React), hybrid mobile apps, AI integrations (ChatGPT/OpenAI), Telegram bots, marketplace platforms, CRMs, digital marketing (email, WhatsApp, landing pages, HTML ads), maintenance & security, motion graphics and IT infrastructure (NAS Synology, cloud). Every project gets a free consultation.",
+    faq2q: "How long does a typical project take?",
+    faq2a: "It depends on complexity: a landing page takes 1-2 weeks, a business website 3-6 weeks, a mobile app 4-8 weeks, and a complex platform (marketplace, CRM, AI) can take 2-4 months. We discuss exact timelines during the free consultation.",
+    faq3q: "Do you offer post-launch support?",
+    faq3a: "Yes! Every project includes 30 days of free post-launch support — bug fixes, minor adjustments, and training. Monthly maintenance packages tailored to your needs are also available.",
+    faq4q: "What do I need to get started?",
+    faq4a: "Just an idea of what you want to achieve! In the free consultation, I analyze your business needs, propose an optimal technical solution, and provide a detailed estimate. You focus on business, I handle the tech.",
+    faq5q: "Do you work with international clients?",
+    faq5a: "Yes, I work with clients across Europe and worldwide. Communication is in Romanian or English, and I collaborate efficiently across time zones — via WhatsApp, Telegram, email, or video call.",
+    faq6q: "Do you maintain existing websites?",
+    faq6a: "Absolutely! I offer monthly maintenance packages including security updates, backups, uptime monitoring, performance optimization and ongoing technical support.",
+    faq7q: "Can you do digital marketing too?",
+    faq7a: "Yes — I create email marketing campaigns with custom templates, WhatsApp marketing, ad-optimized landing pages (Google, Facebook), HTML display ads and complete lead generation strategies.",
+    faq8q: "How does the payment process work?",
+    faq8a: "Payment is made in convenient stages: an advance at project start, milestones along the way, and the rest at delivery. I accept bank transfer and PayPal. Exact details are set per project.",
+
+    // Contact
+    contactTag: "// Let's talk",
+    contactTitle: 'Let\'s Build <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Together</span>',
+    contactSubtitle: "Write to me on any channel below. Free consultation, response within 24 hours.",
+    contactWhatsApp: "Response in max. 2 hours",
+    contactPhone: "Phone",
+    contactGetTitle: "What you get in the first call:",
+    contactGet1: "Free analysis of your digital needs",
+    contactGet2: "Personalized technical recommendations",
+    contactGet3: "Detailed estimate, no obligations",
+    contactGet4: "Clear timeline and execution plan",
+    guarantee: "My Guarantee",
+    guaranteeDesc: "If you're not 100% satisfied with the proposed design, I'll revise it for free until you're happy. Your success is my success.",
+
+    // Why AI in 2026 Section
+    whyAiTag: "// Why AI in 2026?",
+    whyAiTitle2: 'Your Business Needs <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">AI & Digitalization</span>',
+    whyAiSubtitle: "In 2026, companies without digital presence and AI lose clients every day. Here's why you need to act now.",
+    aiCard1Title: "AI Chatbot 24/7",
+    aiCard1Desc: "An AI chatbot responds to your clients non-stop, qualifies leads automatically and increases conversions by up to 40%. No breaks, no weekends.",
+    aiCard2Title: "87% Search Online",
+    aiCard2Desc: "87% of consumers search online before buying. Without a professional website with SEO, you lose potential clients to the competition.",
+    aiCard3Title: "+35% Conversions with AI",
+    aiCard3Desc: "Businesses that integrate AI in marketing get 35% more conversions. Automation, personalization and real-time data.",
+    aiCard4Title: "Mobile-First Required",
+    aiCard4Desc: "70% of web traffic comes from mobile. A site that's not mobile-optimized loses clients and Google ranking in 2026.",
+    aiCard5Title: "Process Automation",
+    aiCard5Desc: "AI automates repetitive tasks: invoices, reports, emails, follow-ups. Save hours daily and reduce human errors.",
+    aiCard6Title: "Competitive Advantage",
+    aiCard6Desc: "Your competition is already investing in digital & AI. Every day without these tools is a lost day. The investment pays off quickly.",
+    aiCTA: "I Want AI For My Business",
+
+    // Final CTA
+    finalCTAtitle: "Have a Project in Mind?",
+    finalCTAdesc: "From MVPs to enterprise platforms, from mobile apps to marketing campaigns — let's discuss how I can turn your idea into digital reality.",
+    finalCTAbtn: "Write me on WhatsApp",
+    finalCTAbtn2: "Send a Message",
+    ctaBadge2026: "Ready for 2026",
+    finalCTAsub: "✓ No obligations ✓ Response in 24h ✓ Free consultation",
+
+    // Guarantee Section
+    guaranteeTag: "// Why trust me",
+    guaranteeSectionTitle: 'My <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Guarantees</span>',
+    guar1Title: "Free Revisions",
+    guar1Desc: "Not 100% satisfied with the design? I'll revise for free until you're happy.",
+    guar2Title: "30 Days Free Support",
+    guar2Desc: "Every project includes one month of completely free post-launch support.",
+    guar3Title: "Response in 24h",
+    guar3Desc: "Messages get a response within 24 hours max, WhatsApp within 2 hours.",
+    guar4Title: "Full Transparency",
+    guar4Desc: "Clear contract, milestone payments, real-time progress access. No surprises.",
+
+    // Footer
+    footerDesc: "Full-Stack Developer & Digital Solutions Architect. Web apps, mobile, AI, digital marketing and IT infrastructure for businesses across Europe and globally.",
+    footerLinks: "Quick links",
+    footerLink1: "Home",
+    footerLink2: "Services",
+    footerLink3: "Portfolio",
+    footerLink4: "About",
+    footerLink5: "Contact",
+    footerContact: "Contact",
+    footerLocation: "Europe · Remote Worldwide",
+
+    // About Page
+    apTag: "// About me",
+    apTitle: "Obreja Bogdan",
+    apRole: "Full-Stack Developer & Digital Solutions Architect",
+    apBio1: "I'm a full-stack developer with over 2 years of experience building complete digital solutions — from web and mobile apps to AI integrations, digital marketing and IT infrastructure.",
+    apBio2: "I've worked with businesses across various industries: real estate, investments, transportation, construction, e-commerce. Every project receives attention to detail, clean code and a results-oriented strategy.",
+    apBio3: "I work with clients across Europe and globally, communicating in Romanian and English. Whether you need a quick MVP or a complex enterprise platform — I'm here to help.",
+    apSkillsTitle: "Key Competencies",
+    apExpTitle: "Experience",
+    apExp1Title: "Full-Stack Developer & Digital Solutions",
+    apExp1Period: "2023 — Present",
+    apExp1Desc: "End-to-end freelance projects: web apps (Laravel/React), hybrid mobile apps, AI integrations, digital marketing, maintenance & security, motion graphics.",
+    apExp2Title: "Motion Graphics Designer",
+    apExp2Period: "2022 — Present",
+    apExp2Desc: "Professional animations in After Effects for brands and digital campaigns. Reels, intros, video content.",
+    apValuesTitle: "My Values",
+    apValue1: "Clean code & scalable architecture",
+    apValue2: "Transparent communication & met deadlines",
+    apValue3: "Business-oriented strategic thinking",
+    apValue4: "Quality delivery, not just quantity",
+
+    // Breadcrumbs
+    breadHome: "Home",
+
+    // Trust & Social Proof (Phase 5)
+    trustTitle: "Trusted by Businesses Worldwide",
+    trustBadge1: "15+ Projects Delivered",
+    trustBadge2: "100% Client Satisfaction",
+    trustBadge3: "Response in 24h",
+    trustBadge4: "30 Days Free Support",
+    
+    // Industries Section
+    industriesTag: "// Industries served",
+    industriesTitle: 'Solutions For <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Any Industry</span>',
+    industriesSubtitle: "I've delivered successful projects across various business domains.",
+    ind1: "Real Estate",
+    ind2: "Investments",
+    ind3: "Transport & Logistics",
+    ind4: "Construction",
+    ind5: "E-commerce & Retail",
+    ind6: "HoReCa",
+    ind7: "Health & Wellness",
+    ind8: "Education",
+
+    // Tech Stack Section
+    techStackTag: "// Tech stack",
+    techStackTitle: 'Modern <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Technologies</span>',
+    techStackSubtitle: "I use the latest and most performant tools in the industry.",
+    
+    // Results Section
+    resultsTag: "// Proven results",
+    resultsTitle: 'Numbers That <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Speak</span>',
+    resultsSubtitle: "Every project brings measurable results for my clients.",
+    result1Label: "Projects Delivered",
+    result2Label: "Years Experience",
+    result3Label: "Client Satisfaction",
+    result4Label: "Digital Services",
+    result5Label: "Technologies Mastered",
+    result6Label: "Hours of Code",
+    
+    // Exit Popup
+    exitTitle: "Wait! Don't leave without a free consultation",
+    exitDesc: "Have a project in mind? Let me help. Get a free analysis of your digital needs.",
+    exitCTA: "Get Free Consultation",
+    exitDismiss: "No, thanks",
+    
+    // Floating WhatsApp
+    floatingWA: "Write me now",
+    
+    // Mobile CTA
+    mobileCTA: "Free Consultation",
+    mobileCall: "Call",
+    
+    // Social Proof
+    proofText1: "SMAD Invest got a new website",
+    proofText2: "VVG Trans launched online platform",
+    proofText3: "R&V Construct — project delivered",
+    proofText4: "3 new projects this month",
+    proofTime: "recently",
+    
+    // Contact Form
+    formName: "Your name",
+    formEmail: "Email",
+    formService: "Desired service",
+    formMessage: "Describe your project...",
+    formSend: "Send Message",
+    formSelect: "Select a service",
+    formSuccess: "Message sent successfully! I'll contact you within 24h.",
+  }
+};
+
+// ===== LANGUAGE SWITCHER =====
+function switchLanguage(lang) {
+  localStorage.setItem('selectedLanguage', lang);
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      if (translations[lang][key].includes('<span') || translations[lang][key].includes('<br')) {
+        element.innerHTML = translations[lang][key];
+      } else {
+        element.textContent = translations[lang][key];
+      }
+    }
+  });
+  // Translate placeholders
+  document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+    const key = element.getAttribute('data-translate-placeholder');
+    if (translations[lang] && translations[lang][key]) {
+      element.placeholder = translations[lang][key];
+    }
+  });
+  const currentLangEl = document.getElementById('currentLang');
+  if (currentLangEl) currentLangEl.textContent = lang.toUpperCase();
+  const url = new URL(window.location);
+  url.searchParams.set('lang', lang);
+  window.history.pushState({}, '', url);
+  if (typeof showNotification === 'function') {
+    showNotification(`Language switched to ${lang === 'en' ? 'English' : 'Romanian'}`, 'success');
+  }
+}
+
+// ===== MOBILE MENU =====
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const icon = document.getElementById('mobileMenuIcon');
+  if (menu && icon) {
+    menu.classList.toggle('hidden');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+  }
+}
+function closeMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const icon = document.getElementById('mobileMenuIcon');
+  if (menu && icon) {
+    menu.classList.add('hidden');
+    icon.classList.add('fa-bars');
+    icon.classList.remove('fa-times');
+  }
+}
+
+// ===== NOTIFICATION SYSTEM =====
+const showNotification = (message, type = 'info') => {
+  const container = document.getElementById('notificationContainer');
+  if (!container) return;
+  const notification = document.createElement('div');
+  notification.className = 'notification';
+  let bgStart, bgEnd, icon;
+  switch(type) {
+    case 'success': bgStart = '#10B981'; bgEnd = '#059669'; icon = '<i class="fas fa-check-circle"></i>'; break;
+    case 'error': bgStart = '#EF4444'; bgEnd = '#DC2626'; icon = '<i class="fas fa-exclamation-circle"></i>'; break;
+    case 'warning': bgStart = '#F59E0B'; bgEnd = '#D97706'; icon = '<i class="fas fa-exclamation-triangle"></i>'; break;
+    default: bgStart = '#3B82F6'; bgEnd = '#2563EB'; icon = '<i class="fas fa-info-circle"></i>';
+  }
+  notification.innerHTML = `<div class="notification-content font-mono text-sm" style="--bg-start:${bgStart};--bg-end:${bgEnd}">${icon}<span>${message}</span></div>`;
+  container.appendChild(notification);
+  setTimeout(() => notification.remove(), 3000);
+};
+
+// ===== FAQ TOGGLE =====
+function toggleFAQ(button) {
+  const answer = button.nextElementSibling;
+  const icon = button.querySelector('i');
+  const isOpen = !answer.classList.contains('hidden');
+  document.querySelectorAll('.faq-answer').forEach(a => {
+    a.classList.add('hidden');
+    a.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+  });
+  if (!isOpen) {
+    answer.classList.remove('hidden');
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
+
+// ===== MATRIX RAIN =====
+function createCodeRain() {
+  const bg = document.getElementById('matrixBg');
+  const container = document.getElementById('matrixContainer');
+  if (!bg || !container) return;
+  bg.innerHTML = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789{}()<>/\\|=+-*[];';
+  const numberOfColumns = Math.floor(window.innerWidth / 25);
+  for (let i = 0; i < numberOfColumns; i++) {
+    const column = document.createElement('div');
+    column.className = 'code-rain';
+    column.style.left = `${i * 25}px`;
+    column.style.animationDuration = `${Math.random() * 4 + 6}s`;
+    column.style.animationDelay = `-${Math.random() * 4}s`;
+    let text = '';
+    for (let j = 0; j < 15; j++) {
+      text += characters[Math.floor(Math.random() * characters.length)] + '\n';
+    }
+    column.textContent = text;
+    bg.appendChild(column);
+  }
+  const firstSection = document.querySelector('section');
+  if (firstSection) {
+    container.style.height = `${firstSection.offsetHeight + 400}px`;
+  }
+}
+
+// ===== SOCIAL MENU =====
+function resetSocialMenu() {
+  const buttons = document.querySelector('.social-buttons');
+  const toggle = document.querySelector('.social-toggle');
+  if (!buttons || !toggle) return;
+  buttons.classList.remove('active');
+  toggle.classList.remove('active');
+  document.querySelectorAll('.social-item').forEach(item => {
+    item.style.transform = 'translate(0, 0)';
+    item.style.opacity = '0';
+  });
+}
+function toggleSocialMenu() {
+  const buttons = document.querySelector('.social-buttons');
+  const toggle = document.querySelector('.social-toggle');
+  if (!buttons || !toggle) return;
+  const items = document.querySelectorAll('.social-item');
+  const isOpen = buttons.classList.contains('active');
+  toggle.classList.toggle('active');
+  buttons.classList.toggle('active');
+  if (!isOpen) {
+    items.forEach((item, index) => {
+      const angle = -Math.PI / 2 + (Math.PI / (items.length + 1)) * (index + 1);
+      const radius = 80;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+      setTimeout(() => {
+        item.style.transform = `translate(${x}px, ${y}px)`;
+        item.style.opacity = '1';
+      }, index * 100);
+    });
+  } else {
+    resetSocialMenu();
+  }
+}
+
+// ===== PORTFOLIO FILTER =====
+function filterPortfolio(category) {
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.portfolio-item').forEach(item => {
+    if (category === 'all' || item.dataset.category === category) {
+      item.style.display = '';
+      item.style.animation = 'fadeIn 0.4s ease forwards';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+// ===== INIT ON DOM READY =====
+document.addEventListener('DOMContentLoaded', () => {
+  // --- Loader ---
+  const loader = document.querySelector('.loader-wrapper');
+  if (loader) {
+    document.body.style.overflow = 'hidden';
+    const hideLoader = () => {
+      if (loader.classList.contains('fade-out')) return; // already hidden
+      loader.classList.add('fade-out');
+      document.body.style.overflow = '';
+      setTimeout(() => loader.remove(), 500);
+    };
+    // Safety timeout — always hide loader after 3s max
+    setTimeout(hideLoader, 3000);
+    setTimeout(() => {
+      // Only wait for eager/above-fold images, skip lazy ones
+      const eagerImages = Array.from(document.images).filter(img => img.loading !== 'lazy');
+      Promise.all(
+        eagerImages.map(img => {
+          if (img.complete) return Promise.resolve();
+          return new Promise(resolve => {
+            img.addEventListener('load', resolve);
+            img.addEventListener('error', resolve);
+          });
+        })
+      ).then(hideLoader);
+    }, 800);
+  }
+
+  // --- Custom Cursor ---
+  const cursor = document.querySelector('.custom-cursor');
+  const cursorDot = document.querySelector('.custom-cursor-dot');
+  if (cursor && cursorDot) {
+    let cursorPos = { x: 0, y: 0 };
+    let dotPos = { x: 0, y: 0 };
+    document.addEventListener('mousemove', (e) => {
+      cursorPos.x = e.clientX;
+      cursorPos.y = e.clientY;
+      cursor.style.left = cursorPos.x + 'px';
+      cursor.style.top = cursorPos.y + 'px';
+    });
+    function updateDot() {
+      dotPos.x += (cursorPos.x - dotPos.x) * 0.2;
+      dotPos.y += (cursorPos.y - dotPos.y) * 0.2;
+      cursorDot.style.left = dotPos.x + 'px';
+      cursorDot.style.top = dotPos.y + 'px';
+      requestAnimationFrame(updateDot);
+    }
+    updateDot();
+    document.querySelectorAll('a, button, .hover-effect').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); cursorDot.classList.add('hover'); });
+      el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); cursorDot.classList.remove('hover'); });
+    });
+    document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; cursorDot.style.opacity = '0'; });
+    document.addEventListener('mouseenter', () => { cursor.style.opacity = '1'; cursorDot.style.opacity = '1'; });
+  }
+
+  // --- Back to Top ---
+  const backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) backToTop.classList.add('visible');
+      else backToTop.classList.remove('visible');
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+
+  // --- Scroll Progress ---
+  const scrollProgress = document.getElementById('scrollProgress');
+  if (scrollProgress) {
+    window.addEventListener('scroll', () => {
+      const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / windowHeight) * 100;
+      scrollProgress.style.transform = `scaleX(${scrolled / 100})`;
+      scrollProgress.classList.toggle('shadow-glow', scrolled > 0);
+    });
+  }
+
+  // --- Social Menu scroll behavior ---
+  const socialMenu = document.getElementById('socialMenu');
+  if (socialMenu) {
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > 300) {
+        socialMenu.style.opacity = '1';
+        socialMenu.style.visibility = 'visible';
+        socialMenu.style.transform = 'translateY(0)';
+      } else {
+        socialMenu.style.opacity = '0';
+        socialMenu.style.visibility = 'hidden';
+        socialMenu.style.transform = 'translateY(1rem)';
+        const btns = document.querySelector('.social-buttons');
+        if (btns && btns.classList.contains('active')) resetSocialMenu();
+      }
+      if (currentScroll > lastScrollY) {
+        const btns = document.querySelector('.social-buttons');
+        if (btns && btns.classList.contains('active')) resetSocialMenu();
+      }
+      lastScrollY = currentScroll;
+    });
+    document.addEventListener('click', (e) => {
+      const btns = document.querySelector('.social-buttons');
+      if (!socialMenu.contains(e.target) && btns && btns.classList.contains('active')) resetSocialMenu();
+    });
+  }
+
+  // --- Matrix Rain ---
+  if (document.getElementById('matrixBg')) {
+    createCodeRain();
+    window.addEventListener('resize', createCodeRain);
+  }
+
+  // --- Scroll Animation Observer ---
+  const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+  const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fadeInUp');
+        scrollObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  document.querySelectorAll('section').forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(20px)';
+    scrollObserver.observe(section);
+  });
+
+  // --- Swiper ---
+  if (typeof Swiper !== 'undefined' && document.querySelector('.projectSwiper')) {
+    new Swiper('.projectSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      grabCursor: true,
+      loop: true,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+    });
+  }
+
+  // --- Smooth Scroll ---
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // --- Welcome Notification ---
+  setTimeout(() => {
+    showNotification('Bine ai venit! Consultanță gratuită disponibilă 🚀', 'success');
+  }, 2000);
+
+  // --- Init Language ---
+  const urlParams = new URLSearchParams(window.location.search);
+  const lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'ro';
+  switchLanguage(lang);
+
+  // --- Active Nav Link ---
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// ===== ERROR HANDLING =====
+window.addEventListener('error', () => {
+  if (typeof showNotification === 'function') showNotification('Something went wrong!', 'error');
+});
+
+// ===== CONSOLE EASTER EGG =====
+console.log(
+  '%c🚀 Obreja Bogdan | Full-Stack Developer & Digital Solutions Architect\n' +
+  '%cWeb · Mobile · AI · Marketing · Infrastructure\n' +
+  '%c📧 bogdanob28@gmail.com | 📱 +373 797 385 24\n' +
+  '%c🌐 https://bogdanob.info',
+  'font-size: 20px; font-weight: bold; color: #3b82f6;',
+  'font-size: 16px; color: #10b981;',
+  'font-size: 14px; color: #6b7280;',
+  'font-size: 14px; color: #8b5cf6;'
+);
+
+// ========================================
+//  PHASE 5 — Lead Gen & UX Enhancements
+// ========================================
+
+// ===== ANIMATED COUNTERS =====
+function animateCounters() {
+  const counters = document.querySelectorAll('[data-counter]');
+  counters.forEach(counter => {
+    if (counter.dataset.animated) return;
+    const target = parseInt(counter.dataset.counter);
+    const suffix = counter.dataset.suffix || '';
+    const duration = 2000;
+    const step = Math.max(1, Math.floor(target / (duration / 16)));
+    let current = 0;
+    counter.dataset.animated = 'true';
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      counter.textContent = current.toLocaleString() + suffix;
+    }, 16);
+  });
+}
+
+// ===== REVEAL ON SCROLL =====
+function initRevealOnScroll() {
+  const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+  if (!revealEls.length) return;
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const delay = entry.target.dataset.delay || 0;
+        setTimeout(() => {
+          entry.target.classList.add('revealed');
+        }, parseInt(delay));
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => revealObserver.observe(el));
+}
+
+// ===== COUNTER SCROLL TRIGGER =====
+function initCounterObserver() {
+  const counterSection = document.querySelectorAll('[data-counter]');
+  if (!counterSection.length) return;
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  counterSection.forEach(el => counterObserver.observe(el));
+}
+
+// ===== SOCIAL PROOF TOASTS =====
+function initSocialProof() {
+  if (window.innerWidth < 768) return; // Skip on mobile
+  const lang = localStorage.getItem('selectedLanguage') || 'ro';
+  const proofs = [
+    { icon: '🏢', textKey: 'proofText1', color: '#3b82f6' },
+    { icon: '🚚', textKey: 'proofText2', color: '#10b981' },
+    { icon: '🏗️', textKey: 'proofText3', color: '#f59e0b' },
+    { icon: '🔥', textKey: 'proofText4', color: '#ef4444' },
+  ];
+  let index = 0;
+  function showProof() {
+    const existing = document.querySelector('.social-proof-toast');
+    if (existing) existing.remove();
+    
+    const proof = proofs[index];
+    const text = translations[lang] && translations[lang][proof.textKey] ? translations[lang][proof.textKey] : proof.textKey;
+    const timeText = translations[lang] && translations[lang].proofTime ? translations[lang].proofTime : 'recent';
+    
+    const toast = document.createElement('div');
+    toast.className = 'social-proof-toast';
+    toast.innerHTML = `
+      <div class="toast-content">
+        <div style="font-size:1.5rem">${proof.icon}</div>
+        <div>
+          <p style="font-weight:600;font-size:0.8125rem;margin:0">${text}</p>
+          <p style="font-size:0.75rem;color:#9ca3af;margin:0.125rem 0 0">${timeText}</p>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+      toast.classList.add('hiding');
+      setTimeout(() => toast.remove(), 500);
+    }, 4000);
+    
+    index = (index + 1) % proofs.length;
+  }
+  
+  // First proof after 15 seconds, then every 30 seconds
+  setTimeout(() => {
+    showProof();
+    setInterval(showProof, 30000);
+  }, 15000);
+}
+
+// ===== EXIT INTENT POPUP =====
+function initExitIntent() {
+  let shown = sessionStorage.getItem('exitPopupShown');
+  if (shown) return;
+  
+  const handler = (e) => {
+    if (e.clientY <= 5) {
+      showExitPopup();
+      document.removeEventListener('mouseout', handler);
+    }
+  };
+  
+  // Only trigger after 10 seconds on page
+  setTimeout(() => {
+    document.addEventListener('mouseout', handler);
+  }, 10000);
+}
+
+function showExitPopup() {
+  if (sessionStorage.getItem('exitPopupShown')) return;
+  sessionStorage.setItem('exitPopupShown', 'true');
+  
+  const overlay = document.createElement('div');
+  overlay.className = 'exit-popup-overlay';
+  overlay.innerHTML = `
+    <div class="exit-popup">
+      <button class="exit-popup-close" onclick="this.closest('.exit-popup-overlay').remove()"><i class="fas fa-times"></i></button>
+      <div style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:1rem">🚀</div>
+        <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:0.75rem" data-translate="exitTitle">Stai! Nu pleca fără consultanță gratuită</h3>
+        <p style="color:#6b7280;margin-bottom:1.5rem;font-size:0.9375rem;line-height:1.6" data-translate="exitDesc">Ai un proiect în minte? Lasă-mă să te ajut. Primește o analiză gratuită a nevoilor tale digitale.</p>
+        <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță%20gratuită." target="_blank" 
+           style="display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(135deg,#25D366,#128C7E);color:white;padding:0.875rem 2rem;border-radius:0.75rem;font-weight:700;font-size:1rem;text-decoration:none;box-shadow:0 8px 20px rgba(37,211,102,0.3);transition:all 0.3s"
+           onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 30px rgba(37,211,102,0.4)'"
+           onmouseout="this.style.transform='';this.style.boxShadow='0 8px 20px rgba(37,211,102,0.3)'">
+          <i class="fab fa-whatsapp"></i>
+          <span data-translate="exitCTA">Vreau Consultanță Gratuită</span>
+        </a>
+        <p style="margin-top:1rem">
+          <button onclick="this.closest('.exit-popup-overlay').remove()" style="background:none;border:none;color:#9ca3af;cursor:pointer;font-size:0.8125rem;text-decoration:underline" data-translate="exitDismiss">Nu, mulțumesc</button>
+        </p>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.remove();
+  });
+  
+  // Re-apply translations to popup
+  const lang = localStorage.getItem('selectedLanguage') || 'ro';
+  overlay.querySelectorAll('[data-translate]').forEach(el => {
+    const key = el.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+}
+
+// ===== TYPED TEXT EFFECT =====
+function initTypedText() {
+  const el = document.getElementById('typedRole');
+  if (!el) return;
+  const lang = localStorage.getItem('selectedLanguage') || 'ro';
+  const texts = [
+    'Full-Stack Developer',
+    'Mobile App Developer',
+    'AI & Automation Expert',
+    'Digital Marketing Specialist',
+    'Motion Graphics Designer',
+    'IT Infrastructure Architect',
+  ];
+  let textIndex = 0, charIndex = 0, isDeleting = false;
+  
+  function type() {
+    const current = texts[textIndex];
+    if (isDeleting) {
+      el.textContent = current.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      el.textContent = current.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    
+    let delay = isDeleting ? 40 : 80;
+    
+    if (!isDeleting && charIndex === current.length) {
+      delay = 2000;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+      delay = 400;
+    }
+    
+    setTimeout(type, delay);
+  }
+  
+  type();
+}
+
+// ===== MOBILE STICKY CTA =====
+function initMobileStickyCTA() {
+  if (window.innerWidth > 768) return;
+  const existing = document.querySelector('.mobile-sticky-cta');
+  if (existing) return;
+  
+  const bar = document.createElement('div');
+  bar.className = 'mobile-sticky-cta';
+  bar.innerHTML = `
+    <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță." target="_blank"
+       class="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-2.5 rounded-lg font-bold text-sm">
+      <i class="fab fa-whatsapp"></i>
+      <span data-translate="mobileCTA">Consultanță Gratuită</span>
+    </a>
+    <a href="tel:+37379738524"
+       class="flex items-center justify-center gap-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 px-4 py-2.5 rounded-lg font-semibold text-sm">
+      <i class="fas fa-phone"></i>
+      <span data-translate="mobileCall">Sună</span>
+    </a>
+  `;
+  document.body.appendChild(bar);
+  
+  // Apply translations
+  const lang = localStorage.getItem('selectedLanguage') || 'ro';
+  bar.querySelectorAll('[data-translate]').forEach(el => {
+    const key = el.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+}
+
+// ===== CONTACT FORM HANDLER =====
+function handleContactForm(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.name.value;
+  const email = form.email.value;
+  const service = form.service.value;
+  const message = form.message.value;
+  
+  // Build WhatsApp message
+  const waMessage = encodeURIComponent(
+    `Salut Bogdan! 👋\n\n` +
+    `Nume: ${name}\n` +
+    `Email: ${email}\n` +
+    `Serviciu: ${service}\n` +
+    `Mesaj: ${message}\n\n` +
+    `Trimis de pe bogdanob.info`
+  );
+  
+  // Open WhatsApp with message
+  window.open(`https://wa.me/37379738524?text=${waMessage}`, '_blank');
+  
+  // Show success notification
+  const lang = localStorage.getItem('selectedLanguage') || 'ro';
+  const successMsg = translations[lang] && translations[lang].formSuccess ? translations[lang].formSuccess : 'Message sent!';
+  showNotification(successMsg, 'success');
+  
+  form.reset();
+}
+
+// ===== INIT PHASE 5 FEATURES =====
+document.addEventListener('DOMContentLoaded', () => {
+  // Delay non-critical features
+  setTimeout(() => {
+    initRevealOnScroll();
+    initCounterObserver();
+    initTypedText();
+    initSocialProof();
+    initExitIntent();
+    initMobileStickyCTA();
+  }, 500);
+});

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ro" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Contact | Consultanță Gratuită | Obreja Bogdan Developer</title>
+    <meta name="description" content="Get in touch for a free consultation. WhatsApp, Telegram, Email, Phone. Full-stack development, mobile apps, AI, digital marketing. Response within 24 hours.">
+    <meta name="keywords" content="contact developer, hire full stack developer, free consultation web development, developer WhatsApp, developer Telegram, hire web developer Europe">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Romanian">
+    <meta name="revisit-after" content="3 days">
+    <meta name="geo.region" content="MD">
+    <meta name="geo.placename" content="Chișinău, Moldova">
+    <link rel="canonical" href="https://bogdanob.info/contact.html">
+    <meta property="og:title" content="Contact | Free Consultation | Obreja Bogdan">
+    <meta property="og:description" content="Free consultation. WhatsApp, Telegram, Email. Response within 24 hours.">
+    <meta property="og:url" content="https://bogdanob.info/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="aseets/preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Obreja Bogdan Digital Solutions">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1e3a5f">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: "class" };</script>
+    <link rel="icon" type="image/x-icon" href="aseets/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bogdanob.info/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://bogdanob.info/contact.html"}]}
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300 page-transition">
+
+    <!-- Shared UI -->
+    <div class="custom-cursor-container"><div class="custom-cursor"></div><div class="custom-cursor-dot"></div></div>
+    <div class="loader-wrapper"><div class="loader-content"><div class="loader-spinner"></div><div class="loader-text"><span class="font-mono">loading</span><div class="loader-dots"><span></span><span></span><span></span></div></div></div></div>
+    <div class="fixed top-0 left-0 w-full h-1 z-50"><div id="scrollProgress" class="h-full bg-gradient-to-r from-blue-500 to-blue-600 transform origin-left transition-transform duration-150"></div></div>
+    <button id="backToTop" class="fixed bottom-8 right-8 p-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg shadow-lg hover:shadow-blue-500/30 group z-50 overflow-hidden"><div class="relative flex items-center gap-2 font-mono text-sm"><span class="opacity-70">{</span><i class="fas fa-arrow-up group-hover:-translate-y-1 transition-transform duration-300"></i><span class="opacity-70">}</span></div></button>
+    <div class="fixed left-6 bottom-24 z-50" id="socialMenu">
+      <button class="social-toggle bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center" onclick="toggleSocialMenu()"><i class="fas fa-share-alt text-lg"></i></button>
+      <div class="social-buttons absolute bottom-10 left-0 transition-all duration-500">
+        <a href="https://wa.me/37379738524" target="_blank" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#25D366,#128C7E)"><i class="fab fa-whatsapp text-white"></i></a>
+        <a href="https://t.me/@x0m9kk" target="_blank" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#0088cc,#0077b5)"><i class="fab fa-telegram-plane text-white"></i></a>
+        <a href="viber://chat?number=+37379738524" target="_blank" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#665CAC,#59267c)"><i class="fab fa-viber text-white"></i></a>
+      </div>
+    </div>
+
+    <!-- Urgency Banner -->
+    <div class="urgency-banner font-mono text-xs sm:text-sm py-2 px-4 flex items-center justify-center flex-wrap gap-1">
+      <span>🔥</span> <span data-translate="trustBadge1">15+ Proiecte Livrate</span> · <span class="hidden sm:inline" data-translate="trustBadge2">100% Clienți Mulțumiți</span><span class="hidden sm:inline"> · </span><span data-translate="trustBadge3">Răspuns în 24h</span> · <span class="hidden sm:inline" data-translate="trustBadge4">30 Zile Suport Gratuit</span>
+    </div>
+
+    <!-- Nav -->
+    <nav class="sticky top-0 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-b border-gray-200/50 dark:border-gray-700/50">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-bold text-lg"><span class="text-blue-600 dark:text-blue-400">&lt;/&gt;</span><span>Bogdan<span class="text-blue-600 dark:text-blue-400">OB</span></span></a>
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="index.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navHome">Acasă</a>
+          <a href="servicii.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navServices">Servicii</a>
+          <a href="portofoliu.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navPortfolio">Portofoliu</a>
+          <a href="despre.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navAbout">Despre</a>
+          <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition-colors font-semibold" data-translate="navCTA">Consultanță Gratuită</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="document.documentElement.classList.toggle('dark');localStorage.setItem('darkMode',document.documentElement.classList.contains('dark'))" class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm"><span class="dark:hidden">🌙</span><span class="hidden dark:inline">☀️</span></button>
+          <div class="relative group">
+            <button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-mono"><span id="currentLang">RO</span><i class="fas fa-globe text-blue-500 text-xs"></i></button>
+            <div class="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-xl border dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="#" onclick="switchLanguage('ro');return false;" class="flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-lg">🇲🇩 Română</a>
+              <a href="#" onclick="switchLanguage('en');return false;" class="flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg">🇬🇧 English</a>
+            </div>
+          </div>
+          <button class="md:hidden w-9 h-9 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" onclick="toggleMobileMenu()"><i class="fas fa-bars" id="mobileMenuIcon"></i></button>
+        </div>
+      </div>
+      <div class="md:hidden hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950" id="mobileMenu">
+        <div class="px-4 py-4 space-y-3">
+          <a href="index.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-translate="navHome">Acasă</a>
+          <a href="servicii.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-translate="navServices">Servicii</a>
+          <a href="portofoliu.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-translate="navPortfolio">Portofoliu</a>
+          <a href="despre.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-translate="navAbout">Despre</a>
+          <a href="contact.html" onclick="closeMobileMenu()" class="block w-full text-center bg-blue-600 text-white py-3 px-4 rounded-xl font-semibold text-base active:scale-95 transition-transform" data-translate="navCTA">Consultanță Gratuită</a>
+        </div>
+      </div>
+    </nav>
+
+    <main aria-label="Conținut principal contact">
+
+    <!-- Breadcrumb -->
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <nav class="breadcrumb text-sm text-gray-500 dark:text-gray-400 font-mono">
+        <a href="index.html" class="hover:text-blue-500 transition-colors" data-translate="breadHome">Acasă</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-800 dark:text-gray-200" data-translate="navContact">Contact</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="relative text-center py-12 px-4 overflow-hidden bg-section-vignette" aria-label="Antet pagină contact">
+      <div class="absolute inset-0 opacity-[0.12] dark:opacity-[0.08] bg-cover bg-center" style="background-image: url('aseets/modern-smartphone-floating-in-space-with-chat.webp');" aria-hidden="true"></div>
+      <div class="max-w-3xl mx-auto relative z-10">
+        <span class="text-blue-500 font-mono text-sm" data-translate="contactTag">// Hai să discutăm</span>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4" data-translate="contactTitle">Hai Să Construim <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Împreună</span></h1>
+        <p class="text-gray-600 dark:text-gray-300 text-base sm:text-lg" data-translate="contactSubtitle">Scrie-mi pe oricare canal de mai jos. Consultanță gratuită, răspuns în maximum 24 de ore.</p>
+      </div>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="max-w-5xl mx-auto px-4 pb-12" aria-label="Informații de contact">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță." target="_blank" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:-translate-y-1 text-center block min-h-[48px]">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center shadow-lg" style="background:linear-gradient(135deg,#25D366,#128C7E)"><i class="fab fa-whatsapp text-white text-2xl"></i></div>
+          <h3 class="font-bold text-lg mb-1">WhatsApp</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm" data-translate="contactWhatsApp">Răspuns în max. 2 ore</p>
+          <p class="text-green-600 dark:text-green-400 text-sm font-mono mt-2">+373 797 385 24</p>
+        </a>
+        <!-- Telegram -->
+        <a href="https://t.me/@x0m9kk" target="_blank" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:-translate-y-1 text-center block min-h-[48px]">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center shadow-lg" style="background:linear-gradient(135deg,#0088cc,#0077b5)"><i class="fab fa-telegram-plane text-white text-2xl"></i></div>
+          <h3 class="font-bold text-lg mb-1">Telegram</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Instant messaging</p>
+          <p class="text-blue-600 dark:text-blue-400 text-sm font-mono mt-2">@x0m9kk</p>
+        </a>
+        <!-- Email -->
+        <a href="mailto:bogdanob28@gmail.com" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:-translate-y-1 text-center block min-h-[48px]">
+          <div class="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg"><i class="fas fa-envelope text-white text-2xl"></i></div>
+          <h3 class="font-bold text-lg mb-1">Email</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Professional inquiries</p>
+          <p class="text-red-500 dark:text-red-400 text-sm font-mono mt-2">bogdanob28@gmail.com</p>
+        </a>
+        <!-- Phone -->
+        <a href="tel:+37379738524" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:-translate-y-1 text-center block min-h-[48px]">
+          <div class="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg"><i class="fas fa-phone-alt text-white text-2xl"></i></div>
+          <h3 class="font-bold text-lg mb-1" data-translate="contactPhone">Telefon</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Direct call</p>
+          <p class="text-blue-600 dark:text-blue-400 text-sm font-mono mt-2">+373 797 385 24</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- What You Get + Guarantee -->
+    <section class="relative bg-gray-50 dark:bg-gray-800 py-12 px-4 overflow-hidden" aria-label="Ce primești și garanție">
+      <div class="absolute inset-0 opacity-[0.08] dark:opacity-[0.05] bg-cover bg-center" style="background-image: url('aseets/business-meeting-handshake-satisfied-smiles-warm.webp');" aria-hidden="true"></div>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        <!-- What You Get -->
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-md border border-gray-100 dark:border-gray-600">
+          <h3 class="font-bold text-xl mb-6" data-translate="contactGetTitle">Ce primești la prima discuție:</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-search text-blue-600 dark:text-blue-400 text-sm"></i></div>
+              <span class="text-gray-700 dark:text-gray-300" data-translate="contactGet1">Analiză gratuită a nevoilor tale digitale</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-green-100 dark:bg-green-900/40 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-cogs text-green-600 dark:text-green-400 text-sm"></i></div>
+              <span class="text-gray-700 dark:text-gray-300" data-translate="contactGet2">Recomandări tehnice personalizate</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-purple-100 dark:bg-purple-900/40 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-calculator text-purple-600 dark:text-purple-400 text-sm"></i></div>
+              <span class="text-gray-700 dark:text-gray-300" data-translate="contactGet3">Estimare detaliată, fără obligații</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-orange-100 dark:bg-orange-900/40 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-calendar-check text-orange-600 dark:text-orange-400 text-sm"></i></div>
+              <span class="text-gray-700 dark:text-gray-300" data-translate="contactGet4">Timeline clar și plan de execuție</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Guarantee -->
+        <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 shadow-lg text-white flex flex-col justify-center">
+          <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6"><i class="fas fa-shield-alt text-3xl"></i></div>
+          <h3 class="font-bold text-2xl mb-4" data-translate="guarantee">Garanția Mea</h3>
+          <p class="text-blue-100 leading-relaxed" data-translate="guaranteeDesc">Dacă nu ești 100% mulțumit de design-ul propus, revizuiesc gratuit până când ești satisfăcut. Succesul tău este succesul meu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="max-w-4xl mx-auto px-4 py-12" aria-label="Rețele sociale">
+      <div class="text-center mb-8">
+        <h3 class="text-xl font-bold">Social Media</h3>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="https://www.linkedin.com/in/bogdan-obreja-5710352a7/" target="_blank" class="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-xl px-6 py-4 shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 min-h-[48px]">
+          <i class="fab fa-linkedin text-blue-600 text-xl"></i><span class="font-semibold text-sm">LinkedIn</span>
+        </a>
+        <a href="https://github.com/B0Gd4n28" target="_blank" class="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-xl px-6 py-4 shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 min-h-[48px]">
+          <i class="fab fa-github text-gray-800 dark:text-white text-xl"></i><span class="font-semibold text-sm">GitHub</span>
+        </a>
+        <a href="https://wa.me/37379738524" target="_blank" class="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-xl px-6 py-4 shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 min-h-[48px]">
+          <i class="fab fa-whatsapp text-green-500 text-xl"></i><span class="font-semibold text-sm">WhatsApp</span>
+        </a>
+        <a href="https://t.me/@x0m9kk" target="_blank" class="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-xl px-6 py-4 shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 min-h-[48px]">
+          <i class="fab fa-telegram text-blue-400 text-xl"></i><span class="font-semibold text-sm">Telegram</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="max-w-3xl mx-auto px-4 py-12" aria-label="Formular de contact">
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700">
+        <h3 class="text-2xl font-bold mb-2 text-center" data-translate="contactTag">// Hai să discutăm</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-sm text-center mb-8" data-translate="contactSubtitle">Scrie-mi pe oricare canal de mai jos. Consultanță gratuită, răspuns în maximum 24 de ore.</p>
+        <form id="contactForm" class="space-y-4" onsubmit="handleContactForm(event)">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input type="text" name="name" required class="modern-input min-h-[48px]" placeholder="Numele tău" data-translate-placeholder="formName">
+            <input type="email" name="email" required class="modern-input min-h-[48px]" placeholder="Email" data-translate-placeholder="formEmail">
+          </div>
+          <select name="service" required class="modern-input min-h-[48px]">
+            <option value="" disabled selected data-translate="formSelect">Selectează un serviciu</option>
+            <option value="web">Full-Stack Web Applications</option>
+            <option value="mobile">Hybrid Mobile Apps</option>
+            <option value="ai">AI Solutions & Automation</option>
+            <option value="ecommerce">E-commerce & Marketplace</option>
+            <option value="crm">CRM & Business Systems</option>
+            <option value="marketing">Digital Marketing</option>
+            <option value="maintenance">Maintenance & Security</option>
+            <option value="motion">Motion Graphics & Reels</option>
+            <option value="infrastructure">IT Infrastructure</option>
+          </select>
+          <textarea name="message" required class="modern-input modern-textarea min-h-[48px]" placeholder="Descrie proiectul tău..." data-translate-placeholder="formMessage"></textarea>
+          <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-3.5 rounded-xl font-bold text-sm shadow-lg hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 flex items-center justify-center gap-2 active:scale-95">
+            <i class="fas fa-paper-plane"></i>
+            <span data-translate="formSend">Trimite Mesajul</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-gray-50 dark:bg-gray-800 py-16 px-4" id="faq" aria-label="Întrebări frecvente">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-blue-500 font-mono text-sm" data-translate="faqTag">// Întrebări frecvente</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-2" data-translate="faqTitle">Întrebări <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Frecvente</span></h2>
+        </div>
+        <div class="space-y-3">
+          <!-- FAQ 1 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq1q">Ce servicii oferiți?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq1a">Ofer dezvoltare full-stack (Laravel, React), aplicații mobile hibride, integrări AI (ChatGPT/OpenAI), boți Telegram, platforme marketplace, CRM-uri, marketing digital (email, WhatsApp, landing pages, HTML ads), mentenanță & securitate, motion graphics și infrastructură IT (NAS Synology, cloud). Fiecare proiect primește consultanță gratuită.</p></div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq2q">Cât durează un proiect tipic?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq2a">Depinde de complexitate: un landing page durează 1-2 săptămâni, un website business 3-6 săptămâni, o aplicație mobilă 4-8 săptămâni, iar o platformă complexă (marketplace, CRM, AI) poate dura 2-4 luni.</p></div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq3q">Oferiți suport după lansare?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq3a">Da! Fiecare proiect include 30 de zile de suport gratuit post-lansare.</p></div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq4q">Ce am nevoie pentru a începe?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq4a">Doar o idee despre ce vrei să obții! În consultanța gratuită, analizez nevoile business-ului tău, propun o soluție tehnică optimă și ofer o estimare detaliată.</p></div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq5q">Lucrați cu clienți internaționali?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq5a">Da, lucrez cu clienți din Europa și din toată lumea. Comunicarea se face în Română sau Engleză.</p></div>
+          </div>
+          <!-- FAQ 6 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq6q">Faceți și mentenanță pentru site-uri existente?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq6a">Absolut! Ofer pachete de mentenanță lunară care includ actualizări de securitate, backup-uri, monitorizare uptime, optimizare performanță și suport tehnic continuu.</p></div>
+          </div>
+          <!-- FAQ 7 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq7q">Puteți face și marketing digital?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq7a">Da — creez campanii email marketing cu template-uri custom, WhatsApp marketing, landing pages optimizate pentru ads (Google, Facebook), HTML display ads și strategii complete de lead generation.</p></div>
+          </div>
+          <!-- FAQ 8 -->
+          <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600 shadow-sm">
+            <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <span data-translate="faq8q">Cum funcționează procesul de plată?</span><i class="fas fa-chevron-down text-gray-400 text-sm transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5"><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" data-translate="faq8a">Plata se face în etape convenabile: un avans la începutul proiectului, milestone-uri pe parcurs și rest la livrare. Accept transfer bancar și PayPal.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+    <!-- Floating WhatsApp CTA -->
+    <div class="floating-whatsapp">
+      <div class="pulse-ring"></div>
+      <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță." target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp text-xl"></i>
+        <span class="hide-mobile" data-translate="floatingWA">Scrie-mi acum</span>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-12 sm:py-16 px-4" role="contentinfo">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div><h3 class="text-xl font-bold mb-3">Obreja Bogdan</h3><p class="text-gray-400 text-sm" data-translate="footerDesc">Full-Stack Developer & Digital Solutions Architect. Web apps, mobile, AI, marketing digital și infrastructură IT.</p></div>
+          <div><h4 class="font-semibold mb-3" data-translate="footerLinks">Link-uri rapide</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="index.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink1">Acasă</a></li><li><a href="servicii.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink2">Servicii</a></li><li><a href="portofoliu.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink3">Portofoliu</a></li><li><a href="despre.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink4">Despre</a></li><li><a href="contact.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink5">Contact</a></li></ul></div>
+          <div><h4 class="font-semibold mb-3" data-translate="footerContact">Contact</h4><ul class="space-y-2 text-sm text-gray-400"><li class="flex items-center gap-2"><i class="fas fa-envelope text-blue-400"></i> bogdanob28@gmail.com</li><li class="flex items-center gap-2"><i class="fas fa-phone text-blue-400"></i> +373 797 385 24</li><li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-blue-400"></i> <span data-translate="footerLocation">Europa · Remote Worldwide</span></li></ul></div>
+        </div>
+        <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p class="text-gray-500 text-sm">© 2026 Obreja Bogdan. Toate drepturile rezervate.</p>
+          <div class="flex items-center gap-4">
+            <a href="https://www.linkedin.com/in/bogdan-obreja-5710352a7/" target="_blank" class="text-gray-500 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/B0Gd4n28" target="_blank" class="text-gray-500 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/37379738524" target="_blank" class="text-gray-500 hover:text-green-400 transition-colors"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/@x0m9kk" target="_blank" class="text-gray-500 hover:text-blue-400 transition-colors"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="notificationContainer" class="fixed bottom-4 right-4 z-[9999] flex flex-col-reverse gap-2"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

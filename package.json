@@ -1,0 +1,25 @@
+{
+  "name": "portofoliu-bogdan-ob",
+  "version": "2.0.0",
+  "description": "Full-Stack Developer Portfolio & Lead Generation Website — Obreja Bogdan",
+  "author": "Obreja Bogdan <bogdanob28@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bogdanob.info",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/B0Gd4n28/Portofoliu_BO.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "full-stack",
+    "lead-generation",
+    "tailwindcss"
+  ],
+  "scripts": {
+    "start": "npx serve .",
+    "lint": "npx htmlhint *.html"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
