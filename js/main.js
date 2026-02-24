@@ -1317,6 +1317,85 @@ function handleContactForm(e) {
   form.reset();
 }
 
+// ===== ANALYTICS EVENT TRACKING =====
+function trackEvent(eventName, params) {
+  // Google Analytics 4
+  if (typeof gtag === 'function') {
+    gtag('event', eventName, params || {});
+  }
+}
+
+// Track CTA button clicks
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a, button');
+  if (!link) return;
+  
+  const href = link.getAttribute('href') || '';
+  const text = link.textContent.trim().substring(0, 50);
+  
+  // WhatsApp clicks
+  if (href.includes('wa.me') || href.includes('whatsapp')) {
+    trackEvent('whatsapp_click', { link_text: text, page: location.pathname });
+  }
+  // Telegram clicks
+  else if (href.includes('t.me') || href.includes('telegram')) {
+    trackEvent('telegram_click', { link_text: text, page: location.pathname });
+  }
+  // Email clicks
+  else if (href.startsWith('mailto:')) {
+    trackEvent('email_click', { page: location.pathname });
+  }
+  // Phone clicks
+  else if (href.startsWith('tel:')) {
+    trackEvent('phone_click', { page: location.pathname });
+  }
+  // CTA to contact page
+  else if (href.includes('contact.html')) {
+    trackEvent('cta_contact', { link_text: text, page: location.pathname });
+  }
+  // External project links
+  else if (href.startsWith('http') && !href.includes('bogdanob')) {
+    trackEvent('outbound_click', { url: href, page: location.pathname });
+  }
+});
+
+// Track contact form submission
+const origFormHandler = window.handleContactForm;
+window.handleContactForm = function(e) {
+  const form = e.target;
+  trackEvent('form_submit', {
+    service: form.service ? form.service.value : '',
+    page: location.pathname
+  });
+  if (origFormHandler) origFormHandler(e);
+};
+
+// Track scroll depth (25%, 50%, 75%, 100%)
+(function() {
+  const milestones = [25, 50, 75, 100];
+  const reached = {};
+  window.addEventListener('scroll', function() {
+    const scrollPct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+    milestones.forEach(function(m) {
+      if (scrollPct >= m && !reached[m]) {
+        reached[m] = true;
+        trackEvent('scroll_depth', { percent: m, page: location.pathname });
+      }
+    });
+  }, { passive: true });
+})();
+
+// Track language switch
+const origSwitchLang = window.switchLanguage;
+window.switchLanguage = function(lang) {
+  trackEvent('language_switch', { language: lang });
+  if (origSwitchLang) origSwitchLang(lang);
+};
+
+// Track time on page
+setTimeout(function() { trackEvent('engaged_user', { seconds: 30, page: location.pathname }); }, 30000);
+setTimeout(function() { trackEvent('engaged_user', { seconds: 60, page: location.pathname }); }, 60000);
+
 // ===== INIT PHASE 5 FEATURES =====
 document.addEventListener('DOMContentLoaded', () => {
   // Delay non-critical features
