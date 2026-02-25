@@ -94,3 +94,23 @@
   from = "/despre"
   to = "/despre.html"
   status = 301
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 301
+
+[[redirects]]
+  from = "/articles"
+  to = "/blog.html"
+  status = 301
+
+[[redirects]]
+  from = "/cat-costa-website"
+  to = "/blog.html#cat-costa-website"
+  status = 301
+
+[[redirects]]
+  from = "/cat-costa-un-website"
+  to = "/blog.html#cat-costa-website"
+  status = 301

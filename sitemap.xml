@@ -66,4 +66,12 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://bogdanob.info/contact.html?lang=ro"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bogdanob.info/contact.html?lang=en"/>
   </url>
+  <url>
+    <loc>https://bogdanob.info/blog.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bogdanob.info/blog.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bogdanob.info/blog.html?lang=en"/>
+  </url>
 </urlset>

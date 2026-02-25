@@ -1,0 +1,27 @@
+{
+  "name": "Obreja Bogdan — Full-Stack Developer & AI Solutions",
+  "short_name": "Bogdan OB",
+  "description": "Full-Stack Developer & Digital Solutions Architect. Web, mobile, AI, marketing digital pentru business-uri din Europa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "lang": "ro",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/aseets/icon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/aseets/me.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "developer tools", "productivity"],
+  "prefer_related_applications": false
+}

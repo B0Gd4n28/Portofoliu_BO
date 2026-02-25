@@ -91,9 +91,15 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=yes">
 
-    <!-- Preconnect for performance -->
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Preconnect & DNS Prefetch for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.clarity.ms">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
 
     <!-- Schema: ProfessionalService (primary) -->
     <script type="application/ld+json">
@@ -306,6 +312,7 @@
           <a href="servicii.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navServices">Servicii</a>
           <a href="portofoliu.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navPortfolio">Portofoliu</a>
           <a href="despre.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navAbout">Despre</a>
+          <a href="blog.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Blog</a>
           <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 active:scale-95" data-translate="navCTA">Consultanță Gratuită</a>
         </div>
         <div class="flex items-center gap-2">
@@ -333,6 +340,7 @@
           <a href="servicii.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors" data-translate="navServices">Servicii</a>
           <a href="portofoliu.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors" data-translate="navPortfolio">Portofoliu</a>
           <a href="despre.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors" data-translate="navAbout">Despre</a>
+          <a href="blog.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors">Blog</a>
           <a href="contact.html" onclick="closeMobileMenu()" class="block w-full text-center bg-blue-600 text-white py-4 rounded-xl font-semibold text-base mt-2 active:scale-95 transition-transform" data-translate="navCTA">Consultanță Gratuită</a>
         </div>
       </div>
@@ -898,6 +906,7 @@
               <li><a href="servicii.html" class="hover:text-blue-400 transition-colors py-1 inline-block" data-translate="footerLink2">Servicii</a></li>
               <li><a href="portofoliu.html" class="hover:text-blue-400 transition-colors py-1 inline-block" data-translate="footerLink3">Portofoliu</a></li>
               <li><a href="despre.html" class="hover:text-blue-400 transition-colors py-1 inline-block" data-translate="footerLink4">Despre</a></li>
+              <li><a href="blog.html" class="hover:text-blue-400 transition-colors py-1 inline-block">Blog</a></li>
               <li><a href="contact.html" class="hover:text-blue-400 transition-colors py-1 inline-block" data-translate="footerLink5">Contact</a></li>
             </ul>
           </nav>

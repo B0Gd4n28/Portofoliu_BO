@@ -7,6 +7,8 @@ Allow: /servicii.html
 Allow: /portofoliu.html
 Allow: /despre.html
 Allow: /contact.html
+Allow: /blog.html
+Allow: /manifest.json
 Allow: /aseets/
 Allow: /css/
 Allow: /js/
