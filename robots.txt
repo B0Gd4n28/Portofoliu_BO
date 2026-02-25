@@ -1,7 +1,55 @@
+# robots.txt — bogdanob.info
+# Full-Stack Developer & AI Solutions | Obreja Bogdan
+
 User-agent: *
 Allow: /
+Allow: /servicii.html
+Allow: /portofoliu.html
+Allow: /despre.html
+Allow: /contact.html
+Allow: /aseets/
+Allow: /css/
+Allow: /js/
+Disallow: /index_backup.html
 
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /aseets/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# AI Crawlers (GEO — Generative Engine Optimization)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap
 Sitemap: https://bogdanob.info/sitemap.xml
 
-# Crawl-delay
-Crawl-delay: 1
+# Host
+Host: https://bogdanob.info
