@@ -21,7 +21,7 @@
     <link rel="alternate" hreflang="ro" href="https://bogdanob.info/blog.html?lang=ro">
     <link rel="alternate" hreflang="en" href="https://bogdanob.info/blog.html?lang=en">
     <meta property="og:title" content="Blog Web Development & AI 2026 | Obreja Bogdan">
-    <meta property="og:description" content="Articole practice despre costuri website, integare AI, cum alegi developer. Sfaturi gratuite pentru business-ul tău digital.">
+    <meta property="og:description" content="Articole practice despre costuri website, integrare AI, cum alegi developer. Sfaturi gratuite pentru business-ul tău digital.">
     <meta property="og:url" content="https://bogdanob.info/blog.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://bogdanob.info/aseets/og-preview.jpg">
@@ -43,9 +43,13 @@
     <script>tailwind.config = { darkMode: "class" };</script>
     <link rel="icon" type="image/x-icon" href="aseets/icon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Schema: BreadcrumbList -->
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bogdanob.info/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://bogdanob.info/blog.html"}]}
     </script>
+
+    <!-- Schema: Blog + BlogPosting (with name + headline) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -63,41 +67,70 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "name": "Cât costă un website în 2026? Ghid complet de prețuri",
           "headline": "Cât costă un website în 2026? Ghid complet de prețuri",
           "description": "Analiză detaliată a costurilor pentru creare website în 2026: landing page, website business, e-commerce, aplicație mobilă, platformă cu AI.",
           "url": "https://bogdanob.info/blog.html#cat-costa-website",
           "datePublished": "2026-02-25",
-          "dateModified": "2026-02-25",
+          "dateModified": "2026-02-26",
           "author": {"@type": "Person", "name": "Obreja Bogdan"},
+          "publisher": {"@type": "Organization", "name": "Obreja Bogdan Digital Solutions", "logo": {"@type": "ImageObject", "url": "https://bogdanob.info/aseets/icon.ico"}},
           "image": "https://bogdanob.info/aseets/og-preview.jpg",
+          "mainEntityOfPage": {"@type": "WebPage", "@id": "https://bogdanob.info/blog.html#cat-costa-website"},
           "keywords": ["pret website 2026", "cat costa website", "cost dezvoltare web", "pret landing page", "cost aplicatie mobila"]
         },
         {
           "@type": "BlogPosting",
+          "name": "De ce business-ul tău are nevoie de AI în 2026",
           "headline": "De ce business-ul tău are nevoie de AI în 2026",
           "description": "Cum inteligența artificială transformă business-urile: chatboți, automatizare, marketing personalizat, analiza datelor.",
           "url": "https://bogdanob.info/blog.html#de-ce-ai-business",
           "datePublished": "2026-02-25",
-          "dateModified": "2026-02-25",
+          "dateModified": "2026-02-26",
           "author": {"@type": "Person", "name": "Obreja Bogdan"},
+          "publisher": {"@type": "Organization", "name": "Obreja Bogdan Digital Solutions", "logo": {"@type": "ImageObject", "url": "https://bogdanob.info/aseets/icon.ico"}},
           "image": "https://bogdanob.info/aseets/og-preview.jpg",
+          "mainEntityOfPage": {"@type": "WebPage", "@id": "https://bogdanob.info/blog.html#de-ce-ai-business"},
           "keywords": ["AI business 2026", "chatbot AI", "automatizare business", "inteligenta artificiala", "transformare digitala"]
         },
         {
           "@type": "BlogPosting",
+          "name": "Cum să alegi un web developer în 2026: 10 criterii esențiale",
           "headline": "Cum să alegi un web developer în 2026: 10 criterii esențiale",
           "description": "Ghid practic pentru alegerea unui dezvoltator web profesionist: portofoliu, tehnologii, comunicare, prețuri, suport post-lansare.",
           "url": "https://bogdanob.info/blog.html#cum-alegi-developer",
           "datePublished": "2026-02-25",
-          "dateModified": "2026-02-25",
+          "dateModified": "2026-02-26",
           "author": {"@type": "Person", "name": "Obreja Bogdan"},
+          "publisher": {"@type": "Organization", "name": "Obreja Bogdan Digital Solutions", "logo": {"@type": "ImageObject", "url": "https://bogdanob.info/aseets/icon.ico"}},
           "image": "https://bogdanob.info/aseets/og-preview.jpg",
+          "mainEntityOfPage": {"@type": "WebPage", "@id": "https://bogdanob.info/blog.html#cum-alegi-developer"},
           "keywords": ["cum alegi developer web", "angajare web developer", "freelancer vs agentie", "criterii developer", "developer Moldova Europa"]
         }
       ]
     }
     </script>
+
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .blog-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+      .blog-card:hover { transform: translateY(-8px); }
+      .blog-card:hover .card-arrow { transform: translateX(4px); }
+      .card-arrow { transition: transform 0.3s ease; }
+      .article-section { scroll-margin-top: 80px; }
+      .blog-tag { backdrop-filter: blur(8px); }
+      .gradient-border { background: linear-gradient(135deg, #3b82f6, #06b6d4, #8b5cf6); padding: 1px; border-radius: 1rem; }
+      .gradient-border > div { border-radius: calc(1rem - 1px); }
+      .blog-toc a { border-left: 2px solid transparent; transition: all 0.3s ease; }
+      .blog-toc a:hover, .blog-toc a.active { border-left-color: #3b82f6; color: #3b82f6; background: rgba(59,130,246,0.05); }
+      .share-btn { transition: all 0.3s ease; }
+      .share-btn:hover { transform: translateY(-2px); }
+      @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+      .animate-fade-in-up { animation: fadeInUp 0.6s ease forwards; }
+      .stagger-1 { animation-delay: 0.1s; opacity: 0; }
+      .stagger-2 { animation-delay: 0.2s; opacity: 0; }
+      .stagger-3 { animation-delay: 0.3s; opacity: 0; }
+    </style>
   </head>
   <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300 page-transition">
 
@@ -138,7 +171,7 @@
           <a href="servicii.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navServices">Servicii</a>
           <a href="portofoliu.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navPortfolio">Portofoliu</a>
           <a href="despre.html" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navAbout">Despre</a>
-          <a href="blog.html" class="nav-link active hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Blog</a>
+          <a href="blog.html" class="nav-link active hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="navBlog">Blog</a>
           <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition-colors font-semibold" data-translate="navCTA">Consultanță Gratuită</a>
         </div>
         <div class="flex items-center gap-3">
@@ -159,291 +192,497 @@
           <a href="servicii.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-translate="navServices">Servicii</a>
           <a href="portofoliu.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-translate="navPortfolio">Portofoliu</a>
           <a href="despre.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-translate="navAbout">Despre</a>
-          <a href="blog.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl bg-gray-100 dark:bg-gray-800 transition-colors">Blog</a>
+          <a href="blog.html" onclick="closeMobileMenu()" class="block py-3 px-4 text-base font-medium rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 transition-colors" data-translate="navBlog">Blog</a>
           <a href="contact.html" onclick="closeMobileMenu()" class="block w-full text-center bg-blue-600 text-white py-3 rounded-xl font-semibold mt-2" data-translate="navCTA">Consultanță Gratuită</a>
         </div>
       </div>
     </nav>
 
     <main>
-    <!-- Blog Hero -->
-    <section class="relative py-16 sm:py-20 px-4 text-center">
-      <div class="max-w-4xl mx-auto">
-        <span class="text-blue-500 font-mono text-sm">// Blog & Resurse</span>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4">Ghiduri Despre <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Web, AI & Business</span></h1>
-        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-base sm:text-lg">Articole practice cu sfaturi concrete pentru antreprenori care vor să-și digitalizeze business-ul în 2026.</p>
+
+    <!-- ============ BLOG HERO ============ -->
+    <section class="relative py-16 sm:py-24 px-4 overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 dark:bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500/10 dark:bg-cyan-500/5 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center gap-2 bg-blue-100/80 dark:bg-blue-900/40 backdrop-blur-sm text-blue-700 dark:text-blue-300 px-4 py-1.5 rounded-full text-xs font-mono mb-5 animate-fade-in-up">
+          <i class="fas fa-newspaper"></i>
+          <span data-translate="blogTag">// Blog & Resurse</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-3 mb-5 leading-tight animate-fade-in-up stagger-1" data-translate="blogTitle">Ghiduri Despre <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500">Web, AI & Business</span></h1>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed mb-8 animate-fade-in-up stagger-2" data-translate="blogSubtitle">Articole practice cu sfaturi concrete pentru antreprenori care vor să-și digitalizeze business-ul în 2026.</p>
+        <div class="flex items-center justify-center gap-4 sm:gap-6 flex-wrap text-sm animate-fade-in-up stagger-3">
+          <div class="flex items-center gap-2 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm px-4 py-2 rounded-xl border border-gray-200/50 dark:border-gray-700/50">
+            <i class="fas fa-file-alt text-blue-500"></i>
+            <span data-translate="blogStat1">3 Articole</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm px-4 py-2 rounded-xl border border-gray-200/50 dark:border-gray-700/50">
+            <i class="fas fa-clock text-cyan-500"></i>
+            <span data-translate="blogStat2">~25 min citire totală</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm px-4 py-2 rounded-xl border border-gray-200/50 dark:border-gray-700/50">
+            <i class="fas fa-tags text-purple-500"></i>
+            <span data-translate="blogStat3">Web · AI · Business</span>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- ============ ARTICLE CARDS GRID ============ -->
+    <section class="py-8 sm:py-12 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Card 1 -->
+          <a href="#cat-costa-website" class="blog-card group">
+            <div class="gradient-border">
+              <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 h-full">
+                <div class="flex items-center gap-2 mb-4">
+                  <span class="blog-tag inline-flex items-center gap-1.5 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-2.5 py-1 rounded-full text-xs font-mono">
+                    <i class="fas fa-euro-sign text-[10px]"></i> <span data-translate="b1Tag">Ghid Prețuri</span>
+                  </span>
+                  <span class="text-xs text-gray-400 ml-auto"><i class="fas fa-clock mr-1"></i> <span data-translate="b1Read">8 min</span></span>
+                </div>
+                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i class="fas fa-coins text-white text-lg"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" data-translate="b1CardTitle">Cât Costă un Website în 2026?</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-3" data-translate="b1CardExcerpt">Ghid complet de prețuri: landing page, website business, e-commerce, aplicație cu AI. Află exact cât investești.</p>
+                <div class="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-semibold">
+                  <span data-translate="blogReadArticle">Citește Articolul</span>
+                  <i class="fas fa-arrow-right card-arrow text-xs"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="#de-ce-ai-business" class="blog-card group">
+            <div class="gradient-border">
+              <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 h-full">
+                <div class="flex items-center gap-2 mb-4">
+                  <span class="blog-tag inline-flex items-center gap-1.5 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-2.5 py-1 rounded-full text-xs font-mono">
+                    <i class="fas fa-robot text-[10px]"></i> <span data-translate="b2Tag">AI & Automatizare</span>
+                  </span>
+                  <span class="text-xs text-gray-400 ml-auto"><i class="fas fa-clock mr-1"></i> <span data-translate="b2Read">7 min</span></span>
+                </div>
+                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-700 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i class="fas fa-brain text-white text-lg"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors" data-translate="b2CardTitle">De Ce Ai Nevoie de AI în 2026?</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-3" data-translate="b2CardExcerpt">Cum inteligența artificială transformă business-urile: chatboți, automatizare, marketing personalizat.</p>
+                <div class="flex items-center gap-2 text-green-600 dark:text-green-400 text-sm font-semibold">
+                  <span data-translate="blogReadArticle">Citește Articolul</span>
+                  <i class="fas fa-arrow-right card-arrow text-xs"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="#cum-alegi-developer" class="blog-card group">
+            <div class="gradient-border">
+              <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 h-full">
+                <div class="flex items-center gap-2 mb-4">
+                  <span class="blog-tag inline-flex items-center gap-1.5 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 px-2.5 py-1 rounded-full text-xs font-mono">
+                    <i class="fas fa-code text-[10px]"></i> <span data-translate="b3Tag">Ghid Practic</span>
+                  </span>
+                  <span class="text-xs text-gray-400 ml-auto"><i class="fas fa-clock mr-1"></i> <span data-translate="b3Read">10 min</span></span>
+                </div>
+                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i class="fas fa-code text-white text-lg"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors" data-translate="b3CardTitle">Cum Alegi un Web Developer?</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-3" data-translate="b3CardExcerpt">10 criterii esențiale pentru a alege developer-ul potrivit: portofoliu, tehnologii, preț, suport.</p>
+                <div class="flex items-center gap-2 text-purple-600 dark:text-purple-400 text-sm font-semibold">
+                  <span data-translate="blogReadArticle">Citește Articolul</span>
+                  <i class="fas fa-arrow-right card-arrow text-xs"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TABLE OF CONTENTS (sticky sidebar on desktop) ============ -->
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="flex gap-8">
+
+        <!-- Sidebar TOC (desktop only) -->
+        <aside class="hidden lg:block w-64 flex-shrink-0">
+          <div class="sticky top-24 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg rounded-2xl border border-gray-200/50 dark:border-gray-700/50 p-5">
+            <h4 class="font-bold text-sm mb-4 flex items-center gap-2">
+              <i class="fas fa-list text-blue-500 text-xs"></i>
+              <span data-translate="blogTocTitle">Cuprins</span>
+            </h4>
+            <nav class="blog-toc space-y-1 text-sm">
+              <a href="#cat-costa-website" class="block px-3 py-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-blue-600" data-translate="b1TocLink">Cât Costă un Website?</a>
+              <a href="#de-ce-ai-business" class="block px-3 py-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-green-600" data-translate="b2TocLink">De Ce AI în 2026?</a>
+              <a href="#cum-alegi-developer" class="block px-3 py-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-purple-600" data-translate="b3TocLink">Cum Alegi un Developer?</a>
+            </nav>
+            <div class="border-t border-gray-200 dark:border-gray-700 mt-4 pt-4">
+              <a href="contact.html" class="flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                <i class="fas fa-comments"></i>
+                <span data-translate="blogTocCta">Consultanță Gratuită</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Articles Container -->
+        <div class="flex-1 min-w-0 space-y-12 sm:space-y-16">
+
     <!-- ===== ARTICLE 1: Cât costă un website? ===== -->
-    <article class="py-12 sm:py-16 px-4 border-t border-gray-200 dark:border-gray-800" id="cat-costa-website">
-      <div class="max-w-4xl mx-auto">
-        <div class="mb-8">
-          <span class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-mono mb-3">
-            <i class="fas fa-euro-sign"></i> Ghid Prețuri
-          </span>
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Cât Costă un Website în 2026? Ghid Complet de Prețuri</h2>
-          <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-            <span><i class="fas fa-user mr-1"></i> Obreja Bogdan</span>
-            <span><i class="fas fa-calendar mr-1"></i> 25 Februarie 2026</span>
-            <span><i class="fas fa-clock mr-1"></i> 8 min citire</span>
+    <article class="article-section bg-white dark:bg-gray-900 rounded-2xl sm:rounded-3xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300" id="cat-costa-website">
+      <!-- Article Header -->
+      <div class="bg-gradient-to-r from-blue-600 to-blue-800 px-6 sm:px-8 py-4 flex items-center gap-3">
+        <i class="fas fa-euro-sign text-white/80"></i>
+        <span class="text-white/90 font-mono text-sm" data-translate="b1Tag">Ghid Prețuri</span>
+        <span class="text-white/50 text-xs ml-auto font-mono">#01</span>
+      </div>
+      <div class="px-6 sm:px-8 py-8 sm:py-10">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight" data-translate="b1Title">Cât Costă un Website în 2026? Ghid Complet de Prețuri</h2>
+        <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8 flex-wrap">
+          <span class="flex items-center gap-1.5"><i class="fas fa-user-circle text-blue-500"></i> Obreja Bogdan</span>
+          <span class="flex items-center gap-1.5"><i class="fas fa-calendar-alt text-blue-500"></i> <span data-translate="b1Date">25 Februarie 2026</span></span>
+          <span class="flex items-center gap-1.5"><i class="fas fa-clock text-blue-500"></i> <span data-translate="b1ReadFull">8 min citire</span></span>
+        </div>
+
+        <div class="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p class="text-lg" data-translate="b1Intro"><strong>Întrebarea #1 pe care o primesc de la clienți:</strong> „Cât costă un website?" Răspunsul depinde de mai mulți factori, dar în acest ghid îți explic exact ce poți aștepta în 2026, de la un simplu landing page la o platformă complexă cu AI.</p>
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-4 flex items-center gap-2" data-translate="b1H3_1">💰 Tipuri de website și prețuri orientative în 2026</h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
+              <div class="flex items-center gap-2 mb-2">
+                <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center"><i class="fas fa-file text-blue-600 text-sm"></i></div>
+                <h4 class="font-bold text-blue-600 dark:text-blue-400" data-translate="b1C1Title">Landing Page / One-Page</h4>
+              </div>
+              <p class="text-2xl font-bold mb-1">€500 — €1,500</p>
+              <p class="text-sm text-gray-500" data-translate="b1C1Desc">1-2 săptămâni · Design modern · SEO de bază · Mobile responsive · Formular contact</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
+              <div class="flex items-center gap-2 mb-2">
+                <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center"><i class="fas fa-building text-blue-600 text-sm"></i></div>
+                <h4 class="font-bold text-blue-600 dark:text-blue-400" data-translate="b1C2Title">Website Business (5-10 pagini)</h4>
+              </div>
+              <p class="text-2xl font-bold mb-1">€1,500 — €4,000</p>
+              <p class="text-sm text-gray-500" data-translate="b1C2Desc">3-6 săptămâni · CMS admin · Blog · SEO complet · Google Analytics · Multi-pagini</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
+              <div class="flex items-center gap-2 mb-2">
+                <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center"><i class="fas fa-shopping-cart text-blue-600 text-sm"></i></div>
+                <h4 class="font-bold text-blue-600 dark:text-blue-400" data-translate="b1C3Title">E-commerce / Magazin Online</h4>
+              </div>
+              <p class="text-2xl font-bold mb-1">€3,000 — €8,000</p>
+              <p class="text-sm text-gray-500" data-translate="b1C3Desc">6-10 săptămâni · Catalog produse · Plăți online · Coș de cumpărături · Admin panel</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
+              <div class="flex items-center gap-2 mb-2">
+                <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center"><i class="fas fa-robot text-blue-600 text-sm"></i></div>
+                <h4 class="font-bold text-blue-600 dark:text-blue-400" data-translate="b1C4Title">Aplicație Web Custom cu AI</h4>
+              </div>
+              <p class="text-2xl font-bold mb-1">€5,000 — €15,000+</p>
+              <p class="text-sm text-gray-500" data-translate="b1C4Desc">2-4 luni · CRM/Marketplace · AI Chatbot · Auth & RBAC · API integrations · SaaS</p>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-4 flex items-center gap-2" data-translate="b1H3_2">📊 Ce influențează prețul unui website?</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3"><i class="fas fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i> <span data-translate="b1F1"><strong>Complexitatea</strong> — câte pagini, funcționalități, integrări API, baze de date</span></li>
+            <li class="flex items-start gap-3 bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3"><i class="fas fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i> <span data-translate="b1F2"><strong>Designul</strong> — template adaptat vs. design custom de la zero în Figma</span></li>
+            <li class="flex items-start gap-3 bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3"><i class="fas fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i> <span data-translate="b1F3"><strong>Integrarea AI</strong> — chatbot OpenAI, automatizări, recomandări personalizate</span></li>
+            <li class="flex items-start gap-3 bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3"><i class="fas fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i> <span data-translate="b1F4"><strong>SEO & Marketing</strong> — optimizare pentru motoare de căutare, Schema markup, analytics</span></li>
+            <li class="flex items-start gap-3 bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3"><i class="fas fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i> <span data-translate="b1F5"><strong>Mentenanța</strong> — hosting, update-uri, backup-uri, suport post-lansare</span></li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-4 flex items-center gap-2" data-translate="b1H3_3">🎯 De ce merită să investești într-un website profesional?</h3>
+          <p data-translate="b1P1">Un website este <strong>cea mai importantă investiție digitală</strong> pentru orice business în 2026. 87% din consumatori caută online înainte de a cumpăra. Un website profesional cu SEO, chatbot AI și design mobile-first generează <strong>clienți 24/7</strong> — chiar și când dormi.</p>
+          <p data-translate="b1P2">Spre deosebire de reclamele plătite (care se opresc când oprești bugetul), un website bine optimizat <strong>atrage trafic organic gratuit</strong> luni și ani la rând.</p>
+
+          <!-- Article 1 CTA -->
+          <div class="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border border-blue-200 dark:border-blue-800 rounded-2xl p-6 mt-8">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-lightbulb text-white"></i></div>
+              <div>
+                <p class="font-bold text-blue-700 dark:text-blue-300 mb-1" data-translate="b1CtaTitle">Vrei să afli exact cât ar costa proiectul tău?</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4" data-translate="b1CtaDesc">Oferim consultanță gratuită personalizată cu estimare detaliată de preț și timeline.</p>
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                  <i class="fab fa-whatsapp"></i> <span data-translate="b1CtaBtn">Consultanță Gratuită</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="prose prose-lg dark:prose-invert max-w-none space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
-          <p class="text-lg"><strong>Întrebarea #1 pe care o primesc de la clienți:</strong> „Cât costă un website?" Răspunsul depinde de mai mulți factori, dar în acest ghid îți explic exact ce poți aștepta în 2026, de la un simplu landing page la o platformă complexă cu AI.</p>
-
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-3">💰 Tipuri de website și prețuri orientative în 2026</h3>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <h4 class="font-bold text-blue-600 dark:text-blue-400 mb-2">Landing Page / One-Page</h4>
-              <p class="text-2xl font-bold mb-1">€500 — €1,500</p>
-              <p class="text-sm text-gray-500">1-2 săptămâni · Design modern · SEO de bază · Mobile responsive · Formular contact</p>
-            </div>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <h4 class="font-bold text-blue-600 dark:text-blue-400 mb-2">Website Business (5-10 pagini)</h4>
-              <p class="text-2xl font-bold mb-1">€1,500 — €4,000</p>
-              <p class="text-sm text-gray-500">3-6 săptămâni · CMS admin · Blog · SEO complet · Google Analytics · Multi-pagini</p>
-            </div>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <h4 class="font-bold text-blue-600 dark:text-blue-400 mb-2">E-commerce / Magazin Online</h4>
-              <p class="text-2xl font-bold mb-1">€3,000 — €8,000</p>
-              <p class="text-sm text-gray-500">6-10 săptămâni · Catalog produse · Plăți online · Coș de cumpărături · Admin panel</p>
-            </div>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <h4 class="font-bold text-blue-600 dark:text-blue-400 mb-2">Aplicație Web Custom cu AI</h4>
-              <p class="text-2xl font-bold mb-1">€5,000 — €15,000+</p>
-              <p class="text-sm text-gray-500">2-4 luni · CRM/Marketplace · AI Chatbot · Auth & RBAC · API integrations · SaaS</p>
-            </div>
-          </div>
-
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-3">📊 Ce influențează prețul unui website?</h3>
-          <ul class="space-y-2">
-            <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span><strong>Complexitatea</strong> — câte pagini, funcționalități, integrări API, baze de date</span></li>
-            <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span><strong>Designul</strong> — template adaptat vs. design custom de la zero în Figma</span></li>
-            <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span><strong>Integrarea AI</strong> — chatbot OpenAI, automatizări, recomandări personalizate</span></li>
-            <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span><strong>SEO & Marketing</strong> — optimizare pentru motoare de căutare, Schema markup, analytics</span></li>
-            <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span><strong>Mentenanța</strong> — hosting, update-uri, backup-uri, suport post-lansare</span></li>
-          </ul>
-
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-3">🎯 De ce merită să investești într-un website profesional?</h3>
-          <p>Un website este <strong>cea mai importantă investiție digitală</strong> pentru orice business în 2026. 87% din consumatori caută online înainte de a cumpăra. Un website profesional cu SEO, chatbot AI și design mobile-first generează <strong>clienți 24/7</strong> — chiar și când dormi.</p>
-          <p>Spre deosebire de reclamele plătite (care se opresc când oprești bugetul), un website bine optimizat <strong>atrage trafic organic gratuit</strong> luni și ani la rând.</p>
-
-          <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 my-6">
-            <p class="font-bold text-blue-700 dark:text-blue-300 mb-2"><i class="fas fa-lightbulb mr-2"></i>Vrei să afli exact cât ar costa proiectul tău?</p>
-            <p class="text-sm mb-4">Oferă consultanță gratuită personalizată cu estimare detaliată de preț și timeline.</p>
-            <a href="contact.html" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors">
-              <i class="fab fa-whatsapp"></i> Consultanță Gratuită
-            </a>
-          </div>
+        <!-- Share buttons -->
+        <div class="flex items-center gap-3 mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+          <span class="text-sm text-gray-500 font-medium" data-translate="blogShare">Distribuie:</span>
+          <button onclick="navigator.clipboard.writeText(window.location.href+'#cat-costa-website');this.innerHTML='<i class=\'fas fa-check text-green-500\'></i>';setTimeout(()=>this.innerHTML='<i class=\'fas fa-link\'></i>',2000)" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-blue-900/40" title="Copy link"><i class="fas fa-link"></i></button>
+          <a href="https://wa.me/?text=Cât%20costă%20un%20website%20în%202026%3F%20https://bogdanob.info/blog.html%23cat-costa-website" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-green-100 dark:hover:bg-green-900/40" title="WhatsApp"><i class="fab fa-whatsapp text-green-600"></i></a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bogdanob.info/blog.html%23cat-costa-website" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-blue-900/40" title="LinkedIn"><i class="fab fa-linkedin text-blue-700"></i></a>
+          <a href="https://twitter.com/intent/tweet?text=Cât%20costă%20un%20website%20în%202026%3F&url=https://bogdanob.info/blog.html%23cat-costa-website" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-sky-100 dark:hover:bg-sky-900/40" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
     </article>
 
     <!-- ===== ARTICLE 2: De ce AI în 2026? ===== -->
-    <article class="py-12 sm:py-16 px-4 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800" id="de-ce-ai-business">
-      <div class="max-w-4xl mx-auto">
-        <div class="mb-8">
-          <span class="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-3 py-1 rounded-full text-xs font-mono mb-3">
-            <i class="fas fa-robot"></i> AI & Automatizare
-          </span>
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">De Ce Business-ul Tău Are Nevoie de AI în 2026</h2>
-          <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-            <span><i class="fas fa-user mr-1"></i> Obreja Bogdan</span>
-            <span><i class="fas fa-calendar mr-1"></i> 25 Februarie 2026</span>
-            <span><i class="fas fa-clock mr-1"></i> 7 min citire</span>
+    <article class="article-section bg-white dark:bg-gray-900 rounded-2xl sm:rounded-3xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300" id="de-ce-ai-business">
+      <div class="bg-gradient-to-r from-green-600 to-emerald-800 px-6 sm:px-8 py-4 flex items-center gap-3">
+        <i class="fas fa-robot text-white/80"></i>
+        <span class="text-white/90 font-mono text-sm" data-translate="b2Tag">AI & Automatizare</span>
+        <span class="text-white/50 text-xs ml-auto font-mono">#02</span>
+      </div>
+      <div class="px-6 sm:px-8 py-8 sm:py-10">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight" data-translate="b2Title">De Ce Business-ul Tău Are Nevoie de AI în 2026</h2>
+        <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8 flex-wrap">
+          <span class="flex items-center gap-1.5"><i class="fas fa-user-circle text-green-500"></i> Obreja Bogdan</span>
+          <span class="flex items-center gap-1.5"><i class="fas fa-calendar-alt text-green-500"></i> <span data-translate="b2Date">25 Februarie 2026</span></span>
+          <span class="flex items-center gap-1.5"><i class="fas fa-clock text-green-500"></i> <span data-translate="b2ReadFull">7 min citire</span></span>
+        </div>
+
+        <div class="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p class="text-lg" data-translate="b2Intro">În 2026, <strong>inteligența artificială nu mai este un lux</strong> — este o necesitate. Business-urile care nu folosesc AI pierd teren în fața competiției. Iată cum AI poate transforma orice business, de la un mic magazin online la o corporație.</p>
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-4 flex items-center gap-2" data-translate="b2H3_1">🤖 5 Moduri în care AI Îți Transformă Business-ul</h3>
+
+          <div class="space-y-4">
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-green-300 dark:hover:border-green-700 transition-colors">
+              <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/20"><span class="font-bold text-white text-sm">1</span></div>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b2Ai1Title">Chatbot AI — Support 24/7</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b2Ai1Desc">Un chatbot bazat pe ChatGPT/OpenAI răspunde clienților tăi instant, non-stop. Califică lead-uri, programează întâlniri, răspunde la întrebări frecvente — totul automat. Crește conversiile cu <strong>până la 40%</strong>.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-green-300 dark:hover:border-green-700 transition-colors">
+              <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-500/20"><span class="font-bold text-white text-sm">2</span></div>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b2Ai2Title">Automatizare Marketing</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b2Ai2Desc">Email-uri personalizate automat, segmentare audiență cu AI, campanii WhatsApp inteligente, follow-up-uri automate bazate pe comportamentul utilizatorilor.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-green-300 dark:hover:border-green-700 transition-colors">
+              <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-purple-500/20"><span class="font-bold text-white text-sm">3</span></div>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b2Ai3Title">Analiza Datelor cu AI</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b2Ai3Desc">AI analizează comportamentul clienților, identifică pattern-uri de cumpărare, prevede tendințe și îți oferă insights acționabile pentru decizii mai bune.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-green-300 dark:hover:border-green-700 transition-colors">
+              <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-orange-500/20"><span class="font-bold text-white text-sm">4</span></div>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b2Ai4Title">Generare Content cu AI</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b2Ai4Desc">Descrieri de produse, articole SEO, postări social media, email-uri — totul generat și optimizat cu ajutorul AI. Economisești ore de muncă zilnic.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-green-300 dark:hover:border-green-700 transition-colors">
+              <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-700 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-red-500/20"><span class="font-bold text-white text-sm">5</span></div>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b2Ai5Title">Boți Telegram & WhatsApp</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b2Ai5Desc">Boți custom care procesează comenzi, trimit notificări, gestionează programări și integrează cu CRM-ul tău — direct din aplicația preferată de clienți.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-4 flex items-center gap-2" data-translate="b2H3_2">📈 Statistici care contează</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="text-center bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-200/50 dark:border-gray-700/50">
+              <p class="text-3xl font-bold text-blue-600">+40%</p>
+              <p class="text-xs text-gray-500 mt-1" data-translate="b2Stat1">Conversii cu chatbot AI</p>
+            </div>
+            <div class="text-center bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-200/50 dark:border-gray-700/50">
+              <p class="text-3xl font-bold text-green-500">-60%</p>
+              <p class="text-xs text-gray-500 mt-1" data-translate="b2Stat2">Timp pe sarcini repetitive</p>
+            </div>
+            <div class="text-center bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-200/50 dark:border-gray-700/50">
+              <p class="text-3xl font-bold text-purple-500">87%</p>
+              <p class="text-xs text-gray-500 mt-1" data-translate="b2Stat3">Clienți caută online</p>
+            </div>
+            <div class="text-center bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-200/50 dark:border-gray-700/50">
+              <p class="text-3xl font-bold text-orange-500">24/7</p>
+              <p class="text-xs text-gray-500 mt-1" data-translate="b2Stat4">Disponibilitate chatbot</p>
+            </div>
+          </div>
+
+          <!-- Article 2 CTA -->
+          <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border border-green-200 dark:border-green-800 rounded-2xl p-6 mt-8">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-robot text-white"></i></div>
+              <div>
+                <p class="font-bold text-green-700 dark:text-green-300 mb-1" data-translate="b2CtaTitle">Vrei să integrezi AI în business-ul tău?</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4" data-translate="b2CtaDesc">Discut gratuit cum poți implementa chatboți, automatizări și soluții AI personalizate.</p>
+                <a href="servicii.html#ai" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20">
+                  <i class="fas fa-brain"></i> <span data-translate="b2CtaBtn">Vezi Serviciile AI</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="prose prose-lg dark:prose-invert max-w-none space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
-          <p class="text-lg">În 2026, <strong>inteligența artificială nu mai este un lux</strong> — este o necesitate. Business-urile care nu folosesc AI pierd teren în fața competiției. Iată cum AI poate transforma orice business, de la un mic magazin online la o corporație.</p>
-
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-3">🤖 5 Moduri în care AI Îți Transformă Business-ul</h3>
-
-          <div class="space-y-4 my-6">
-            <div class="flex gap-4 items-start bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center flex-shrink-0"><span class="font-bold text-blue-600">1</span></div>
-              <div>
-                <h4 class="font-bold mb-1">Chatbot AI — Support 24/7</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Un chatbot bazat pe ChatGPT/OpenAI răspunde clienților tăi instant, non-stop. Califică lead-uri, programează întâlniri, răspunde la întrebări frecvente — totul automat. Crește conversiile cu <strong>până la 40%</strong>.</p>
-              </div>
-            </div>
-            <div class="flex gap-4 items-start bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 bg-green-100 dark:bg-green-900/40 rounded-lg flex items-center justify-center flex-shrink-0"><span class="font-bold text-green-600">2</span></div>
-              <div>
-                <h4 class="font-bold mb-1">Automatizare Marketing</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Email-uri personalizate automat, segmentare audiență cu AI, campanii WhatsApp inteligente, follow-up-uri automate bazate pe comportamentul utilizatorilor.</p>
-              </div>
-            </div>
-            <div class="flex gap-4 items-start bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/40 rounded-lg flex items-center justify-center flex-shrink-0"><span class="font-bold text-purple-600">3</span></div>
-              <div>
-                <h4 class="font-bold mb-1">Analiza Datelor cu AI</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">AI analizează comportamentul clienților, identifică pattern-uri de cumpărare, prevede tendințe și îți oferă insights acționabile pentru decizii mai bune.</p>
-              </div>
-            </div>
-            <div class="flex gap-4 items-start bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 bg-orange-100 dark:bg-orange-900/40 rounded-lg flex items-center justify-center flex-shrink-0"><span class="font-bold text-orange-600">4</span></div>
-              <div>
-                <h4 class="font-bold mb-1">Generare Content cu AI</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Descrieri de produse, articole SEO, postări social media, email-uri — totul generat și optimizat cu ajutorul AI. Economisești ore de muncă zilnic.</p>
-              </div>
-            </div>
-            <div class="flex gap-4 items-start bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 bg-red-100 dark:bg-red-900/40 rounded-lg flex items-center justify-center flex-shrink-0"><span class="font-bold text-red-600">5</span></div>
-              <div>
-                <h4 class="font-bold mb-1">Boți Telegram & WhatsApp</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Boți custom care procesează comenzi, trimit notificări, gestionează programări și integrează cu CRM-ul tău — direct din aplicația preferată de clienți.</p>
-              </div>
-            </div>
-          </div>
-
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-3">📈 Statistici care contează</h3>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-6">
-            <div class="text-center bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
-              <p class="text-3xl font-bold text-blue-600">+40%</p>
-              <p class="text-xs text-gray-500 mt-1">Conversii cu chatbot AI</p>
-            </div>
-            <div class="text-center bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
-              <p class="text-3xl font-bold text-green-500">-60%</p>
-              <p class="text-xs text-gray-500 mt-1">Timp pe sarcini repetitive</p>
-            </div>
-            <div class="text-center bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
-              <p class="text-3xl font-bold text-purple-500">87%</p>
-              <p class="text-xs text-gray-500 mt-1">Clienți caută online</p>
-            </div>
-            <div class="text-center bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
-              <p class="text-3xl font-bold text-orange-500">24/7</p>
-              <p class="text-xs text-gray-500 mt-1">Disponibilitate chatbot</p>
-            </div>
-          </div>
-
-          <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6 my-6">
-            <p class="font-bold text-green-700 dark:text-green-300 mb-2"><i class="fas fa-robot mr-2"></i>Vrei să integrezi AI în business-ul tău?</p>
-            <p class="text-sm mb-4">Discut gratuit cum poți implementa chatboți, automatizări și soluții AI personalizate.</p>
-            <a href="servicii.html#ai" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors">
-              <i class="fas fa-brain"></i> Vezi Serviciile AI
-            </a>
-          </div>
+        <!-- Share buttons -->
+        <div class="flex items-center gap-3 mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+          <span class="text-sm text-gray-500 font-medium" data-translate="blogShare">Distribuie:</span>
+          <button onclick="navigator.clipboard.writeText(window.location.href+'#de-ce-ai-business');this.innerHTML='<i class=\'fas fa-check text-green-500\'></i>';setTimeout(()=>this.innerHTML='<i class=\'fas fa-link\'></i>',2000)" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-blue-900/40" title="Copy link"><i class="fas fa-link"></i></button>
+          <a href="https://wa.me/?text=De%20ce%20ai%20nevoie%20de%20AI%20în%202026%3F%20https://bogdanob.info/blog.html%23de-ce-ai-business" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-green-100 dark:hover:bg-green-900/40" title="WhatsApp"><i class="fab fa-whatsapp text-green-600"></i></a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bogdanob.info/blog.html%23de-ce-ai-business" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-blue-900/40" title="LinkedIn"><i class="fab fa-linkedin text-blue-700"></i></a>
+          <a href="https://twitter.com/intent/tweet?text=De%20ce%20AI%20în%202026%3F&url=https://bogdanob.info/blog.html%23de-ce-ai-business" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-sky-100 dark:hover:bg-sky-900/40" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
     </article>
 
     <!-- ===== ARTICLE 3: Cum alegi un developer? ===== -->
-    <article class="py-12 sm:py-16 px-4 border-t border-gray-200 dark:border-gray-800" id="cum-alegi-developer">
-      <div class="max-w-4xl mx-auto">
-        <div class="mb-8">
-          <span class="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-mono mb-3">
-            <i class="fas fa-code"></i> Ghid Practic
-          </span>
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Cum Să Alegi un Web Developer în 2026: 10 Criterii Esențiale</h2>
-          <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-            <span><i class="fas fa-user mr-1"></i> Obreja Bogdan</span>
-            <span><i class="fas fa-calendar mr-1"></i> 25 Februarie 2026</span>
-            <span><i class="fas fa-clock mr-1"></i> 10 min citire</span>
+    <article class="article-section bg-white dark:bg-gray-900 rounded-2xl sm:rounded-3xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300" id="cum-alegi-developer">
+      <div class="bg-gradient-to-r from-purple-600 to-purple-800 px-6 sm:px-8 py-4 flex items-center gap-3">
+        <i class="fas fa-code text-white/80"></i>
+        <span class="text-white/90 font-mono text-sm" data-translate="b3Tag">Ghid Practic</span>
+        <span class="text-white/50 text-xs ml-auto font-mono">#03</span>
+      </div>
+      <div class="px-6 sm:px-8 py-8 sm:py-10">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight" data-translate="b3Title">Cum Să Alegi un Web Developer în 2026: 10 Criterii Esențiale</h2>
+        <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8 flex-wrap">
+          <span class="flex items-center gap-1.5"><i class="fas fa-user-circle text-purple-500"></i> Obreja Bogdan</span>
+          <span class="flex items-center gap-1.5"><i class="fas fa-calendar-alt text-purple-500"></i> <span data-translate="b3Date">25 Februarie 2026</span></span>
+          <span class="flex items-center gap-1.5"><i class="fas fa-clock text-purple-500"></i> <span data-translate="b3ReadFull">10 min citire</span></span>
+        </div>
+
+        <div class="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p class="text-lg" data-translate="b3Intro">Alegerea unui web developer poate fi copleșitoare. <strong>Există mii de opțiuni</strong> — freelanceri, agenții, platforme. Iată <strong>10 criterii concrete</strong> care te ajută să alegi developer-ul potrivit pentru proiectul tău.</p>
+
+          <div class="space-y-4">
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">1</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C1Title">Portofoliu cu proiecte reale</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C1Desc">Un developer bun are un portofoliu cu proiecte live, nu doar mockup-uri. Verifică website-urile realizate — funcționează? Sunt rapide? Arată profesional pe mobil?</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">2</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C2Title">Tehnologii moderne (2026-ready)</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C2Desc">Caută un developer care folosește framework-uri actuale: React, Laravel, Node.js, TailwindCSS. Evită pe cei care lucrează doar cu WordPress basic sau tehnologii învechite.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">3</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C3Title">Cunoștințe de AI & automatizare</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C3Desc">În 2026, un developer care nu știe să integreze AI (chatboți, OpenAI, automatizări) este în urma timpului. AI este diferențiatorul competitiv.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">4</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C4Title">SEO de la bun început</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C4Desc">Un website fără SEO este un website invizibil. Developer-ul trebuie să implementeze SEO tehnic, Schema markup, sitemap, meta tags și optimizare pentru viteza paginii.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">5</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C5Title">Design responsive (mobile-first)</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C5Desc">70% din trafic vine de pe mobil. Un developer bun construiește mai întâi pentru mobil și apoi adaptează pentru desktop — nu invers.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">6</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C6Title">Comunicare clară și rapidă</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C6Desc">Întreabă cum comunică: WhatsApp? Email? Video call? Cât de repede răspunde? Un developer care dispare zile la rând este un semnal de alarmă major.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">7</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C7Title">Suport post-lansare inclus</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C7Desc">30 zile de suport gratuit minim. Ce se întâmplă dacă ceva nu funcționează după lansare? Un developer serios oferă garanție și mentenanță.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">8</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C8Title">Preț transparent, fără surprize</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C8Desc">Evită developer-ii care nu pot da o estimare clară. Plata în etape (avans, milestone, livrare) este standardul de încredere.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">9</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C9Title">Full-stack vs. specialist</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C9Desc">Un full-stack developer acoperă tot: bază de date, backend, frontend, deploy. Nu mai ai nevoie de 3-4 persoane diferite — un singur punct de contact.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <span class="w-9 h-9 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-lg shadow-purple-500/20">10</span>
+              <div>
+                <h4 class="font-bold mb-1" data-translate="b3C10Title">Recenzii și testimoniale reale</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400" data-translate="b3C10Desc">Verifică recenziile de la clienți anteriori. Cere referințe. Un developer cu clienți mulțumiți este cel mai bun indicator de calitate.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 3 CTA -->
+          <div class="bg-gradient-to-r from-purple-50 to-fuchsia-50 dark:from-purple-900/20 dark:to-fuchsia-900/20 border border-purple-200 dark:border-purple-800 rounded-2xl p-6 mt-8">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-star text-white"></i></div>
+              <div>
+                <p class="font-bold text-purple-700 dark:text-purple-300 mb-1" data-translate="b3CtaTitle">Bifez toate cele 10 criterii ✓</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4" data-translate="b3CtaDesc">Portofoliu cu proiecte live, tehnologii moderne, AI integration, SEO, suport 30 zile, comunicare în 24h, prețuri transparente.</p>
+                <div class="flex flex-wrap gap-3">
+                  <a href="portofoliu.html" class="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 px-4 py-2 rounded-xl font-semibold text-sm transition-colors hover:bg-purple-200 dark:hover:bg-purple-800/40">
+                    <i class="fas fa-eye"></i> <span data-translate="b3CtaBtn1">Vezi Portofoliul</span>
+                  </a>
+                  <a href="contact.html" class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                    <i class="fas fa-comments"></i> <span data-translate="b3CtaBtn2">Discută Proiectul Tău</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="prose prose-lg dark:prose-invert max-w-none space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
-          <p class="text-lg">Alegerea unui web developer poate fi copleșitoare. <strong>Există mii de opțiuni</strong> — freelanceri, agenții, platforme. Iată <strong>10 criterii concrete</strong> care te ajută să alegi developer-ul potrivit pentru proiectul tău.</p>
-
-          <ol class="space-y-6 my-6 list-none pl-0">
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">1</span>
-              <div>
-                <h4 class="font-bold mb-1">Portofoliu cu proiecte reale</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Un developer bun are un portofoliu cu proiecte live, nu doar mockup-uri. Verifică website-urile realizate — funcționează? Sunt rapide? Arată profesional pe mobil?</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">2</span>
-              <div>
-                <h4 class="font-bold mb-1">Tehnologii moderne (2026-ready)</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Caută un developer care folosește framework-uri actuale: React, Laravel, Node.js, TailwindCSS. Evită pe cei care lucrează doar cu WordPress basic sau tehnologii învechite.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">3</span>
-              <div>
-                <h4 class="font-bold mb-1">Cunoștințe de AI & automatizare</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">În 2026, un developer care nu știe să integreze AI (chatboți, OpenAI, automatizări) este în urma timpului. AI este diferențiatorul competitiv.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">4</span>
-              <div>
-                <h4 class="font-bold mb-1">SEO de la bun început</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Un website fără SEO este un website invizibil. Developer-ul trebuie să implementeze SEO tehnic, Schema markup, sitemap, meta tags și optimizare pentru viteza paginii.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">5</span>
-              <div>
-                <h4 class="font-bold mb-1">Design responsive (mobile-first)</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">70% din trafic vine de pe mobil. Un developer bun construiește mai întâi pentru mobil și apoi adaptează pentru desktop — nu invers.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">6</span>
-              <div>
-                <h4 class="font-bold mb-1">Comunicare clară și rapidă</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Întreabă cum comunică: WhatsApp? Email? Video call? Cât de repede răspunde? Un developer care dispare zilelor este un semnal de alarmă major.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">7</span>
-              <div>
-                <h4 class="font-bold mb-1">Suport post-lansare inclus</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">30 zile de suport gratuit minim. Ce se întâmplă dacă ceva nu funcționează după lansare? Un developer serios oferă garanție și mentenanță.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">8</span>
-              <div>
-                <h4 class="font-bold mb-1">Preț transparent, fără surprize</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Evită developer-ii care nu pot da o estimare clară. Plata în etape (avans, milestone, livrare) este standardul de încredere.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">9</span>
-              <div>
-                <h4 class="font-bold mb-1">Full-stack vs. specialist</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Un full-stack developer acoperă tot: bază de date, backend, frontend, deploy. Nu mai ai nevoie de 3-4 persoane diferite — un singur punct de contact.</p>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">10</span>
-              <div>
-                <h4 class="font-bold mb-1">Recenzii și testimoniale reale</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Verifică recenziile de la clienți anteriori. Cere referințe. Un developer cu clienți mulțumiți este cel mai bun indicator de calitate.</p>
-              </div>
-            </li>
-          </ol>
-
-          <div class="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-xl p-6 my-6">
-            <p class="font-bold text-purple-700 dark:text-purple-300 mb-2"><i class="fas fa-star mr-2"></i>Bifez toate cele 10 criterii ✓</p>
-            <p class="text-sm mb-4">Portofoliu cu proiecte live, tehnologii moderne, AI integration, SEO, suport 30 zile, comunicare în 24h, prețuri transparente. <a href="portofoliu.html" class="text-blue-600 dark:text-blue-400 underline">Vezi portofoliul meu</a>.</p>
-            <a href="contact.html" class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors">
-              <i class="fas fa-comments"></i> Discută Proiectul Tău
-            </a>
-          </div>
+        <!-- Share buttons -->
+        <div class="flex items-center gap-3 mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+          <span class="text-sm text-gray-500 font-medium" data-translate="blogShare">Distribuie:</span>
+          <button onclick="navigator.clipboard.writeText(window.location.href+'#cum-alegi-developer');this.innerHTML='<i class=\'fas fa-check text-green-500\'></i>';setTimeout(()=>this.innerHTML='<i class=\'fas fa-link\'></i>',2000)" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-blue-900/40" title="Copy link"><i class="fas fa-link"></i></button>
+          <a href="https://wa.me/?text=Cum%20alegi%20un%20web%20developer%20în%202026%3F%20https://bogdanob.info/blog.html%23cum-alegi-developer" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-green-100 dark:hover:bg-green-900/40" title="WhatsApp"><i class="fab fa-whatsapp text-green-600"></i></a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bogdanob.info/blog.html%23cum-alegi-developer" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-blue-900/40" title="LinkedIn"><i class="fab fa-linkedin text-blue-700"></i></a>
+          <a href="https://twitter.com/intent/tweet?text=Cum%20alegi%20un%20developer%20în%202026%3F&url=https://bogdanob.info/blog.html%23cum-alegi-developer" target="_blank" class="share-btn w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-sky-100 dark:hover:bg-sky-900/40" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
     </article>
 
-    <!-- ===== CTA Section ===== -->
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-800 dark:to-blue-950 py-16 sm:py-20 px-4">
-      <div class="max-w-3xl mx-auto text-center text-white">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Ai Întrebări Despre Proiectul Tău?</h2>
-        <p class="text-blue-100 mb-8 text-base sm:text-lg">Consultanță gratuită, fără obligații. Discutăm ce soluție digitală este potrivită pentru business-ul tău.</p>
+        </div><!-- /Articles Container -->
+      </div><!-- /flex -->
+    </div><!-- /max-w-6xl -->
+
+    <!-- ===== BOTTOM CTA Section ===== -->
+    <section class="relative py-16 sm:py-24 px-4 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-800 dark:to-blue-950"></div>
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-white/5 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-cyan-400/10 rounded-full blur-2xl"></div>
+      </div>
+      <div class="max-w-3xl mx-auto text-center text-white relative z-10">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm mb-6">
+          <i class="fas fa-newspaper"></i>
+          <span data-translate="blogCtaBadge">Ți-a plăcut ce ai citit?</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4" data-translate="blogCtaTitle">Ai Întrebări Despre Proiectul Tău?</h2>
+        <p class="text-blue-100 mb-8 text-base sm:text-lg" data-translate="blogCtaDesc">Consultanță gratuită, fără obligații. Discutăm ce soluție digitală este potrivită pentru business-ul tău.</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-          <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Am%20citit%20blogul%20și%20vreau%20o%20consultanță." target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-2xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 w-full sm:w-auto justify-center">
-            <i class="fab fa-whatsapp text-green-500 text-xl"></i> Scrie-mi pe WhatsApp
+          <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Am%20citit%20blogul%20și%20vreau%20o%20consultanță." target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-2xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 w-full sm:w-auto justify-center hover:-translate-y-0.5">
+            <i class="fab fa-whatsapp text-green-500 text-xl"></i> <span data-translate="blogCtaBtn1">Scrie-mi pe WhatsApp</span>
           </a>
           <a href="contact.html" class="inline-flex items-center gap-3 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 hover:bg-white/10 w-full sm:w-auto justify-center">
-            <i class="fas fa-envelope"></i> Trimite un Mesaj
+            <i class="fas fa-envelope"></i> <span data-translate="blogCtaBtn2">Trimite un Mesaj</span>
           </a>
         </div>
       </div>
@@ -465,40 +704,40 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 class="text-xl font-bold mb-3">Obreja Bogdan</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Full-Stack Developer & Digital Solutions Architect. Web, mobile, AI, marketing digital și infrastructură IT.</p>
+            <p class="text-gray-400 text-sm leading-relaxed" data-translate="footerDesc">Full-Stack Developer & Digital Solutions Architect. Web, mobile, AI, marketing digital și infrastructură IT.</p>
           </div>
           <nav aria-label="Footer navigation">
-            <h4 class="font-semibold mb-3">Link-uri rapide</h4>
+            <h4 class="font-semibold mb-3" data-translate="footerLinks">Link-uri rapide</h4>
             <ul class="space-y-2 text-sm text-gray-400">
-              <li><a href="index.html" class="hover:text-blue-400 transition-colors">Acasă</a></li>
-              <li><a href="servicii.html" class="hover:text-blue-400 transition-colors">Servicii</a></li>
-              <li><a href="portofoliu.html" class="hover:text-blue-400 transition-colors">Portofoliu</a></li>
-              <li><a href="despre.html" class="hover:text-blue-400 transition-colors">Despre</a></li>
-              <li><a href="blog.html" class="hover:text-blue-400 transition-colors text-blue-400">Blog</a></li>
-              <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+              <li><a href="index.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink1">Acasă</a></li>
+              <li><a href="servicii.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink2">Servicii</a></li>
+              <li><a href="portofoliu.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink3">Portofoliu</a></li>
+              <li><a href="despre.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink4">Despre</a></li>
+              <li><a href="blog.html" class="hover:text-blue-400 transition-colors text-blue-400" data-translate="navBlog">Blog</a></li>
+              <li><a href="contact.html" class="hover:text-blue-400 transition-colors" data-translate="footerLink5">Contact</a></li>
             </ul>
           </nav>
           <div>
-            <h4 class="font-semibold mb-3">Servicii populare</h4>
+            <h4 class="font-semibold mb-3" data-translate="blogFooterServices">Servicii populare</h4>
             <ul class="space-y-2 text-sm text-gray-400">
-              <li><a href="servicii.html#web" class="hover:text-blue-400 transition-colors">Aplicații Web Full-Stack</a></li>
-              <li><a href="servicii.html#ai" class="hover:text-blue-400 transition-colors">Soluții AI & Chatbot</a></li>
-              <li><a href="servicii.html#mobile" class="hover:text-blue-400 transition-colors">Aplicații Mobile</a></li>
-              <li><a href="servicii.html#ecommerce" class="hover:text-blue-400 transition-colors">E-commerce & Marketplace</a></li>
-              <li><a href="servicii.html#marketing" class="hover:text-blue-400 transition-colors">Marketing Digital</a></li>
+              <li><a href="servicii.html#web" class="hover:text-blue-400 transition-colors" data-translate="blogFooterS1">Aplicații Web Full-Stack</a></li>
+              <li><a href="servicii.html#ai" class="hover:text-blue-400 transition-colors" data-translate="blogFooterS2">Soluții AI & Chatbot</a></li>
+              <li><a href="servicii.html#mobile" class="hover:text-blue-400 transition-colors" data-translate="blogFooterS3">Aplicații Mobile</a></li>
+              <li><a href="servicii.html#ecommerce" class="hover:text-blue-400 transition-colors" data-translate="blogFooterS4">E-commerce & Marketplace</a></li>
+              <li><a href="servicii.html#marketing" class="hover:text-blue-400 transition-colors" data-translate="blogFooterS5">Marketing Digital</a></li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-3">Contact</h4>
+            <h4 class="font-semibold mb-3" data-translate="footerContact">Contact</h4>
             <ul class="space-y-3 text-sm text-gray-400">
               <li class="flex items-center gap-2"><i class="fas fa-envelope text-blue-400 w-4"></i> <a href="mailto:bogdanob28@gmail.com" class="hover:text-blue-400 transition-colors">bogdanob28@gmail.com</a></li>
               <li class="flex items-center gap-2"><i class="fas fa-phone text-blue-400 w-4"></i> <a href="tel:+37379738524" class="hover:text-blue-400 transition-colors">+373 797 385 24</a></li>
-              <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-blue-400 w-4"></i> <span>Europa · Remote Worldwide</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-blue-400 w-4"></i> <span data-translate="footerLocation">Europa · Remote Worldwide</span></li>
             </ul>
           </div>
         </div>
         <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p class="text-gray-500 text-sm">© 2026 Obreja Bogdan. Toate drepturile rezervate.</p>
+          <p class="text-gray-500 text-sm">&copy; 2026 Obreja Bogdan. Toate drepturile rezervate.</p>
           <div class="flex items-center gap-5">
             <a href="https://www.linkedin.com/in/bogdan-obreja-5710352a7/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-400 transition-colors p-2" aria-label="LinkedIn"><i class="fab fa-linkedin text-lg"></i></a>
             <a href="https://github.com/B0Gd4n28" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-white transition-colors p-2" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
