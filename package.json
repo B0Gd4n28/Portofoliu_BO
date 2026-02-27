@@ -18,8 +18,15 @@
   ],
   "scripts": {
     "start": "npx serve .",
-    "lint": "npx htmlhint *.html"
+    "lint": "npx htmlhint *.html",
+    "build:tw": "npx tailwindcss -i input.css -o css/tailwind.min.css --minify",
+    "build:css": "npx cleancss -o css/style.min.css css/style.css",
+    "build:js": "npx terser js/main.js -o js/main.min.js --compress --mangle",
+    "build": "npm run build:tw && npm run build:css && npm run build:js"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "tailwindcss": "^3.4.19",
+    "terser": "^5.46.0"
+  }
 }

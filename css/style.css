@@ -184,9 +184,9 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 @keyframes typing {
-  0% { width: 0; }
-  20%, 80% { width: 100%; }
-  100% { width: 0; }
+  0% { clip-path: inset(0 100% 0 0); }
+  20%, 80% { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(0 100% 0 0); }
 }
 @keyframes rain {
   from { transform: translateY(-100%); }
@@ -292,8 +292,9 @@ body {
   overflow: hidden;
   border-right: 2px solid #3b82f6;
   white-space: nowrap;
-  width: 0;
+  width: auto;
   margin: 0 auto;
+  clip-path: inset(0 100% 0 0);
   animation: typing 8s steps(40) infinite;
 }
 .code-text {
@@ -837,16 +838,11 @@ html:not(.dark) .glass-card:hover {
 .urgency-banner {
   background: linear-gradient(90deg, #f59e0b, #ef4444, #f59e0b);
   background-size: 200% 100%;
-  animation: urgencyGradient 3s ease infinite;
   color: white;
   text-align: center;
   padding: 0.5rem 1rem;
   font-weight: 600;
   font-size: 0.875rem;
-}
-@keyframes urgencyGradient {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
 }
 
 /* === Social Proof Toast === */
@@ -1557,3 +1553,74 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .matrix-bg, .gradient-mesh { display: none !important; }
   body { background: white !important; color: black !important; }
 }
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+
+/* === Content Visibility: skip rendering off-screen sections === */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+/* === Will-change hints for animated elements === */
+.skill-item,
+.floating-whatsapp,
+.code-rain,
+.social-item,
+.glass-card,
+.service-grid-card,
+.metric-card,
+.tech-logo-item {
+  will-change: transform;
+}
+
+.gradient-mesh::before,
+.gradient-mesh::after,
+.loader-spinner::before,
+.loader-spinner::after,
+.trust-strip-inner {
+  will-change: transform;
+}
+
+.pulse-ring,
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-section,
+.loader-wrapper {
+  will-change: transform, opacity;
+}
+
+/* === Font display swap for web fonts === */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-display: swap;
+}
+
+/* === Reduce motion for accessibility + performance === */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .skill-item { animation: none !important; }
+  .gradient-mesh::before, .gradient-mesh::after { animation: none !important; }
+  .floating-whatsapp { animation: none !important; }
+  .trust-strip-inner { animation: none !important; }
+  .pulse-ring { animation: none !important; }
+  .code-rain { animation: none !important; }
+}
+
+/* === Fix contrast for accessibility (light mode only) === */
+html:not(.dark) .text-gray-400 {
+  color: #6b7280;
+}
+

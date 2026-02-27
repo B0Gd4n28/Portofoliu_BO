@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro" class="dark">
   <head>
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34THRFBWE"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R34THRFBWE');</script>
-    <!-- Microsoft Clarity -->
-    <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","vmwhzmknod");</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>Despre Obreja Bogdan | Full-Stack Developer & Digital Solutions Architect</title>
@@ -39,18 +34,17 @@
     </script>
     <meta name="theme-color" content="#1e3a5f">
     <link rel="manifest" href="manifest.json">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.clarity.ms">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config = { darkMode: "class" };</script>
+    <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="icon" type="image/x-icon" href="aseets/icon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bogdanob.info/"},{"@type":"ListItem","position":2,"name":"About","item":"https://bogdanob.info/despre.html"}]}
     </script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300 page-transition">
 
@@ -60,11 +54,11 @@
     <div class="fixed top-0 left-0 w-full h-1 z-50"><div id="scrollProgress" class="h-full bg-gradient-to-r from-blue-500 to-blue-600 transform origin-left transition-transform duration-150"></div></div>
     <button id="backToTop" class="fixed bottom-8 right-8 p-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg shadow-lg hover:shadow-blue-500/30 group z-50 overflow-hidden"><div class="relative flex items-center gap-2 font-mono text-sm"><span class="opacity-70">{</span><i class="fas fa-arrow-up group-hover:-translate-y-1 transition-transform duration-300"></i><span class="opacity-70">}</span></div></button>
     <div class="fixed left-6 bottom-24 z-50" id="socialMenu">
-      <button class="social-toggle bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center" onclick="toggleSocialMenu()"><i class="fas fa-share-alt text-lg"></i></button>
+      <button class="social-toggle bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center" onclick="toggleSocialMenu()" aria-label="Social links"><i class="fas fa-share-alt text-lg"></i></button>
       <div class="social-buttons absolute bottom-10 left-0 transition-all duration-500">
-        <a href="https://wa.me/37379738524" target="_blank" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#25D366,#128C7E)"><i class="fab fa-whatsapp text-white"></i></a>
-        <a href="https://t.me/@x0m9kk" target="_blank" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#0088cc,#0077b5)"><i class="fab fa-telegram-plane text-white"></i></a>
-        <a href="viber://chat?number=+37379738524" target="_blank" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#665CAC,#59267c)"><i class="fab fa-viber text-white"></i></a>
+        <a href="https://wa.me/37379738524" target="_blank" rel="noopener noreferrer" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#25D366,#128C7E)" aria-label="WhatsApp"><i class="fab fa-whatsapp text-white"></i></a>
+        <a href="https://t.me/@x0m9kk" target="_blank" rel="noopener noreferrer" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#0088cc,#0077b5)" aria-label="Telegram"><i class="fab fa-telegram-plane text-white"></i></a>
+        <a href="viber://chat?number=+37379738524" target="_blank" rel="noopener noreferrer" class="social-item absolute w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#665CAC,#59267c)" aria-label="Viber"><i class="fab fa-viber text-white"></i></a>
       </div>
     </div>
 
@@ -321,16 +315,19 @@
         <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p class="text-gray-500 text-sm">© 2026 Obreja Bogdan. Toate drepturile rezervate.</p>
           <div class="flex items-center gap-4">
-            <a href="https://www.linkedin.com/in/bogdan-obreja-5710352a7/" target="_blank" class="text-gray-500 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/B0Gd4n28" target="_blank" class="text-gray-500 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
-            <a href="https://wa.me/37379738524" target="_blank" class="text-gray-500 hover:text-green-400 transition-colors"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://t.me/@x0m9kk" target="_blank" class="text-gray-500 hover:text-blue-400 transition-colors"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/bogdan-obreja-5710352a7/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-400 transition-colors p-2" aria-label="LinkedIn"><i class="fab fa-linkedin text-lg"></i></a>
+            <a href="https://github.com/B0Gd4n28" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-white transition-colors p-2" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
+            <a href="https://wa.me/37379738524" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-green-400 transition-colors p-2" aria-label="WhatsApp"><i class="fab fa-whatsapp text-lg"></i></a>
+            <a href="https://t.me/@x0m9kk" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-400 transition-colors p-2" aria-label="Telegram"><i class="fab fa-telegram text-lg"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
     <div id="notificationContainer" class="fixed bottom-4 right-4 z-[9999] flex flex-col-reverse gap-2"></div>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34THRFBWE"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R34THRFBWE');</script>
+    <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","vmwhzmknod");</script>
   </body>
 </html>
