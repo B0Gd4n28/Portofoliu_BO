@@ -127,6 +127,47 @@ const translations = {
     spMainCTA: "Solicită o Consultanță Gratuită",
     spPopular: "🔥 Popular",
 
+    // Service detail paragraphs
+    sp1Detail: 'Fiecare aplicație web pe care o construiesc este <strong>optimizată pentru performanță</strong>: Core Web Vitals, SEO complet, SSL, design responsive mobile-first. Folosesc arhitectură MVC scalabilă cu <strong>Laravel, React și Node.js</strong> — aceleași tehnologii utilizate de Instagram, Airbnb și Netflix. Ideal pentru business-uri din <strong>Moldova, România și Europa</strong> care vor o prezență digitală profesională.',
+    sp3Detail: 'În 2026, <strong>AI nu mai este un lux — este o necesitate</strong>. Chatboții AI cu OpenAI/ChatGPT răspund clienților 24/7, automatizează procesele repetitive și cresc conversiile cu 35%. Boții Telegram custom pot gestiona comenzi, programări și suport tehnic. <strong>Business-urile care integrează AI</strong> au un avantaj competitiv semnificativ în piața europeană.',
+    sp4Detail: 'Un <strong>magazin online profesional</strong> în 2026 necesită mai mult decât un catalog de produse. Construiesc platforme <strong>marketplace multi-vendor</strong> cu sisteme de plăți integrate (Stripe, PayPal), management inventar, logistică automatizată și dashboard-uri pentru vânzători. SEO optimizat pentru Google Shopping și rich snippets. Scalabil de la 10 la 100,000+ produse.',
+    sp5Detail: 'Un <strong>CRM custom construit pentru business-ul tău</strong> bate orice soluție generică. Gestionează lead-uri, clienți, pipeline de vânzări și rapoarte — totul automatizat cu AI. Perfect pentru <strong>agenții imobiliare, companii de construcții, firme de logistică</strong> care vor să știe exact unde este fiecare client și fiecare oportunitate.',
+
+    // FAQ section
+    faqTag: "// Întrebări frecvente",
+    faqTitle: "Întrebări Frecvente despre Servicii",
+    faqSubtitle: "Răspunsuri la cele mai frecvente întrebări despre prețuri, tehnologii, timeline și suport.",
+    faqQ1: "💰 Cât costă un website profesional în 2026?",
+    faqA1: 'Un landing page costă de la <strong>€500</strong>, un website business de la <strong>€1,500</strong>, un e-commerce de la <strong>€3,000</strong>, iar o aplicație web custom cu AI de la <strong>€5,000</strong>. Prețul depinde de complexitate, funcționalități și integrări. Fiecare proiect primește <strong>consultanță gratuită</strong> cu estimare detaliată.',
+    faqQ2: "⚙️ Ce tehnologii folosiți pentru dezvoltarea web?",
+    faqA2: 'Folosim <strong>Laravel, React, Node.js, MySQL, TailwindCSS</strong> pentru web development, <strong>OpenAI API și Python</strong> pentru soluții AI, <strong>Docker</strong> pentru deploy și <strong>Figma</strong> pentru design. Stack-ul este ales strategic pentru fiecare proiect.',
+    faqQ3: "⏱️ Cât durează dezvoltarea unui proiect?",
+    faqA3: 'Landing page: <strong>1-2 săptămâni</strong>. Website business: <strong>3-6 săptămâni</strong>. Aplicație mobilă: <strong>4-8 săptămâni</strong>. Platformă complexă (marketplace, CRM cu AI): <strong>2-4 luni</strong>. Timeline-ul exact se stabilește în consultanța gratuită.',
+    faqQ4: "🛡️ Oferiți suport după lansarea proiectului?",
+    faqA4: 'Da! Fiecare proiect include <strong>30 de zile de suport gratuit</strong> post-lansare: rezolvare bug-uri, ajustări, training. Ulterior, pachete de <strong>mentenanță lunară</strong> cu monitorizare 24/7, backup-uri automatizate și actualizări de securitate.',
+    faqQ5: "🌍 Lucrați cu clienți din afara Moldovei?",
+    faqA5: 'Da, lucrez cu clienți din <strong>toată Europa și global</strong>. Comunicarea se face în Română sau Engleză, prin WhatsApp, Telegram, email sau video call. Am livrat proiecte pentru clienți din <strong>Moldova, România, Germania, Franța și UK</strong>.',
+    faqQ6: "🤖 De ce am nevoie de un chatbot AI pe website?",
+    faqA6: 'Un chatbot AI răspunde clienților <strong>24/7 instant</strong>, califică lead-uri automat, reduce volum de suport cu 60%, crește conversiile cu 35%. În 2026, business-urile cu AI chatbot au un avantaj competitiv semnificativ față de cele fără.',
+    faqQ7: "📱 Faceți și aplicații mobile sau doar website-uri?",
+    faqA7: 'Dezvolt <strong>și website-uri și aplicații mobile</strong> hibride (iOS + Android dintr-o singură codebase). Aplicații imobiliare, business apps, jocuri interactive — toate cu performanță nativă, push notifications și offline mode.',
+    faqQ8: "📈 Include și SEO website-ul meu?",
+    faqA8: 'Da! Fiecare website include <strong>SEO complet</strong>: meta tags optimizate, Schema.org JSON-LD (FAQ, BreadcrumbList, etc.), sitemap XML, Core Web Vitals optimizate, Google Search Console + Analytics 4. Website-urile pe care le construiesc apar pe Google din prima lună.',
+
+    // Reviews/Testimonials
+    revTag: "// Ce spun clienții",
+    revTitle: "Recenzii de la Clienți",
+    revSubtitle: "Feedback real de la business-uri care au investit în soluții digitale profesionale.",
+    rev1Text: '"Website-ul nostru a fost gata în 2 săptămâni, cu SEO complet, design modern și chatbot AI. De când l-am lansat, primim de 3 ori mai multe cereri. Comunicare excelentă și suport rapid."',
+    rev1Name: "Alexandru C.",
+    rev1Role: "CEO, Companie Construcții",
+    rev2Text: '"Am cerut un CRM custom cu automatizări și am primit exact ce aveam nevoie. Bogdan înțelege rapid cerințele și livrează peste așteptări. Recomand 100%!"',
+    rev2Name: "Maria R.",
+    rev2Role: "Manager, Agenție Imobiliară",
+    rev3Text: '"Botul Telegram pe care l-a construit schimbă modul în care comunicăm cu clienții. Automatizare completă, răspunsuri instant, economisim 4 ore pe zi. Investiția s-a amortizat în prima lună."',
+    rev3Name: "Dmitri M.",
+    rev3Role: "Fondator, Startup Logistică",
+
     // Process
     processTag: "// Cum funcționează",
     processTitle: 'De la Idee la <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Produs Live</span>',
@@ -403,6 +444,7 @@ const translations = {
     b1CtaTitle: "Vrei să afli exact cât ar costa proiectul tău?",
     b1CtaDesc: "Oferim consultanță gratuită personalizată cu estimare detaliată de preț și timeline.",
     b1CtaBtn: "Consultanță Gratuită",
+    b1CtaBtn2: "Vezi Servicii E-commerce",
     b2Tag: "AI & Automatizare",
     b2Read: "7 min",
     b2CardTitle: "De Ce Ai Nevoie de AI în 2026?",
@@ -506,8 +548,7 @@ const translations = {
     b4CtaTitle: "Vrei SEO profesional pentru site-ul tău?",
     b4CtaDesc: "Fiecare website pe care îl construiesc include SEO complet: Schema.org, meta tags, Core Web Vitals, sitemap, analytics. Rezultate măsurabile, nu promisiuni.",
     b4CtaBtn: "Vreau SEO Profesional",
-
-    // Blog Article 5: 5 Greșeli
+    b4CtaBtn2: "Mentenanță & Securitate",
     b5Tag: "Greșeli Frecvente",
     b5Read: "7 min",
     b5CardTitle: "5 Greșeli Care Îți Distrug Website-ul",
@@ -537,6 +578,7 @@ const translations = {
     b5CtaTitle: "Website-ul tău are aceste probleme?",
     b5CtaDesc: "Audit gratuit: analizez site-ul tău și îți spun exact ce trebuie reparat. Zero obligații, zero costuri ascunse.",
     b5CtaBtn: "Audit Gratuit al Site-ului",
+    b5CtaBtn2: "Soluții AI & Automatizări",
   },
   en: {
     // Navigation
@@ -659,6 +701,47 @@ const translations = {
     spNote: "Each project receives a personalized estimate. Complexity, timeline and specific requirements determine the investment.",
     spMainCTA: "Get a Free Consultation",
     spPopular: "🔥 Popular",
+
+    // Service detail paragraphs
+    sp1Detail: 'Every web application I build is <strong>optimized for performance</strong>: Core Web Vitals, complete SEO, SSL, responsive mobile-first design. I use scalable MVC architecture with <strong>Laravel, React, and Node.js</strong> — the same technologies used by Instagram, Airbnb, and Netflix. Ideal for businesses in <strong>Moldova, Romania, and Europe</strong> looking for a professional digital presence.',
+    sp3Detail: 'In 2026, <strong>AI is no longer a luxury — it\'s a necessity</strong>. AI chatbots with OpenAI/ChatGPT respond to clients 24/7, automate repetitive processes, and increase conversions by 35%. Custom Telegram bots can handle orders, appointments, and technical support. <strong>Businesses integrating AI</strong> have a significant competitive advantage in the European market.',
+    sp4Detail: 'A <strong>professional online store</strong> in 2026 requires more than just a product catalog. I build <strong>multi-vendor marketplace</strong> platforms with integrated payment systems (Stripe, PayPal), inventory management, automated logistics, and seller dashboards. SEO optimized for Google Shopping and rich snippets. Scalable from 10 to 100,000+ products.',
+    sp5Detail: 'A <strong>custom CRM built for your business</strong> beats any generic solution. Manage leads, clients, sales pipeline, and reports — all automated with AI. Perfect for <strong>real estate agencies, construction companies, logistics firms</strong> that want to know exactly where every client and opportunity stands.',
+
+    // FAQ section
+    faqTag: "// Frequently Asked Questions",
+    faqTitle: "Frequently Asked Questions about Services",
+    faqSubtitle: "Answers to the most common questions about pricing, technologies, timeline, and support.",
+    faqQ1: "💰 How much does a professional website cost in 2026?",
+    faqA1: 'A landing page costs from <strong>€500</strong>, a business website from <strong>€1,500</strong>, an e-commerce from <strong>€3,000</strong>, and a custom web app with AI from <strong>€5,000</strong>. Price depends on complexity, features, and integrations. Every project gets a <strong>free consultation</strong> with a detailed estimate.',
+    faqQ2: "⚙️ What technologies do you use for web development?",
+    faqA2: 'We use <strong>Laravel, React, Node.js, MySQL, TailwindCSS</strong> for web development, <strong>OpenAI API and Python</strong> for AI solutions, <strong>Docker</strong> for deployment, and <strong>Figma</strong> for design. The tech stack is strategically chosen for each project.',
+    faqQ3: "⏱️ How long does project development take?",
+    faqA3: 'Landing page: <strong>1-2 weeks</strong>. Business website: <strong>3-6 weeks</strong>. Mobile app: <strong>4-8 weeks</strong>. Complex platform (marketplace, CRM with AI): <strong>2-4 months</strong>. Exact timeline is set during the free consultation.',
+    faqQ4: "🛡️ Do you offer support after project launch?",
+    faqA4: 'Yes! Every project includes <strong>30 days of free support</strong> post-launch: bug fixes, adjustments, training. Afterwards, <strong>monthly maintenance packages</strong> with 24/7 monitoring, automated backups, and security updates.',
+    faqQ5: "🌍 Do you work with clients outside Moldova?",
+    faqA5: 'Yes, I work with clients from <strong>all over Europe and globally</strong>. Communication is in Romanian or English, via WhatsApp, Telegram, email, or video call. I\'ve delivered projects for clients in <strong>Moldova, Romania, Germany, France, and the UK</strong>.',
+    faqQ6: "🤖 Why do I need an AI chatbot on my website?",
+    faqA6: 'An AI chatbot responds to clients <strong>24/7 instantly</strong>, qualifies leads automatically, reduces support volume by 60%, and increases conversions by 35%. In 2026, businesses with AI chatbots have a significant competitive advantage over those without.',
+    faqQ7: "📱 Do you also build mobile apps or just websites?",
+    faqA7: 'I develop <strong>both websites and hybrid mobile apps</strong> (iOS + Android from a single codebase). Real estate apps, business apps, interactive games — all with native performance, push notifications, and offline mode.',
+    faqQ8: "📈 Does my website include SEO?",
+    faqA8: 'Yes! Every website includes <strong>complete SEO</strong>: optimized meta tags, Schema.org JSON-LD (FAQ, BreadcrumbList, etc.), XML sitemap, optimized Core Web Vitals, Google Search Console + Analytics 4. Websites I build appear on Google within the first month.',
+
+    // Reviews/Testimonials
+    revTag: "// What clients say",
+    revTitle: "Client Reviews",
+    revSubtitle: "Real feedback from businesses that invested in professional digital solutions.",
+    rev1Text: '"Our website was ready in 2 weeks, with complete SEO, modern design, and AI chatbot. Since launching, we receive 3 times more inquiries. Excellent communication and fast support."',
+    rev1Name: "Alexandru C.",
+    rev1Role: "CEO, Construction Company",
+    rev2Text: '"I requested a custom CRM with automations and got exactly what I needed. Bogdan quickly understands requirements and delivers beyond expectations. 100% recommend!"',
+    rev2Name: "Maria R.",
+    rev2Role: "Manager, Real Estate Agency",
+    rev3Text: '"The Telegram bot he built changes how we communicate with clients. Complete automation, instant responses, we save 4 hours daily. The investment paid for itself in the first month."',
+    rev3Name: "Dmitri M.",
+    rev3Role: "Founder, Logistics Startup",
 
     // Process
     processTag: "// How it works",
@@ -936,6 +1019,7 @@ const translations = {
     b1CtaTitle: "Want to know exactly how much your project would cost?",
     b1CtaDesc: "We offer free personalized consultation with detailed price and timeline estimates.",
     b1CtaBtn: "Free Consultation",
+    b1CtaBtn2: "View E-commerce Services",
     b2Tag: "AI & Automation",
     b2Read: "7 min",
     b2CardTitle: "Why You Need AI in 2026?",
@@ -1039,6 +1123,7 @@ const translations = {
     b4CtaTitle: "Want professional SEO for your site?",
     b4CtaDesc: "Every website I build includes complete SEO: Schema.org, meta tags, Core Web Vitals, sitemap, analytics. Measurable results, not promises.",
     b4CtaBtn: "I Want Professional SEO",
+    b4CtaBtn2: "Maintenance & Security",
 
     // Blog Article 5: 5 Mistakes
     b5Tag: "Common Mistakes",
@@ -1070,6 +1155,7 @@ const translations = {
     b5CtaTitle: "Does your website have these problems?",
     b5CtaDesc: "Free audit: I analyze your site and tell you exactly what needs fixing. Zero obligations, zero hidden costs.",
     b5CtaBtn: "Free Website Audit",
+    b5CtaBtn2: "AI Solutions & Automations",
   }
 };
 
