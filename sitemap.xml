@@ -68,10 +68,46 @@
   </url>
   <url>
     <loc>https://bogdanob.info/blog.html</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://bogdanob.info/blog.html?lang=ro"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bogdanob.info/blog.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://bogdanob.info/blog.html#cat-costa-website</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bogdanob.info/blog.html#de-ce-ai-business</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bogdanob.info/blog.html#cum-alegi-developer</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bogdanob.info/blog.html#seo-ghid-2026</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bogdanob.info/blog.html#greseli-website</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bogdanob.info/feed.xml</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

@@ -50,8 +50,9 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Sitemap
+# Sitemap & RSS Feed
 Sitemap: https://bogdanob.info/sitemap.xml
+Sitemap: https://bogdanob.info/feed.xml
 
 # Host
 Host: https://bogdanob.info

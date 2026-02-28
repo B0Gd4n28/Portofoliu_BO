@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Blog Obreja Bogdan — Web Development, AI &amp; SEO</title>
+    <link>https://bogdanob.info/blog.html</link>
+    <description>Articole practice despre dezvoltare web, AI, SEO, transformare digitală și business în 2026. Ghiduri pentru antreprenori.</description>
+    <language>ro</language>
+    <lastBuildDate>Fri, 28 Feb 2026 12:00:00 +0200</lastBuildDate>
+    <atom:link href="https://bogdanob.info/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://bogdanob.info/aseets/icon.ico</url>
+      <title>Obreja Bogdan Blog</title>
+      <link>https://bogdanob.info/blog.html</link>
+    </image>
+    <item>
+      <title>Cât Costă un Website în 2026? Ghid Complet de Prețuri</title>
+      <link>https://bogdanob.info/blog.html#cat-costa-website</link>
+      <guid isPermaLink="true">https://bogdanob.info/blog.html#cat-costa-website</guid>
+      <description>Analiză detaliată a costurilor pentru creare website în 2026: landing page (€500-€1,500), website business (€1,500-€4,000), e-commerce (€3,000-€8,000), aplicație web custom cu AI (€5,000-€15,000+). Ce influențează prețul și de ce merită investiția.</description>
+      <dc:creator>Obreja Bogdan</dc:creator>
+      <pubDate>Wed, 25 Feb 2026 10:00:00 +0200</pubDate>
+      <category>Ghid Prețuri</category>
+      <category>Web Development</category>
+    </item>
+    <item>
+      <title>De Ce Business-ul Tău Are Nevoie de AI în 2026</title>
+      <link>https://bogdanob.info/blog.html#de-ce-ai-business</link>
+      <guid isPermaLink="true">https://bogdanob.info/blog.html#de-ce-ai-business</guid>
+      <description>Cum inteligența artificială transformă business-urile: chatboți AI care răspund 24/7, automatizare procese, marketing personalizat, analiza datelor cu machine learning. 5 moduri concrete în care AI crește veniturile.</description>
+      <dc:creator>Obreja Bogdan</dc:creator>
+      <pubDate>Wed, 25 Feb 2026 11:00:00 +0200</pubDate>
+      <category>AI &amp; Automatizare</category>
+      <category>Business</category>
+    </item>
+    <item>
+      <title>Cum Să Alegi un Web Developer în 2026: 10 Criterii Esențiale</title>
+      <link>https://bogdanob.info/blog.html#cum-alegi-developer</link>
+      <guid isPermaLink="true">https://bogdanob.info/blog.html#cum-alegi-developer</guid>
+      <description>Ghid practic pentru alegerea unui dezvoltator web profesionist: portofoliu cu proiecte live, tehnologii moderne, integrare AI, design responsive, comunicare clară, suport post-lansare, preț transparent.</description>
+      <dc:creator>Obreja Bogdan</dc:creator>
+      <pubDate>Wed, 25 Feb 2026 12:00:00 +0200</pubDate>
+      <category>Ghid Practic</category>
+      <category>Web Development</category>
+    </item>
+    <item>
+      <title>SEO în 2026: Ghid Complet pentru Începători</title>
+      <link>https://bogdanob.info/blog.html#seo-ghid-2026</link>
+      <guid isPermaLink="true">https://bogdanob.info/blog.html#seo-ghid-2026</guid>
+      <description>Ghid complet SEO: Core Web Vitals, cuvinte cheie (keyword research), Schema.org markup, mobile-first indexing, backlink-uri de calitate, AI SEO &amp; AEO. Checklist rapid cu 10 puncte esențiale.</description>
+      <dc:creator>Obreja Bogdan</dc:creator>
+      <pubDate>Sat, 28 Feb 2026 10:00:00 +0200</pubDate>
+      <category>SEO</category>
+      <category>Marketing Digital</category>
+    </item>
+    <item>
+      <title>5 Greșeli Care Îți Distrug Website-ul (și Cum Le Eviți)</title>
+      <link>https://bogdanob.info/blog.html#greseli-website</link>
+      <guid isPermaLink="true">https://bogdanob.info/blog.html#greseli-website</guid>
+      <description>Cele mai frecvente erori la website-uri: viteză lentă, fără SEO, fără optimizare mobilă, fără SSL, fără analytics. Soluții practice pentru fiecare greșeală.</description>
+      <dc:creator>Obreja Bogdan</dc:creator>
+      <pubDate>Sat, 28 Feb 2026 11:00:00 +0200</pubDate>
+      <category>Greșeli Frecvente</category>
+      <category>Web Development</category>
+    </item>
+  </channel>
+</rss>
