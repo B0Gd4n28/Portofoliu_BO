@@ -306,6 +306,91 @@
       </div>
     </header>
 
+    <!-- ===== QUICK QUOTE FORM ===== -->
+    <section class="py-14 sm:py-18 px-4 bg-gradient-to-b from-blue-50 to-white dark:from-blue-950/30 dark:to-gray-950" id="quote">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-800 overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <!-- Left: Info -->
+            <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-8 sm:p-10 text-white flex flex-col justify-center">
+              <h2 class="text-2xl sm:text-3xl font-bold mb-4">Get Your Free Quote<br>in <span class="text-yellow-300">24 Hours</span></h2>
+              <p class="text-blue-100 mb-6 text-sm sm:text-base leading-relaxed">Tell me about your project and I'll send you a detailed proposal with timeline and pricing. <strong>100% free, no obligations.</strong></p>
+              <div class="space-y-3 text-sm">
+                <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-300"></i><span>Free consultation & project analysis</span></div>
+                <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-300"></i><span>Detailed proposal within 24 hours</span></div>
+                <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-300"></i><span>No hidden fees, transparent pricing</span></div>
+                <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-300"></i><span>NDA available on request</span></div>
+              </div>
+              <div class="mt-6 pt-6 border-t border-blue-500/30">
+                <p class="text-blue-200 text-xs mb-2">Or contact directly:</p>
+                <div class="flex flex-col gap-2 text-sm">
+                  <a href="https://wa.me/37379738524" class="flex items-center gap-2 hover:text-green-300 transition-colors"><i class="fab fa-whatsapp"></i> +373 797 385 24</a>
+                  <a href="mailto:bogdanob28@gmail.com" class="flex items-center gap-2 hover:text-yellow-300 transition-colors"><i class="fas fa-envelope"></i> bogdanob28@gmail.com</a>
+                  <a href="https://t.me/BogdanOB28" class="flex items-center gap-2 hover:text-cyan-300 transition-colors"><i class="fab fa-telegram"></i> @BogdanOB28</a>
+                </div>
+              </div>
+            </div>
+            <!-- Right: Form -->
+            <div class="p-8 sm:p-10">
+              <form action="https://formsubmit.co/bogdanob28@gmail.com" method="POST" class="space-y-4" id="quoteForm">
+                <input type="hidden" name="_subject" value="[EN Lead] New Quote Request from bogdanob.info">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://bogdanob.info/en/#quote">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+                <div>
+                  <label class="block text-sm font-semibold mb-1.5">Your Name *</label>
+                  <input type="text" name="name" required placeholder="John Smith" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-1.5">Email *</label>
+                  <input type="email" name="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-1.5">Phone / WhatsApp</label>
+                  <input type="tel" name="phone" placeholder="+49 123 456 789" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-1.5">Project Type *</label>
+                  <select name="project_type" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm">
+                    <option value="">Select project type...</option>
+                    <option value="Website / Landing Page">Website / Landing Page</option>
+                    <option value="Mobile App (iOS/Android)">Mobile App (iOS/Android)</option>
+                    <option value="AI Chatbot / Automation">AI Chatbot / Automation</option>
+                    <option value="E-commerce / Online Store">E-commerce / Online Store</option>
+                    <option value="CRM / Business Platform">CRM / Business Platform</option>
+                    <option value="SEO / Digital Marketing">SEO / Digital Marketing</option>
+                    <option value="Website Redesign">Website Redesign</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-1.5">Budget Range</label>
+                  <select name="budget" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm">
+                    <option value="">Select budget...</option>
+                    <option value="€500 - €1,500">€500 – €1,500</option>
+                    <option value="€1,500 - €3,000">€1,500 – €3,000</option>
+                    <option value="€3,000 - €5,000">€3,000 – €5,000</option>
+                    <option value="€5,000 - €10,000">€5,000 – €10,000</option>
+                    <option value="€10,000+">€10,000+</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-1.5">Tell me about your project</label>
+                  <textarea name="message" rows="3" placeholder="Describe your project, goals, and any specific requirements..." class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                  <i class="fas fa-paper-plane"></i> Send & Get Free Quote
+                </button>
+                <p class="text-xs text-gray-400 text-center">🔒 Your data is safe. I never share client information.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== SERVICES ===== -->
     <section class="bg-gray-50 dark:bg-gray-900 py-16 sm:py-20 px-4" id="services" aria-labelledby="servicesTitle">
       <div class="max-w-6xl mx-auto">
@@ -359,6 +444,43 @@
             <p class="text-cyan-600 font-bold text-sm">From €5,000</p>
             <p class="text-gray-400 text-xs mt-1">Lead Tracking · AI · Automation · RBAC</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BREAK: Services → Pricing ===== -->
+    <section class="py-10 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Not sure which service you need? Let's figure it out together.</p>
+        <a href="#quote" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all"><i class="fas fa-arrow-up"></i> Get Free Quote Now</a>
+      </div>
+    </section>
+
+    <!-- ===== TECH STACK ===== -->
+    <section class="bg-gray-50 dark:bg-gray-900 py-14 sm:py-16 px-4" aria-labelledby="techTitle">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-blue-500 font-mono text-sm">// Technologies I use</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2" id="techTitle">Modern <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Tech Stack</span> for 2026</h2>
+          <p class="text-gray-600 dark:text-gray-300 mt-3 max-w-xl mx-auto text-sm">Enterprise-grade technologies. The same tools used by Google, Facebook, Netflix — at affordable freelancer prices.</p>
+        </div>
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-laravel text-red-500 text-2xl mb-1"></i><p class="text-xs font-medium">Laravel</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-react text-cyan-400 text-2xl mb-1"></i><p class="text-xs font-medium">React</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-node-js text-green-600 text-2xl mb-1"></i><p class="text-xs font-medium">Node.js</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-python text-yellow-500 text-2xl mb-1"></i><p class="text-xs font-medium">Python</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-vuejs text-green-500 text-2xl mb-1"></i><p class="text-xs font-medium">Vue.js</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-php text-indigo-500 text-2xl mb-1"></i><p class="text-xs font-medium">PHP</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fas fa-database text-blue-600 text-2xl mb-1"></i><p class="text-xs font-medium">MySQL</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fas fa-leaf text-green-700 text-2xl mb-1"></i><p class="text-xs font-medium">MongoDB</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-docker text-blue-500 text-2xl mb-1"></i><p class="text-xs font-medium">Docker</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-git-alt text-orange-600 text-2xl mb-1"></i><p class="text-xs font-medium">Git</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-aws text-orange-500 text-2xl mb-1"></i><p class="text-xs font-medium">AWS</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fas fa-brain text-green-500 text-2xl mb-1"></i><p class="text-xs font-medium">OpenAI</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-figma text-purple-500 text-2xl mb-1"></i><p class="text-xs font-medium">Figma</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-stripe text-indigo-600 text-2xl mb-1"></i><p class="text-xs font-medium">Stripe</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fas fa-wind text-cyan-500 text-2xl mb-1"></i><p class="text-xs font-medium">Tailwind</p></div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"><i class="fab fa-telegram text-blue-400 text-2xl mb-1"></i><p class="text-xs font-medium">Telegram API</p></div>
         </div>
       </div>
     </section>
@@ -429,6 +551,42 @@
       </div>
     </section>
 
+    <!-- ===== INDUSTRIES SERVED ===== -->
+    <section class="py-14 sm:py-16 px-4" aria-labelledby="industriesTitle">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-blue-500 font-mono text-sm">// Industries I serve</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2" id="industriesTitle">Website & App Solutions for <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Every Industry</span></h2>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-building text-blue-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Real Estate</h3><p class="text-xs text-gray-400 mt-1">Property listings, virtual tours, CRM</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-heartbeat text-red-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Healthcare</h3><p class="text-xs text-gray-400 mt-1">Booking, patient portal, telemedicine</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-utensils text-orange-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Restaurants</h3><p class="text-xs text-gray-400 mt-1">Online ordering, delivery, menu system</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-shopping-bag text-purple-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">E-commerce</h3><p class="text-xs text-gray-400 mt-1">Online stores, marketplace, payments</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-graduation-cap text-green-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Education</h3><p class="text-xs text-gray-400 mt-1">LMS, online courses, student portal</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-truck text-cyan-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Logistics</h3><p class="text-xs text-gray-400 mt-1">Fleet tracking, route optimization</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-gavel text-yellow-600 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Law Firms</h3><p class="text-xs text-gray-400 mt-1">Case management, client portal</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-dumbbell text-pink-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Fitness</h3><p class="text-xs text-gray-400 mt-1">Booking app, membership, tracking</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-hotel text-indigo-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Tourism & Hotels</h3><p class="text-xs text-gray-400 mt-1">Booking, reviews, virtual tours</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-hard-hat text-amber-500 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Construction</h3><p class="text-xs text-gray-400 mt-1">Portfolio, project gallery, leads</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-car text-gray-600 dark:text-gray-300 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Automotive</h3><p class="text-xs text-gray-400 mt-1">Dealership, inventory, booking</p></div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 text-center border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all hover:-translate-y-0.5"><i class="fas fa-rocket text-blue-600 text-2xl mb-2"></i><h3 class="font-semibold text-sm">Startups & SaaS</h3><p class="text-xs text-gray-400 mt-1">MVP, SaaS platform, dashboards</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BREAK: Industries → Mobile ===== -->
+    <section class="bg-gradient-to-r from-purple-600 to-blue-600 py-10 px-4 text-white">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-xl sm:text-2xl font-bold mb-3">Don't see your industry? I build custom solutions for any business.</h3>
+        <p class="text-purple-100 mb-5 text-sm">Every project starts with a free consultation — tell me about your business and I'll propose the perfect solution.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="#quote" class="inline-flex items-center gap-2 bg-white text-purple-700 hover:bg-purple-50 px-6 py-3 rounded-xl font-bold text-sm shadow-lg transition-all"><i class="fas fa-paper-plane"></i> Request Custom Quote</a>
+          <a href="https://wa.me/37379738524?text=Hi%20Bogdan!%20I%20have%20a%20custom%20project." target="_blank" rel="noopener" class="inline-flex items-center gap-2 border-2 border-white/30 hover:border-white/60 px-6 py-3 rounded-xl font-bold text-sm transition-all hover:bg-white/10"><i class="fab fa-whatsapp"></i> Discuss on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== MOBILE APP + AI DEEP CONTENT ===== -->
     <section class="py-16 sm:py-20 px-4" aria-labelledby="mobileAiTitle">
       <div class="max-w-4xl mx-auto">
@@ -442,6 +600,34 @@
           <p>Every <strong>mobile app I create</strong> includes: beautiful UI/UX design in Figma, push notifications, offline mode, camera and GPS integration, social login (Google, Apple, Facebook), analytics dashboard, and App Store / Google Play submission. The app is built with modern frameworks ensuring fast performance, smooth animations, and native-like experience.</p>
           <p>My <strong>AI chatbot solutions</strong> go beyond simple Q&A. I build intelligent systems that learn from your business data, qualify leads automatically, schedule appointments, process orders, and integrate with your existing CRM, email marketing, and WhatsApp Business. Businesses using <strong>AI chatbots</strong> report 35% more conversions and 4 hours saved daily on repetitive tasks.</p>
           <p><strong>Affordable pricing</strong> doesn't mean low quality. Based in Moldova (Europe), I offer the same technologies used by top agencies — <strong>Laravel, React, Node.js, Python, OpenAI API, TailwindCSS, Docker</strong> — at significantly lower rates. A simple <strong>mobile app costs from €3,000</strong>, an <strong>AI chatbot from €1,000</strong>, and a <strong>professional website from €500</strong>. Free consultation included with detailed estimate.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESULTS & METRICS ===== -->
+    <section class="bg-gray-50 dark:bg-gray-900 py-14 sm:py-16 px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-blue-500 font-mono text-sm">// Real results</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2">Proven Results for <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Real Businesses</span></h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 text-center border border-gray-100 dark:border-gray-700">
+            <p class="text-3xl sm:text-4xl font-bold text-blue-600 mb-1">3x</p>
+            <p class="text-sm text-gray-500">More online inquiries for SMAD Invest after launch</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 text-center border border-gray-100 dark:border-gray-700">
+            <p class="text-3xl sm:text-4xl font-bold text-green-500 mb-1">90+</p>
+            <p class="text-sm text-gray-500">Google PageSpeed score on every website</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 text-center border border-gray-100 dark:border-gray-700">
+            <p class="text-3xl sm:text-4xl font-bold text-purple-500 mb-1">40%</p>
+            <p class="text-sm text-gray-500">Higher conversion rate with AI chatbot</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 text-center border border-gray-100 dark:border-gray-700">
+            <p class="text-3xl sm:text-4xl font-bold text-orange-500 mb-1">24h</p>
+            <p class="text-sm text-gray-500">Average response time for all inquiries</p>
+          </div>
         </div>
       </div>
     </section>
@@ -501,6 +687,50 @@
             <blockquote class="text-gray-600 dark:text-gray-300 text-sm mb-6 italic">"Excellent collaboration, prompt communication. Bogdan delivered everything on time and even exceeded our expectations. Highly recommended!"</blockquote>
             <div class="flex items-center gap-3"><div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-sm">R</div><div><p class="font-semibold text-sm">R&V Construct</p><p class="text-xs text-gray-500">Construction & Interior</p></div></div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GUARANTEES ===== -->
+    <section class="bg-gray-50 dark:bg-gray-900 py-14 sm:py-16 px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-blue-500 font-mono text-sm">// Zero risk</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2">My <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-400">Guarantees</span> to You</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 text-center hover:shadow-lg transition-all">
+            <div class="w-14 h-14 mx-auto bg-green-100 dark:bg-green-900/40 rounded-2xl flex items-center justify-center mb-3"><i class="fas fa-undo text-green-600 text-xl"></i></div>
+            <h3 class="font-bold text-sm mb-2">Money-Back Guarantee</h3>
+            <p class="text-gray-500 text-xs">If you're not satisfied with the design before development starts, full refund. Zero risk.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 text-center hover:shadow-lg transition-all">
+            <div class="w-14 h-14 mx-auto bg-blue-100 dark:bg-blue-900/40 rounded-2xl flex items-center justify-center mb-3"><i class="fas fa-lock text-blue-600 text-xl"></i></div>
+            <h3 class="font-bold text-sm mb-2">NDA & Confidentiality</h3>
+            <p class="text-gray-500 text-xs">Non-disclosure agreement available on request. Your idea and data stay private and protected.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 text-center hover:shadow-lg transition-all">
+            <div class="w-14 h-14 mx-auto bg-purple-100 dark:bg-purple-900/40 rounded-2xl flex items-center justify-center mb-3"><i class="fas fa-code-branch text-purple-600 text-xl"></i></div>
+            <h3 class="font-bold text-sm mb-2">You Own the Code</h3>
+            <p class="text-gray-500 text-xs">Full source code ownership. All files, designs, and assets are transferred to you upon completion.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 text-center hover:shadow-lg transition-all">
+            <div class="w-14 h-14 mx-auto bg-orange-100 dark:bg-orange-900/40 rounded-2xl flex items-center justify-center mb-3"><i class="fas fa-headset text-orange-600 text-xl"></i></div>
+            <h3 class="font-bold text-sm mb-2">30 Days Free Support</h3>
+            <p class="text-gray-500 text-xs">One month of free post-launch support: bug fixes, text changes, training. Longer packages available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BREAK: Guarantees → Content ===== -->
+    <section class="py-10 px-4">
+      <div class="max-w-3xl mx-auto bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 rounded-2xl p-6 sm:p-8 text-center border border-green-200/50 dark:border-green-800/30">
+        <div class="flex items-center justify-center gap-2 mb-3"><i class="fas fa-shield-alt text-green-500 text-xl"></i><span class="font-bold text-lg">100% Risk-Free</span></div>
+        <p class="text-gray-600 dark:text-gray-300 text-sm mb-5">Still not sure? Start with a <strong>free consultation</strong> — no payment required, no obligations. I'll analyze your project and send a detailed proposal within 24 hours.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="#quote" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg transition-all"><i class="fas fa-paper-plane"></i> Get Free Consultation</a>
+          <a href="tel:+37379738524" class="inline-flex items-center gap-2 text-green-700 dark:text-green-300 hover:underline font-semibold text-sm"><i class="fas fa-phone"></i> Call: +373 797 385 24</a>
         </div>
       </div>
     </section>
@@ -593,12 +823,27 @@
 
     </main>
 
-    <!-- Floating WhatsApp -->
-    <div class="fixed bottom-6 right-6 z-50">
-      <a href="https://wa.me/37379738524?text=Hi%20Bogdan!%20I%20need%20a%20website." target="_blank" rel="noopener" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all font-semibold">
+    <!-- Floating WhatsApp (desktop) -->
+    <div class="fixed bottom-6 right-6 z-50 hidden sm:block">
+      <a href="https://wa.me/37379738524?text=Hi%20Bogdan!%20I%20need%20a%20website." target="_blank" rel="noopener" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all font-semibold animate-bounce" style="animation-duration:3s">
         <i class="fab fa-whatsapp text-xl"></i>
-        <span class="hidden sm:inline">Chat on WhatsApp</span>
+        <span>Chat on WhatsApp</span>
       </a>
+    </div>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-white/95 dark:bg-gray-950/95 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 px-3 py-2.5 safe-area-inset">
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/37379738524?text=Hi!%20I%20need%20a%20website." target="_blank" rel="noopener" class="flex-1 flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl font-bold text-sm shadow-md transition-all">
+          <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+        </a>
+        <a href="#quote" class="flex-1 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold text-sm shadow-md transition-all">
+          <i class="fas fa-paper-plane text-sm"></i> Free Quote
+        </a>
+        <a href="tel:+37379738524" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 py-3 px-4 rounded-xl transition-all">
+          <i class="fas fa-phone text-blue-600 text-sm"></i>
+        </a>
+      </div>
     </div>
 
     <!-- Footer -->
