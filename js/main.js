@@ -16,8 +16,8 @@ const translations = {
 
     // Hero
     heroAvailable: "Disponibil pentru proiecte noi",
-    heroTitle: 'Soluții Digitale Care <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Scalează</span>.<br>De la Idee la Produs.',
-    heroSubtitle: "Full-Stack Developer & Digital Solutions — construiesc aplicații web, mobile, platforme marketplace, sisteme CRM, soluții AI, marketing digital și infrastructură IT pentru business-uri din Europa și global.",
+    heroTitle: 'Creare Website & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Web Design</span><br>Moldova 2026',
+    heroSubtitle: "Creare website profesional de la €500 — web design modern, magazin online, aplicații mobile, chatbot AI și SEO complet. Dezvoltator web din Moldova, Chișinău pentru clienți din România și Europa. Consultanță gratuită!",
     heroProp1: "Consultanță gratuită",
     heroProp2: "Full-Stack · AI · Mobile",
     heroProp3: "Clienți din Europa & global",
@@ -31,8 +31,8 @@ const translations = {
 
     // About / Benefits (Home)
     aboutTag: "// De ce să lucrezi cu mine",
-    aboutTitle: 'Nu Doar Code. <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Soluții Complete.</span>',
-    aboutSubtitle: "Combin expertiza full-stack cu dezvoltare mobilă, AI, marketing digital și gândire de produs pentru a livra soluții care generează rezultate reale.",
+    aboutTitle: 'Web Design Moldova — <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Soluții Complete.</span>',
+    aboutSubtitle: "Programator web din Chișinău cu experiență în creare website, magazin online, aplicații mobile, AI și marketing digital. Preț corect, calitate garantată.",
     benefit1Title: "Full-Stack End-to-End",
     benefit1Desc: "De la bază de date și API-uri REST la interfețe responsive — un singur developer care acoperă tot stack-ul tehnic.",
     benefit2Title: "Aplicații Mobile",
@@ -52,14 +52,14 @@ const translations = {
 
     // Services overview (Home)
     servicesTag: "// Ce pot face pentru tine",
-    servicesTitle: 'Servicii Digitale <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Complete</span>',
-    servicesSubtitle: "De la web și mobile la AI și marketing — ofer soluții end-to-end pentru orice tip de business.",
+    servicesTitle: 'Servicii Creare Website & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Web Design</span>',
+    servicesSubtitle: "Creare website de prezentare, magazin online, aplicații mobile, chatbot AI, SEO și marketing digital — preț de la €500, calitate europeană.",
     seeAllServices: "Vezi Toate Serviciile →",
 
     // Services Page
     spTitle: "Toate Serviciile Mele",
     spSubtitle: "Soluții digitale complete pentru business-uri din Europa și global. De la idee la implementare.",
-    sp1Title: "Aplicații Web Full-Stack",
+    sp1Title: "Creare Website Profesional",
     sp1Desc: "Aplicații web complexe construite cu Laravel și React. Dashboard-uri admin, platforme business, produse SaaS — de la bază de date la interfață.",
     sp1f1: "Laravel MVC & REST API",
     sp1f2: "Admin dashboard-uri custom",
@@ -94,7 +94,7 @@ const translations = {
     sp5f3: "Automatizări & notificări",
     sp5f4: "Rapoarte & analytics",
     sp5f5: "Roluri & permisiuni (RBAC)",
-    sp6Title: "Marketing Digital",
+    sp6Title: "SEO & Marketing Digital",
     sp6Desc: "Email marketing cu șabloane custom, WhatsApp marketing, landing pages pentru ads, HTML ads — strategii complete de lead generation.",
     sp6f1: "Email marketing & șabloane",
     sp6f2: "WhatsApp marketing campaigns",
@@ -292,7 +292,7 @@ const translations = {
     guar4Desc: "Contract clar, plată în etape, acces la progres în timp real. Fără surprize.",
 
     // Footer
-    footerDesc: "Full-Stack Developer & Digital Solutions Architect. Web apps, mobile, AI, marketing digital și infrastructură IT pentru business-uri din Europa și global.",
+    footerDesc: "Programator web & dezvoltator website din Moldova. Creare website, magazin online, aplicații mobile, AI, SEO și marketing digital.",
     footerLinks: "Link-uri rapide",
     footerLink1: "Acasă",
     footerLink2: "Servicii",
@@ -333,6 +333,15 @@ const translations = {
     trustBadge3: "Răspuns în 24h",
     trustBadge4: "30 Zile Suport Gratuit",
     
+    // SEO Content Section
+    seoContentTag: "// Creare Website Moldova",
+    seoContentTitle: 'Creare Website Profesional <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Moldova & România</span>',
+    seoP1: 'Cauți <strong>creare website în Moldova</strong>? Obreja Bogdan este programator web profesional din Chișinău, specializat în <strong>web design modern</strong>, creare magazin online, aplicații mobile și soluții AI. Cu peste 15 proiecte livrate și clienți din Moldova, România și Europa, ofer servicii complete de <strong>dezvoltare web</strong> la prețuri competitive, de la €500.',
+    seoP2: 'Fiecare <strong>website creat</strong> vine cu design responsive mobile-first, optimizare SEO completă, hosting configurat, certificat SSL și 30 de zile suport gratuit. Indiferent dacă ai nevoie de un <strong>site de prezentare</strong>, un <strong>magazin online</strong> cu plăți integrate, o <strong>aplicație mobilă</strong> iOS/Android sau un <strong>chatbot AI</strong> pentru business — te ajut de la consultanța gratuită până la lansare.',
+    seoP3: 'Folosesc tehnologii moderne precum Laravel, React, Node.js, TailwindCSS și OpenAI API pentru a construi website-uri rapide, sigure și optimizate pentru Google. Serviciile mele includ: <strong>creare website de prezentare</strong>, <strong>creare magazin online e-commerce</strong>, <strong>optimizare SEO</strong>, <strong>web design Chișinău</strong>, <strong>dezvoltare aplicații mobile</strong>, integrări chatbot AI și <strong>marketing digital</strong> complet.',
+    seoP4: 'De ce să alegi web design-ul meu? Preț corect fără intermediari, comunicare directă pe WhatsApp, livrare la timp, cod curat și calitate europeană. Lucrez cu firme mici și medii din <strong>Moldova</strong>, <strong>România</strong>, <strong>Germania</strong>, <strong>Franța</strong> și <strong>UK</strong>. Contactează-mă pentru o <strong>consultanță gratuită</strong> și primești o estimare detaliată în 24 de ore.',
+    seoContentCTA: "Cere Ofertă Gratuită pentru Website",
+
     // Industries Section
     industriesTag: "// Industrii deservite",
     industriesTitle: 'Soluții Pentru <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Orice Industrie</span>',
@@ -591,8 +600,8 @@ const translations = {
 
     // Hero
     heroAvailable: "Available for new projects",
-    heroTitle: 'Digital Solutions That <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Scale</span>.<br>From Idea to Product.',
-    heroSubtitle: "Full-Stack Developer & Digital Solutions — I build web apps, mobile apps, marketplace platforms, CRM systems, AI solutions, digital marketing and IT infrastructure for businesses across Europe and globally.",
+    heroTitle: 'Website Creation & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Web Design</span><br>Moldova 2026',
+    heroSubtitle: "Professional website creation from €500 — modern web design, online store, mobile apps, AI chatbot and full SEO. Web developer from Moldova for clients in Romania and Europe. Free consultation!",
     heroProp1: "Free consultation",
     heroProp2: "Full-Stack · AI · Mobile",
     heroProp3: "Clients across Europe & worldwide",
@@ -606,8 +615,8 @@ const translations = {
 
     // About / Benefits (Home)
     aboutTag: "// Why work with me",
-    aboutTitle: 'Not Just Code. <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Complete Solutions.</span>',
-    aboutSubtitle: "I combine full-stack expertise with mobile development, AI, digital marketing and product thinking to deliver solutions that generate real results.",
+    aboutTitle: 'Web Design Moldova — <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Complete Solutions.</span>',
+    aboutSubtitle: "Web developer from Chișinău experienced in website creation, online stores, mobile apps, AI and digital marketing. Fair price, guaranteed quality.",
     benefit1Title: "Full-Stack End-to-End",
     benefit1Desc: "From databases and REST APIs to responsive interfaces — one developer covering the entire tech stack.",
     benefit2Title: "Mobile Apps",
@@ -627,14 +636,14 @@ const translations = {
 
     // Services overview (Home)
     servicesTag: "// What I can do for you",
-    servicesTitle: 'Complete <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Digital Services</span>',
-    servicesSubtitle: "From web and mobile to AI and marketing — I offer end-to-end solutions for any type of business.",
+    servicesTitle: 'Website Creation & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Web Design</span> Services',
+    servicesSubtitle: "Website creation, online store, mobile apps, AI chatbot, SEO and digital marketing — from €500, European quality.",
     seeAllServices: "View All Services →",
 
     // Services Page
     spTitle: "All My Services",
     spSubtitle: "Complete digital solutions for businesses across Europe and globally. From idea to implementation.",
-    sp1Title: "Full-Stack Web Applications",
+    sp1Title: "Professional Website Creation",
     sp1Desc: "Complex web applications built with Laravel and React. Admin dashboards, business platforms, SaaS products — from database to interface.",
     sp1f1: "Laravel MVC & REST API",
     sp1f2: "Custom admin dashboards",
@@ -655,7 +664,7 @@ const translations = {
     sp3f3: "Internal/external process automation",
     sp3f4: "Advanced prompt engineering",
     sp3f5: "Integration into existing systems",
-    sp4Title: "E-commerce & Marketplace",
+    sp4Title: "Online Store & E-commerce",
     sp4Desc: "Scalable marketplace platforms, online stores with payment systems, product management and integrated logistics.",
     sp4f1: "Multi-vendor marketplace",
     sp4f2: "Integrated payment systems",
@@ -669,7 +678,7 @@ const translations = {
     sp5f3: "Automation & notifications",
     sp5f4: "Reports & analytics",
     sp5f5: "Roles & permissions (RBAC)",
-    sp6Title: "Digital Marketing",
+    sp6Title: "SEO & Digital Marketing",
     sp6Desc: "Email marketing with custom templates, WhatsApp marketing, ad landing pages, HTML ads — complete lead generation strategies.",
     sp6f1: "Email marketing & templates",
     sp6f2: "WhatsApp marketing campaigns",
@@ -867,7 +876,7 @@ const translations = {
     guar4Desc: "Clear contract, milestone payments, real-time progress access. No surprises.",
 
     // Footer
-    footerDesc: "Full-Stack Developer & Digital Solutions Architect. Web apps, mobile, AI, digital marketing and IT infrastructure for businesses across Europe and globally.",
+    footerDesc: "Web developer & website creator from Moldova. Website creation, online stores, mobile apps, AI, SEO and digital marketing.",
     footerLinks: "Quick links",
     footerLink1: "Home",
     footerLink2: "Services",
@@ -908,6 +917,15 @@ const translations = {
     trustBadge3: "Response in 24h",
     trustBadge4: "30 Days Free Support",
     
+    // SEO Content Section
+    seoContentTag: "// Website Creation Moldova",
+    seoContentTitle: 'Professional Website Creation <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Moldova & Romania</span>',
+    seoP1: 'Looking for <strong>website creation in Moldova</strong>? Obreja Bogdan is a professional web developer from Chișinău, specialized in <strong>modern web design</strong>, online store creation, mobile apps and AI solutions. With 15+ delivered projects and clients from Moldova, Romania and Europe, I offer complete <strong>web development</strong> services at competitive prices, from €500.',
+    seoP2: 'Every <strong>website created</strong> comes with responsive mobile-first design, complete SEO optimization, configured hosting, SSL certificate and 30 days free support. Whether you need a <strong>presentation website</strong>, an <strong>online store</strong> with integrated payments, a <strong>mobile app</strong> for iOS/Android or an <strong>AI chatbot</strong> for your business — I help you from free consultation to launch.',
+    seoP3: 'I use modern technologies like Laravel, React, Node.js, TailwindCSS and OpenAI API to build fast, secure and Google-optimized websites. My services include: <strong>business website creation</strong>, <strong>e-commerce online store</strong>, <strong>SEO optimization</strong>, <strong>web design</strong>, <strong>mobile app development</strong>, AI chatbot integrations and complete <strong>digital marketing</strong>.',
+    seoP4: 'Why choose my web design? Fair price without middlemen, direct WhatsApp communication, on-time delivery, clean code and European quality. I work with small and medium businesses from <strong>Moldova</strong>, <strong>Romania</strong>, <strong>Germany</strong>, <strong>France</strong> and <strong>UK</strong>. Contact me for a <strong>free consultation</strong> and get a detailed estimate within 24 hours.',
+    seoContentCTA: "Get a Free Website Quote",
+
     // Industries Section
     industriesTag: "// Industries served",
     industriesTitle: 'Solutions For <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Any Industry</span>',
