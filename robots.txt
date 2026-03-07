@@ -3,6 +3,7 @@
 
 User-agent: *
 Allow: /
+Allow: /en/
 Allow: /servicii.html
 Allow: /portofoliu.html
 Allow: /despre.html

@@ -79,6 +79,23 @@
   to = "/contact.html"
   status = 301
 
+# EN page SEO-friendly redirects
+[[redirects]]
+  from = "/english"
+  to = "/en/"
+  status = 301
+
+[[redirects]]
+  from = "/en/index.html"
+  to = "/en/"
+  status = 301
+
+[[headers]]
+  for = "/en/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+    Content-Language = "en"
+
 # Common SEO misspellings/alternatives
 [[redirects]]
   from = "/service"
