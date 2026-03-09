@@ -101,7 +101,7 @@ const translations = {
     sp6f3: "Landing pages pentru reclame",
     sp6f4: "HTML ads & display banners",
     sp6f5: "Strategii de lead generation",
-    sp7Title: "Mentenanță & Securitate",
+    sp7Title: "Mentenanță Website & Securitate",
     sp7Desc: "Mentenanță continuă, actualizări de securitate, monitoring, backup-uri automate — website-ul tău rămâne performant 24/7.",
     sp7f1: "Mentenanță lunară proactivă",
     sp7f2: "Actualizări de securitate",
@@ -115,7 +115,7 @@ const translations = {
     sp8f3: "Video editing profesional",
     sp8f4: "Motion graphics pentru ads",
     sp8f5: "Branding animat & intro-uri",
-    sp9Title: "Infrastructură IT",
+    sp9Title: "Infrastructură IT & Cloud",
     sp9Desc: "Configurare NAS Synology, soluții Drive, stocare cloud, backup automatizat și sisteme de stocare pentru companii.",
     sp9f1: "NAS Synology configurare",
     sp9f2: "Stocare cloud & Drive",
@@ -304,7 +304,7 @@ const translations = {
 
     // About Page
     apTag: "// Despre mine",
-    apTitle: 'Obreja Bogdan',
+    apTitle: 'Despre Obreja Bogdan \u2014 Programator Web',
     apRole: "Full-Stack Developer & Digital Solutions Architect",
     apBio1: "Sunt un dezvoltator full-stack cu peste 2 ani de experiență în construirea soluțiilor digitale complete — de la aplicații web și mobile la integrări AI, marketing digital și infrastructură IT.",
     apBio2: "Am lucrat cu business-uri din diverse industrii: imobiliare, investiții, transport, construcții, e-commerce. Fiecare proiect primește atenție la detalii, cod curat și o strategie orientată spre rezultate.",
@@ -685,7 +685,7 @@ const translations = {
     sp6f3: "Ad landing pages",
     sp6f4: "HTML ads & display banners",
     sp6f5: "Lead generation strategies",
-    sp7Title: "Maintenance & Security",
+    sp7Title: "Website Maintenance & Security",
     sp7Desc: "Ongoing maintenance, security updates, monitoring, automated backups — your website stays performant 24/7.",
     sp7f1: "Proactive monthly maintenance",
     sp7f2: "Security updates",
@@ -699,7 +699,7 @@ const translations = {
     sp8f3: "Professional video editing",
     sp8f4: "Motion graphics for ads",
     sp8f5: "Animated branding & intros",
-    sp9Title: "IT Infrastructure",
+    sp9Title: "IT Infrastructure & Cloud",
     sp9Desc: "NAS Synology setup, Drive solutions, cloud storage, automated backups and enterprise storage systems.",
     sp9f1: "NAS Synology configuration",
     sp9f2: "Cloud storage & Drive",
@@ -888,7 +888,7 @@ const translations = {
 
     // About Page
     apTag: "// About me",
-    apTitle: "Obreja Bogdan",
+    apTitle: "About Obreja Bogdan \u2014 Web Developer",
     apRole: "Full-Stack Developer & Digital Solutions Architect",
     apBio1: "I'm a full-stack developer with over 2 years of experience building complete digital solutions — from web and mobile apps to AI integrations, digital marketing and IT infrastructure.",
     apBio2: "I've worked with businesses across various industries: real estate, investments, transportation, construction, e-commerce. Every project receives attention to detail, clean code and a results-oriented strategy.",
@@ -1665,7 +1665,7 @@ function showExitPopup() {
         <div style="font-size:3rem;margin-bottom:1rem">🚀</div>
         <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:0.75rem" data-translate="exitTitle">Stai! Nu pleca fără consultanță gratuită</h3>
         <p style="color:#6b7280;margin-bottom:1.5rem;font-size:0.9375rem;line-height:1.6" data-translate="exitDesc">Ai un proiect în minte? Lasă-mă să te ajut. Primește o analiză gratuită a nevoilor tale digitale.</p>
-        <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță%20gratuită." target="_blank" 
+        <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță%20gratuită." target="_blank" rel="nofollow noopener noreferrer"
            style="display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(135deg,#25D366,#128C7E);color:white;padding:0.875rem 2rem;border-radius:0.75rem;font-weight:700;font-size:1rem;text-decoration:none;box-shadow:0 8px 20px rgba(37,211,102,0.3);transition:all 0.3s"
            onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 30px rgba(37,211,102,0.4)'"
            onmouseout="this.style.transform='';this.style.boxShadow='0 8px 20px rgba(37,211,102,0.3)'">
@@ -1744,7 +1744,7 @@ function initMobileStickyCTA() {
   const bar = document.createElement('div');
   bar.className = 'mobile-sticky-cta';
   bar.innerHTML = `
-    <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță." target="_blank"
+    <a href="https://wa.me/37379738524?text=Salut%20Bogdan!%20Vreau%20o%20consultanță." target="_blank" rel="nofollow noopener noreferrer"
        class="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-2.5 rounded-lg font-bold text-sm">
       <i class="fab fa-whatsapp"></i>
       <span data-translate="mobileCTA">Consultanță Gratuită</span>
